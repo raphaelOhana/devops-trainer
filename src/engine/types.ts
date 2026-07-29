@@ -27,7 +27,8 @@ export type Topic =
   | 'appsec'
   | 'algorithms'
   | 'system-design'
-  | 'languages';
+  | 'languages'
+  | 'memory-safety';
 
 export type Difficulty = 'junior' | 'intermediate' | 'senior';
 

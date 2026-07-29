@@ -10,6 +10,7 @@ import securityMd from './courses/security.md?raw';
 import devopsMd from './courses/devops.md?raw';
 import opsMd from './courses/ops.md?raw';
 import csMd from './courses/cs.md?raw';
+import memoryMd from './courses/memory.md?raw';
 
 // Décode les entités HTML laissées par la génération (&lt; &gt; &amp; …).
 function decode(s: string): string {
@@ -59,6 +60,7 @@ export const lessons: Lesson[] = [
   ...parse(devopsMd),
   ...parse(opsMd),
   ...parse(csMd),
+  ...parse(memoryMd),
 ];
 
 /** Première leçon associée à un sujet (pour le lien exercice → cours). */

@@ -16,6 +16,7 @@ import { cveExercises } from './exercises-cve';
 import { gotchaExercises } from './exercises-gotchas';
 import { cloudExercises } from './exercises-cloud';
 import { sreExercises } from './exercises-sre';
+import { memoryExercises } from './exercises-memory';
 import { shuffleAll } from './shuffle';
 import type { Exercise } from '../engine/types';
 
@@ -40,4 +41,5 @@ export const exercises: Exercise[] = shuffleAll([
   ...gotchaExercises,
   ...cloudExercises,
   ...sreExercises,
+  ...memoryExercises,
 ]);
