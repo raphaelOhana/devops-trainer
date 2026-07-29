@@ -21,6 +21,7 @@ export const TOPIC_ICON: Record<Topic, string> = {
   appsec: '🛡️',
   algorithms: '🧠',
   'system-design': '🗺️',
+  languages: '🐛',
 };
 
 // Libellés courts (français) pour le filtre par sujet.
@@ -42,6 +43,7 @@ export const TOPIC_LABEL: Record<Topic, string> = {
   appsec: 'AppSec',
   algorithms: 'Algorithmes',
   'system-design': 'System Design',
+  languages: 'Pièges langages',
 };
 
 export const DOMAIN_LABEL: Record<Domain, string> = {

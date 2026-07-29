@@ -26,7 +26,8 @@ export type Topic =
   | 'backend'
   | 'appsec'
   | 'algorithms'
-  | 'system-design';
+  | 'system-design'
+  | 'languages';
 
 export type Difficulty = 'junior' | 'intermediate' | 'senior';
 
@@ -66,7 +67,7 @@ export interface FindErrorExercise extends BaseExercise {
   language:
     | 'dockerfile' | 'yaml' | 'bash' | 'hcl' | 'json'
     | 'typescript' | 'javascript' | 'c' | 'python' | 'php' | 'sql'
-    | 'go' | 'java' | 'nginx';
+    | 'go' | 'java' | 'nginx' | 'rust';
   options: string[];
   answer: number;
 }
