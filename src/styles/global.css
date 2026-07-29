@@ -66,6 +66,21 @@ code, pre, .mono { font-family: var(--mono); }
 .streak .flame { font-size: 17px; filter: saturate(1.3); }
 .streak.hot { border-color: var(--streak); box-shadow: 0 0 0 1px var(--streak) inset; }
 
+/* ============ Stats ============ */
+.stat-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin: 14px 0 8px; }
+.stat-tile { background: linear-gradient(180deg, var(--card), var(--card2)); border: 1px solid var(--border); border-radius: 16px; padding: 16px; text-align: center; }
+.stat-big { font-size: 30px; font-weight: 900; line-height: 1.1; }
+.stat-lbl { font-size: 12px; color: var(--dim); margin-top: 4px; }
+.stat-h3 { font-size: 13px; color: var(--dim); text-transform: uppercase; letter-spacing: .6px; margin: 22px 0 12px; }
+.stat-hint { text-transform: none; letter-spacing: 0; font-weight: 400; opacity: .7; }
+.bar-row { margin-bottom: 12px; }
+.bar-head { display: flex; justify-content: space-between; font-size: 13.5px; margin-bottom: 5px; }
+.bar-val { color: var(--dim); font-variant-numeric: tabular-nums; }
+.bar { height: 9px; background: var(--card); border-radius: 99px; overflow: hidden; }
+.bar i { display: block; height: 100%; border-radius: 99px; transition: width .4s; }
+
+.hud-stats-btn { width: 40px; height: 40px; border-radius: 12px; background: var(--card); border: 1px solid var(--border); display: grid; place-items: center; font-size: 18px; flex-shrink: 0; }
+
 /* ============ Bouton révision ============ */
 .revise-btn {
   display: flex; align-items: center; justify-content: center; gap: 8px; width: 100%;

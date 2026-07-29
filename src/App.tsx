@@ -3,20 +3,27 @@ import { exercises } from './data';
 import type { Domain, Exercise } from './engine/types';
 import { ExerciseView } from './components/ExerciseView';
 import { LevelUp } from './components/LevelUp';
+import { Stats } from './components/Stats';
 import {
-  loadProgress, isMastered, resetProgress, levelInfo,
+  loadProgress, isMastered, resetProgress, levelInfo, isDue,
   XP_BY_DIFFICULTY, type Progress,
 } from './store/progress';
 import { TOPIC_ICON, DOMAIN_LABEL, DOMAIN_COLOR, DIFFICULTY_META } from './engine/meta';
 
 const DOMAINS: (Domain | 'all')[] = ['all', 'devops', 'software', 'web', 'iot'];
 
-/** Session de révision : exercices non maîtrisés, les ratés d'abord. */
+/**
+ * Session de révision espacée : d'abord les exercices « dus » (dont les
+ * maîtrisés à ré-ancrer), puis les ratés récents, puis les nouveaux.
+ */
 function buildRevision(p: Progress, pool: Exercise[]): Exercise[] {
-  const notMastered = pool.filter((e) => !isMastered(p, e.id));
-  const failed = notMastered.filter((e) => (p.attempts[e.id]?.attempts ?? 0) > 0);
-  const fresh = notMastered.filter((e) => (p.attempts[e.id]?.attempts ?? 0) === 0);
-  return [...failed, ...fresh];
+  const now = Date.now();
+  const due = pool.filter((e) => isDue(p, e.id, now));
+  const failed = pool.filter((e) => !isDue(p, e.id, now) && !isMastered(p, e.id) && (p.attempts[e.id]?.attempts ?? 0) > 0);
+  const fresh = pool.filter((e) => (p.attempts[e.id]?.attempts ?? 0) === 0);
+  // due trié par date d'échéance (le plus en retard d'abord)
+  due.sort((a, b) => (p.attempts[a.id]?.dueAt ?? 0) - (p.attempts[b.id]?.dueAt ?? 0));
+  return [...due, ...failed, ...fresh];
 }
 
 export default function App() {
@@ -26,13 +33,15 @@ export default function App() {
   // Une session = file d'exercices + position. Un clic simple = session de 1.
   const [session, setSession] = useState<Exercise[] | null>(null);
   const [pos, setPos] = useState(0);
+  const [showStats, setShowStats] = useState(false);
 
   const filtered = useMemo(
     () => (domain === 'all' ? exercises : exercises.filter((e) => e.domain === domain)),
     [domain]
   );
   const masteredCount = exercises.filter((e) => isMastered(progress, e.id)).length;
-  const notMasteredCount = exercises.length - masteredCount;
+  const revisionQueue = useMemo(() => buildRevision(progress, filtered), [progress, filtered]);
+  const dueToday = useMemo(() => filtered.filter((e) => isDue(progress, e.id)).length, [progress, filtered]);
   const lvl = levelInfo(progress.xp);
 
   function handleResult(rec: { progress: Progress; leveledUp: boolean }) {
@@ -62,7 +71,15 @@ export default function App() {
     );
   }
 
+  // ---- Écran stats ----
+  if (showStats) {
+    return <Stats progress={progress} onBack={() => setShowStats(false)} />;
+  }
+
   // ---- Accueil ----
+  const reviseLabel = dueToday > 0 ? '🔥 À réviser aujourd\'hui' : '🎯 Réviser mes lacunes';
+  const reviseNum = dueToday > 0 ? dueToday : revisionQueue.length;
+
   return (
     <div className="app">
       <header className="hud">
@@ -75,19 +92,21 @@ export default function App() {
             </div>
             <div className="xp-bar"><div className="xp-fill" style={{ width: `${lvl.progressPct}%` }} /></div>
           </div>
-          <div className={`streak ${progress.streak >= 3 ? 'hot' : ''}`} title="Série de bonnes réponses">
+          <div className={`streak ${progress.streak >= 3 ? 'hot' : ''}`} title="Série">
             <span className="flame">🔥</span>{progress.streak}
           </div>
+          <button className="hud-stats-btn" onClick={() => setShowStats(true)} title="Statistiques">📊</button>
         </div>
       </header>
 
-      {/* Bouton révision */}
-      {notMasteredCount > 0 && (
+      {/* Bouton révision (priorise les exercices dus) */}
+      {revisionQueue.length > 0 && (
         <button
           className="revise-btn"
-          onClick={() => { const s = buildRevision(progress, filtered); if (s.length) { setSession(s); setPos(0); } }}
+          style={dueToday > 0 ? { background: 'linear-gradient(135deg, var(--streak), #ff9147)', color: '#231004', boxShadow: '0 6px 18px rgba(255,122,61,.35)' } : undefined}
+          onClick={() => { if (revisionQueue.length) { setSession(revisionQueue); setPos(0); } }}
         >
-          🎯 Réviser mes lacunes<span className="revise-count">{buildRevision(progress, filtered).length}</span>
+          {reviseLabel}<span className="revise-count">{reviseNum}</span>
         </button>
       )}
 
