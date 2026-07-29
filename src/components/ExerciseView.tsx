@@ -4,6 +4,7 @@ import { validate } from '../engine/validate';
 import { recordAttempt, type RecordResult } from '../store/progress';
 import { Markdown } from './Markdown';
 import { Confetti } from './Confetti';
+import { CodeBlock } from './CodeBlock';
 import { TOPIC_ICON, DIFFICULTY_META, TYPE_LABEL, DOMAIN_COLOR } from '../engine/meta';
 
 interface Props {
@@ -85,7 +86,7 @@ export function ExerciseView({ exercise, onBack, onResult, onNext, position }: P
       {exercise.type === 'find-error' && (
         <>
           <p className="qtext">{exercise.question}</p>
-          <pre className="code">{exercise.code}</pre>
+          <CodeBlock code={exercise.code} lang={exercise.language} />
         </>
       )}
       {exercise.type === 'write-config' && <p className="qtext">{exercise.prompt}</p>}
@@ -161,7 +162,7 @@ export function ExerciseView({ exercise, onBack, onResult, onNext, position }: P
               <button className="btn ghost solution-btn" style={{ width: '100%' }} onClick={() => setShowSolution((s) => !s)}>
                 {showSolution ? 'Masquer' : '👀 Voir'} la solution de référence
               </button>
-              {showSolution && <pre>{exercise.solution}</pre>}
+              {showSolution && <CodeBlock code={exercise.solution} lang={exercise.language} />}
             </div>
           )}
         </div>
