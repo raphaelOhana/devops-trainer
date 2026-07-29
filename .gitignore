@@ -1,0 +1,6 @@
+node_modules
+dist
+dist-ssr
+_shot
+*.local
+.DS_Store
