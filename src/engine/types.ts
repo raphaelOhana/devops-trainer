@@ -28,7 +28,8 @@ export type Topic =
   | 'algorithms'
   | 'system-design'
   | 'languages'
-  | 'memory-safety';
+  | 'memory-safety'
+  | 'problem-solving';
 
 export type Difficulty = 'junior' | 'intermediate' | 'senior';
 

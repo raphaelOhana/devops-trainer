@@ -18,6 +18,7 @@ import { cloudExercises } from './exercises-cloud';
 import { sreExercises } from './exercises-sre';
 import { memoryExercises } from './exercises-memory';
 import { ops2Exercises } from './exercises-ops2';
+import { problemSolvingExercises } from './exercises-problem-solving';
 import { shuffleAll } from './shuffle';
 import type { Exercise } from '../engine/types';
 
@@ -44,4 +45,5 @@ export const exercises: Exercise[] = shuffleAll([
   ...sreExercises,
   ...memoryExercises,
   ...ops2Exercises,
+  ...problemSolvingExercises,
 ]);
