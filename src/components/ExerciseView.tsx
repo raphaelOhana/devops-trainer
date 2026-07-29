@@ -10,12 +10,16 @@ interface Props {
   exercise: Exercise;
   onBack: () => void;
   onResult: (rec: RecordResult) => void;
+  /** Passe à l'exercice suivant de la session (ou termine si dernier). */
+  onNext: () => void;
+  /** Position dans une session multi-exercices (affiché en haut). */
+  position?: { current: number; total: number };
 }
 
 const PASS_MSGS = ['Bravo ! 🎉', 'Excellent ! 💪', 'Nickel ! ✨', 'Parfait ! 🚀', 'Bien joué ! 🔥'];
 const FAIL_MSGS = ['Presque !', 'Pas tout à fait', 'On réessaie ?', 'Courage !'];
 
-export function ExerciseView({ exercise, onBack, onResult }: Props) {
+export function ExerciseView({ exercise, onBack, onResult, onNext, position }: Props) {
   const [picked, setPicked] = useState<number | null>(null);
   const [text, setText] = useState(exercise.type === 'write-config' ? exercise.starter ?? '' : '');
   const [result, setResult] = useState<ValidationResult | null>(null);
@@ -42,6 +46,7 @@ export function ExerciseView({ exercise, onBack, onResult }: Props) {
 
   const passed = result?.passed ?? false;
   const canSubmit = isChoice ? picked !== null : text.trim().length > 0;
+  const lastOfSession = !position || position.current >= position.total;
 
   return (
     <div className="app ex">
@@ -50,7 +55,10 @@ export function ExerciseView({ exercise, onBack, onResult }: Props) {
       {/* Header */}
       <div className="ex-head">
         <button className="icon-btn" onClick={onBack}>←</button>
-        <div className="ex-progress"><i style={{ width: result ? '100%' : '35%' }} /></div>
+        <div className="ex-progress">
+          <i style={{ width: position ? `${(position.current / position.total) * 100}%` : result ? '100%' : '35%' }} />
+        </div>
+        {position && <span className="ex-count">{position.current}/{position.total}</span>}
       </div>
 
       <div className="chip-line">
@@ -169,12 +177,14 @@ export function ExerciseView({ exercise, onBack, onResult }: Props) {
           )}
           {result && !passed && (
             <>
-              <button className="btn ghost" onClick={onBack}>Quitter</button>
-              <button className="btn" onClick={retry}>Réessayer</button>
+              <button className="btn ghost" onClick={retry}>Réessayer</button>
+              <button className="btn" onClick={onNext}>{lastOfSession ? 'Terminer' : 'Passer →'}</button>
             </>
           )}
           {result && passed && (
-            <button className="btn success" onClick={onBack}>Continuer →</button>
+            <button className="btn success" onClick={onNext}>
+              {lastOfSession ? '✓ Terminer' : 'Continuer →'}
+            </button>
           )}
         </div>
       </div>
