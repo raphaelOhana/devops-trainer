@@ -117,6 +117,29 @@ export type Exercise =
 
 export type ExerciseType = Exercise['type'];
 
+// ---------------------------------------------------------------------------
+// Cours (leçons). Chaque leçon est reliée à un `topic` : depuis un exercice,
+// on ouvre le cours de son sujet (notamment après un échec).
+// ---------------------------------------------------------------------------
+
+export interface LessonSection {
+  heading: string;
+  /** Corps en markdown léger (titres ###, listes -, code ``` ```, **gras**, `code`). */
+  body: string;
+}
+
+export interface Lesson {
+  /** Identifiant unique de la leçon. */
+  key: string;
+  /** Sujet associé (permet le lien exercice → cours). */
+  topic: Topic;
+  title: string;
+  /** Emoji d'illustration. */
+  icon: string;
+  intro: string;
+  sections: LessonSection[];
+}
+
 /** Résultat d'une tentative, produit par le moteur de validation. */
 export interface ValidationResult {
   /** Vrai si l'exercice est considéré comme réussi. */

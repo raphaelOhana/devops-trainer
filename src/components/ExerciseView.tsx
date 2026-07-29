@@ -15,12 +15,14 @@ interface Props {
   onNext: () => void;
   /** Position dans une session multi-exercices (affiché en haut). */
   position?: { current: number; total: number };
+  /** Ouvre le cours du sujet de l'exercice (proposé surtout après un échec). */
+  onOpenLesson?: () => void;
 }
 
 const PASS_MSGS = ['Bravo ! 🎉', 'Excellent ! 💪', 'Nickel ! ✨', 'Parfait ! 🚀', 'Bien joué ! 🔥'];
 const FAIL_MSGS = ['Presque !', 'Pas tout à fait', 'On réessaie ?', 'Courage !'];
 
-export function ExerciseView({ exercise, onBack, onResult, onNext, position }: Props) {
+export function ExerciseView({ exercise, onBack, onResult, onNext, position, onOpenLesson }: Props) {
   const [picked, setPicked] = useState<number | null>(null);
   const [text, setText] = useState(exercise.type === 'write-config' ? exercise.starter ?? '' : '');
   const [result, setResult] = useState<ValidationResult | null>(null);
@@ -156,6 +158,12 @@ export function ExerciseView({ exercise, onBack, onResult, onNext, position }: P
             <h3>💡 Explication</h3>
             <Markdown text={exercise.explanation} />
           </div>
+
+          {onOpenLesson && (
+            <button className={`course-link ${passed ? '' : 'hot'}`} onClick={onOpenLesson}>
+              📖 {passed ? 'Approfondir dans le cours' : 'Revoir le cours sur ce sujet'} →
+            </button>
+          )}
 
           {exercise.type === 'write-config' && (
             <div className="explain solution">
