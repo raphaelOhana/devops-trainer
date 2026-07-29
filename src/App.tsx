@@ -1,6 +1,6 @@
 import { useMemo, useState } from 'react';
 import { exercises } from './data';
-import type { Domain, Exercise } from './engine/types';
+import type { Domain, Topic, Difficulty, ExerciseType, Exercise } from './engine/types';
 import { ExerciseView } from './components/ExerciseView';
 import { LevelUp } from './components/LevelUp';
 import { Stats } from './components/Stats';
@@ -8,9 +8,11 @@ import {
   loadProgress, isMastered, resetProgress, levelInfo, isDue,
   XP_BY_DIFFICULTY, type Progress,
 } from './store/progress';
-import { TOPIC_ICON, DOMAIN_LABEL, DOMAIN_COLOR, DIFFICULTY_META } from './engine/meta';
+import { TOPIC_ICON, TOPIC_LABEL, DOMAIN_LABEL, DOMAIN_COLOR, DIFFICULTY_META, TYPE_LABEL } from './engine/meta';
 
 const DOMAINS: (Domain | 'all')[] = ['all', 'devops', 'software', 'web', 'iot'];
+const DIFFICULTIES: (Difficulty | 'all')[] = ['all', 'junior', 'intermediate', 'senior'];
+const TYPES: (ExerciseType | 'all')[] = ['all', 'mcq', 'find-error', 'write-config'];
 
 /**
  * Session de révision espacée : d'abord les exercices « dus » (dont les
@@ -28,6 +30,10 @@ function buildRevision(p: Progress, pool: Exercise[]): Exercise[] {
 
 export default function App() {
   const [domain, setDomain] = useState<Domain | 'all'>('all');
+  const [topic, setTopic] = useState<Topic | 'all'>('all');
+  const [difficulty, setDifficulty] = useState<Difficulty | 'all'>('all');
+  const [exType, setExType] = useState<ExerciseType | 'all'>('all');
+  const [query, setQuery] = useState('');
   const [progress, setProgress] = useState<Progress>(() => loadProgress());
   const [levelUpTo, setLevelUpTo] = useState<number | null>(null);
   // Une session = file d'exercices + position. Un clic simple = session de 1.
@@ -35,10 +41,34 @@ export default function App() {
   const [pos, setPos] = useState(0);
   const [showStats, setShowStats] = useState(false);
 
-  const filtered = useMemo(
-    () => (domain === 'all' ? exercises : exercises.filter((e) => e.domain === domain)),
-    [domain]
-  );
+  // Sujets réellement présents dans le domaine choisi (le filtre s'adapte),
+  // triés par nombre d'exercices décroissant.
+  const topicsInDomain = useMemo(() => {
+    const pool = domain === 'all' ? exercises : exercises.filter((e) => e.domain === domain);
+    const counts = new Map<Topic, number>();
+    pool.forEach((e) => counts.set(e.topic, (counts.get(e.topic) ?? 0) + 1));
+    return [...counts.entries()].sort((a, b) => b[1] - a[1]).map(([t]) => t);
+  }, [domain]);
+
+  const filtered = useMemo(() => {
+    const q = query.trim().toLowerCase();
+    return exercises.filter((e) =>
+      (domain === 'all' || e.domain === domain) &&
+      (topic === 'all' || e.topic === topic) &&
+      (difficulty === 'all' || e.difficulty === difficulty) &&
+      (exType === 'all' || e.type === exType) &&
+      (q === '' ||
+        e.title.toLowerCase().includes(q) ||
+        (e.company ?? '').toLowerCase().includes(q) ||
+        (e.tags ?? []).some((t) => t.toLowerCase().includes(q)))
+    );
+  }, [domain, topic, difficulty, exType, query]);
+
+  const activeFilters = (domain !== 'all' ? 1 : 0) + (topic !== 'all' ? 1 : 0) +
+    (difficulty !== 'all' ? 1 : 0) + (exType !== 'all' ? 1 : 0) + (query.trim() ? 1 : 0);
+  function resetFilters() {
+    setDomain('all'); setTopic('all'); setDifficulty('all'); setExType('all'); setQuery('');
+  }
   const masteredCount = exercises.filter((e) => isMastered(progress, e.id)).length;
   const revisionQueue = useMemo(() => buildRevision(progress, filtered), [progress, filtered]);
   const dueToday = useMemo(() => filtered.filter((e) => isDue(progress, e.id)).length, [progress, filtered]);
@@ -110,22 +140,70 @@ export default function App() {
         </button>
       )}
 
-      <div className="filters">
+      <div className="search-wrap">
+        <span className="search-ico">🔎</span>
+        <input
+          className="search"
+          value={query}
+          onChange={(e) => setQuery(e.target.value)}
+          placeholder="Rechercher un sujet, une techno, une entreprise…"
+        />
+        {query && <button className="search-clear" onClick={() => setQuery('')}>✕</button>}
+      </div>
+
+      {/* Domaine */}
+      <div className="filters" role="tablist" aria-label="Domaine">
         {DOMAINS.map((d) => {
           const active = domain === d;
           const color = d === 'all' ? '#4f8cff' : DOMAIN_COLOR[d];
           return (
             <button key={d} className={`chip ${active ? 'active' : ''}`}
-              style={active ? { background: color } : undefined} onClick={() => setDomain(d)}>
+              style={active ? { background: color } : undefined}
+              onClick={() => { setDomain(d); setTopic('all'); }}>
               {d === 'all' ? '⭐ Tout' : DOMAIN_LABEL[d]}
             </button>
           );
         })}
       </div>
 
+      {/* Sujet (s'adapte au domaine) */}
+      <div className="filters scroll-x" aria-label="Sujet">
+        <button className={`chip sm ${topic === 'all' ? 'active' : ''}`} onClick={() => setTopic('all')}>
+          Tous les sujets
+        </button>
+        {topicsInDomain.map((t) => (
+          <button key={t} className={`chip sm ${topic === t ? 'active' : ''}`} onClick={() => setTopic(t)}>
+            {TOPIC_ICON[t]} {TOPIC_LABEL[t]}
+          </button>
+        ))}
+      </div>
+
+      {/* Difficulté + Type */}
+      <div className="filters scroll-x" aria-label="Difficulté et type">
+        {DIFFICULTIES.map((d) => (
+          <button key={d} className={`chip sm ${difficulty === d ? 'active' : ''}`}
+            style={difficulty === d && d !== 'all' ? { background: DIFFICULTY_META[d].color, color: '#fff' } : undefined}
+            onClick={() => setDifficulty(d)}>
+            {d === 'all' ? 'Toute difficulté' : DIFFICULTY_META[d].label}
+          </button>
+        ))}
+        {TYPES.map((t) => (
+          <button key={t} className={`chip sm ${exType === t ? 'active' : ''}`} onClick={() => setExType(t)}>
+            {t === 'all' ? 'Tout format' : TYPE_LABEL[t]}
+          </button>
+        ))}
+      </div>
+
       <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 14, fontSize: 13, color: 'var(--dim)' }}>
-        <span>{masteredCount} / {exercises.length} maîtrisés · record 🔥 {progress.bestStreak}</span>
-        {progress.xp > 0 && (
+        <span>
+          <b style={{ color: 'var(--text)' }}>{filtered.length}</b> exercice{filtered.length > 1 ? 's' : ''}
+          {activeFilters === 0 && <> · {masteredCount} maîtrisés · record 🔥 {progress.bestStreak}</>}
+        </span>
+        {activeFilters > 0 ? (
+          <button onClick={resetFilters} style={{ color: 'var(--blue)', fontSize: 12, fontWeight: 700 }}>
+            ✕ effacer les filtres ({activeFilters})
+          </button>
+        ) : progress.xp > 0 && (
           <button onClick={() => { if (confirm('Réinitialiser toute la progression ?')) setProgress(resetProgress()); }}
             style={{ color: 'var(--dim)', fontSize: 12 }}>↺ reset</button>
         )}

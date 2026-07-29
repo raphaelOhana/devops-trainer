@@ -20,6 +20,28 @@ export const TOPIC_ICON: Record<Topic, string> = {
   backend: '⚙️',
   appsec: '🛡️',
   algorithms: '🧠',
+  'system-design': '🗺️',
+};
+
+// Libellés courts (français) pour le filtre par sujet.
+export const TOPIC_LABEL: Record<Topic, string> = {
+  docker: 'Docker',
+  kubernetes: 'Kubernetes',
+  'ci-cd': 'CI/CD',
+  terraform: 'Terraform',
+  monitoring: 'Monitoring',
+  linux: 'Linux',
+  git: 'Git',
+  networking: 'Réseau',
+  security: 'Sécurité',
+  architecture: 'Architecture',
+  'design-patterns': 'Design Patterns',
+  'iot-edge': 'IoT / Edge',
+  frontend: 'Frontend',
+  backend: 'Backend',
+  appsec: 'AppSec',
+  algorithms: 'Algorithmes',
+  'system-design': 'System Design',
 };
 
 export const DOMAIN_LABEL: Record<Domain, string> = {

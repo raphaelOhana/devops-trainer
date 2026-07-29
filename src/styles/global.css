@@ -94,7 +94,22 @@ code, pre, .mono { font-family: var(--mono); }
   flex-shrink: 0; padding: 9px 16px; border-radius: 99px; font-size: 14px; font-weight: 800;
   background: var(--card); color: var(--text-dim); border: 2px solid var(--border); transition: .12s;
 }
-.chip.active { color: #fff; border-color: transparent; }
+.chip.active { color: #fff; border-color: transparent; background: var(--blue); }
+.chip.sm { padding: 7px 13px; font-size: 13px; font-weight: 700; }
+
+/* Barre de recherche */
+.search-wrap {
+  display: flex; align-items: center; gap: 8px; background: var(--bg-soft);
+  border: 2px solid var(--border); border-radius: 14px; padding: 10px 14px; margin-bottom: 4px;
+}
+.search-ico { font-size: 15px; opacity: .6; }
+.search {
+  flex: 1; border: none; background: transparent; font: inherit; font-size: 15px;
+  color: var(--text); outline: none;
+}
+.search::placeholder { color: var(--text-dim); }
+.search-clear { color: var(--text-dim); font-size: 15px; padding: 0 4px; }
+.filters.scroll-x { padding: 6px 0; }
 
 /* ============ Cartes exercices ============ */
 .list { display: flex; flex-direction: column; gap: 12px; }

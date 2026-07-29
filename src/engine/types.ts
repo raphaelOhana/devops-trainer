@@ -25,7 +25,8 @@ export type Topic =
   | 'frontend'
   | 'backend'
   | 'appsec'
-  | 'algorithms';
+  | 'algorithms'
+  | 'system-design';
 
 export type Difficulty = 'junior' | 'intermediate' | 'senior';
 
