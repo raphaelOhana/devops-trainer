@@ -7,6 +7,14 @@ import type { Exercise } from '../engine/types';
 // Pour en ajouter un : copier un objet, changer les champs. Aucun code à
 // toucher ailleurs. Les cas concrets sont contextualisés par une entreprise
 // fictive pour l'ancrage mémoriel.
+//
+// RÈGLE DE CONCEPTION DES OPTIONS (anti-triche) :
+//   Les 4 options doivent être de LONGUEUR ÉQUIVALENTE et toutes plausibles.
+//   La bonne réponse ne doit jamais être « la plus longue / la plus détaillée ».
+//   Le détail pédagogique va dans `explanation` (affiché APRÈS la réponse),
+//   pas dans l'option. Les distracteurs = vraies notions mal appliquées,
+//   causes réelles mais secondaires, ou confusions classiques. Jamais de
+//   leurre absurde (« augmenter la RAM », « ne rien changer »).
 // ---------------------------------------------------------------------------
 
 export const exercises: Exercise[] = [
@@ -29,10 +37,10 @@ COPY . .
 RUN npm ci
 CMD ["node", "server.js"]`,
     options: [
-      "FROM node:20-alpine — l'image de base est trop lourde",
-      'COPY . . avant npm ci : tout changement de code invalide le cache des dépendances',
-      'WORKDIR /app est inutile',
-      'CMD devrait être un RUN',
+      'FROM node:20-alpine : changer de base à chaque build invalide tout le cache',
+      'COPY . . avant npm ci : un changement de source invalide la couche des deps',
+      'RUN npm ci : npm ci ignore le cache de couches, contrairement à npm install',
+      'CMD en fin de fichier : il force à reconstruire les couches au-dessus',
     ],
     answer: 1,
     explanation:
@@ -239,10 +247,10 @@ spec:
     question:
       'Quelle est la différence correcte entre `resources.requests` et `resources.limits` ?',
     options: [
-      'requests = maximum autorisé, limits = minimum garanti',
-      'requests = ce qui est réservé pour le scheduling, limits = plafond que le conteneur ne peut dépasser',
-      "requests et limits sont synonymes, l'un pour le CPU l'autre pour la RAM",
-      'requests concerne le stockage, limits le réseau',
+      'requests = plafond maximal autorisé, limits = quantité réservée au démarrage',
+      'requests = quantité réservée pour le scheduling, limits = plafond à ne pas dépasser',
+      'requests = ressource CPU, limits = ressource mémoire (une clé par ressource)',
+      'requests = besoin en stockage du pod, limits = son quota réseau',
     ],
     answer: 1,
     explanation:
@@ -263,10 +271,10 @@ spec:
       "Sur un pipeline GitHub Actions chez une équipe Microsoft, un token AWS est apparu en clair dans les logs d'un build public.",
     question: 'Quelle pratique aurait évité la fuite ?',
     options: [
-      'Mettre le token directement dans le fichier YAML du workflow',
-      "Stocker le token dans les GitHub Secrets et l'injecter via `secrets.AWS_TOKEN`",
-      'Encoder le token en base64 dans le code',
-      'Committer le token dans un fichier .env versionné',
+      'Mettre le token en variable env directement dans le YAML du workflow',
+      'Le stocker dans les GitHub Secrets et le référencer via secrets.AWS_TOKEN',
+      'Encoder le token en base64 avant de le committer dans le dépôt',
+      'Le committer dans un .env ajouté au .gitignore juste après',
     ],
     answer: 1,
     explanation:
@@ -287,10 +295,10 @@ spec:
       "Pour une flotte de capteurs environnementaux à faible bande passante et alimentation limitée, une équipe NASA choisit un protocole de messagerie.",
     question: 'Pourquoi MQTT est-il préféré à HTTP pour ce cas IoT ?',
     options: [
-      'MQTT est plus verbeux, donc plus lisible',
-      'MQTT est un protocole pub/sub léger, à faible overhead, adapté aux réseaux instables et aux appareils contraints',
-      'MQTT nécessite une connexion filaire',
-      'MQTT ne fonctionne que sur le cloud AWS',
+      'MQTT ouvre une connexion HTTP par mesure, plus simple à débuguer',
+      'MQTT est un pub/sub léger, à faible overhead, tolérant aux réseaux instables',
+      'MQTT chiffre nativement sans TLS, ce qui économise la batterie',
+      'MQTT diffuse en broadcast UDP, sans connexion à maintenir',
     ],
     answer: 1,
     explanation:
@@ -314,14 +322,14 @@ curl http://updates.example.com/firmware.bin -o fw.bin
 flash fw.bin
 reboot`,
     options: [
-      'curl est trop lent',
-      "Aucune vérification de signature ni HTTPS : un attaquant peut injecter un firmware malveillant (MITM)",
-      'reboot devrait être avant flash',
-      'Le fichier devrait être en .tar.gz',
+      'Téléchargement HTTP sans cache : le firmware est retéléchargé à chaque boot',
+      'Aucune signature ni HTTPS : un MITM peut injecter un firmware malveillant',
+      'flash sans checksum : une coupure réseau corrompt le binaire en silence',
+      'reboot immédiat sans fenêtre de rollback en cas de flash raté',
     ],
     answer: 1,
     explanation:
-      "Le firmware est téléchargé en **HTTP clair** et flashé **sans vérifier de signature**. Un attaquant en position d'homme du milieu peut servir un binaire piégé. Une OTA sûre exige : transport chiffré (HTTPS/TLS), **signature cryptographique** du firmware vérifiée par le device avant flash, et idéalement un rollback en cas d'échec.",
+      "Le firmware est téléchargé en **HTTP clair** et flashé **sans vérifier de signature**. Un attaquant en position d'homme du milieu peut servir un binaire piégé. Une OTA sûre exige : transport chiffré (HTTPS/TLS), **signature cryptographique** du firmware vérifiée par le device avant flash, et idéalement un rollback en cas d'échec. (Le checksum et le rollback sont utiles, mais ne protègent pas d'un attaquant qui signe lui-même son binaire.)",
     tags: ['iot', 'ota', 'sécurité', 'firmware', 'signature'],
   },
 
@@ -338,10 +346,10 @@ reboot`,
       "Un front Netflix appelle une API sur un autre domaine et reçoit : « blocked by CORS policy ». Un dev cherche l'origine.",
     question: 'Que signifie cette erreur CORS ?',
     options: [
-      "Le serveur d'API n'autorise pas explicitement l'origine du front dans ses en-têtes de réponse",
-      "Le front a un bug JavaScript",
-      "L'utilisateur n'est pas connecté",
-      'Le certificat SSL est expiré',
+      "Le serveur d'API n'autorise pas l'origine du front dans ses en-têtes de réponse",
+      'Le navigateur a bloqué une exception JavaScript levée par le code du front',
+      "La session de l'utilisateur a expiré côté serveur d'API",
+      'Le certificat TLS du domaine appelé est invalide ou expiré',
     ],
     answer: 0,
     explanation:
@@ -395,10 +403,10 @@ reboot`,
       "Sur une passerelle de paiement type Stripe, un client réseau instable renvoie la même requête de paiement, débitant le client deux fois.",
     question: 'Quel principe évite le double débit ?',
     options: [
-      'Augmenter le timeout',
-      "Rendre l'endpoint idempotent via une clé d'idempotence : la même clé ne produit qu'une seule opération",
-      'Réessayer plus vite',
-      'Mettre le paiement en GET',
+      'Augmenter le timeout client pour laisser la première requête aboutir',
+      "Rendre l'endpoint idempotent via une clé d'idempotence (un rejeu = une opération)",
+      'Réessayer plus vite pour que le doublon arrive avant le débit initial',
+      'Passer le paiement en GET, méthode considérée comme idempotente',
     ],
     answer: 1,
     explanation:
@@ -417,10 +425,10 @@ reboot`,
       "Un dev de GitLab fait `git push --force` sur `main` après un rebase. L'équipe se retrouve avec un historique cassé.",
     question: 'Quelle est la règle correcte ?',
     options: [
-      'On peut force-push sur main quand on veut',
-      "Ne jamais réécrire (rebase + force-push) l'historique d'une branche partagée ; réserver le rebase aux branches locales",
-      'git rebase est toujours interdit',
-      'git merge est déprécié',
+      "Force-push sur main est sûr tant qu'on prévient l'équipe avant",
+      "Ne jamais réécrire l'historique d'une branche partagée ; rebaser en local seulement",
+      'Le rebase est toujours à proscrire ; merge est la seule option correcte',
+      "git pull --force sur main répare l'historique cassé des collègues",
     ],
     answer: 1,
     explanation:
@@ -441,10 +449,10 @@ reboot`,
       "Sur un service Oracle, deux pools de connexions à la base sont créés par erreur, épuisant les connexions. Un architecte propose un Singleton.",
     question: 'Que garantit le pattern Singleton ?',
     options: [
-      'Qu\'une classe a plusieurs instances interchangeables',
-      "Qu'une classe n'a qu'une seule instance, accessible via un point d'accès global",
-      'Que les objets sont créés par une fabrique',
-      'Que les objets notifient leurs observateurs',
+      'Que plusieurs instances interchangeables partagent le même état',
+      "Qu'une classe a une seule instance, via un point d'accès global",
+      'Que la création des objets est déléguée à une fabrique dédiée',
+      'Que chaque instance notifie ses observateurs à tout changement',
     ],
     answer: 1,
     explanation:
@@ -460,7 +468,7 @@ reboot`,
     title: 'Singleton non thread-safe',
     company: 'Oracle',
     scenario:
-      "Ce Singleton Java fonctionne en dev mono-thread, mais en production multi-thread, deux instances sont parfois créées.",
+      "Ce Singleton fonctionne en dev mono-thread, mais en production multi-thread, deux instances sont parfois créées.",
     question: 'Quelle est la cause du bug ?',
     language: 'typescript',
     code: `class Config {
@@ -475,10 +483,10 @@ reboot`,
   }
 }`,
     options: [
-      'Le constructeur ne devrait pas être privé',
-      "Race condition : deux threads passent le test `!instance` en même temps et créent chacun une instance (pas de verrou / initialisation paresseuse non protégée)",
-      'getInstance devrait être une méthode d\'instance',
-      'Il manque un return dans le constructeur',
+      'Le constructeur privé empêche toute instanciation, même interne',
+      'Race condition : deux threads passent le test !instance et créent deux objets',
+      "getInstance ne devrait pas être statique pour accéder au champ instance",
+      'Le champ instance devrait être public pour pouvoir être partagé',
     ],
     answer: 1,
     explanation:
@@ -497,10 +505,10 @@ reboot`,
       "Une app Adobe doit exporter en PDF, PNG ou SVG. Le code est truffé de `if (type === 'pdf') … else if …` dupliqués partout.",
     question: 'Quel pattern élimine ces if/else dispersés pour la création d\'objets ?',
     options: [
-      'Observer',
-      "Factory : centraliser la création des objets Exporter derrière une fabrique qui décide de la classe concrète à instancier",
-      'Singleton',
-      'Decorator',
+      "Observer : chaque format s'abonne et réagit à la demande d'export",
+      'Factory : une fabrique centralise la création et choisit la classe concrète',
+      "Singleton : une seule instance d'Exporter partagée pour tous les formats",
+      "Decorator : envelopper l'exporter pour lui ajouter chaque format",
     ],
     answer: 1,
     explanation:
@@ -519,10 +527,10 @@ reboot`,
       "Sur un fil d'actualité Meta, quand un utilisateur poste, plusieurs modules doivent réagir (notifications, fil, analytics) sans que le code du post les connaisse.",
     question: 'Quel pattern découple l\'émetteur d\'un événement de ses multiples réactions ?',
     options: [
-      "Observer (publish/subscribe) : le sujet notifie une liste d'observateurs abonnés, sans les connaître individuellement",
-      'Adapter',
-      'Factory',
-      'Singleton',
+      "Observer : le sujet notifie une liste d'abonnés sans les connaître",
+      "Adapter : convertir l'interface de chaque module qui réagit",
+      'Factory : produire le bon handler pour chaque type d\'événement',
+      'Singleton : centraliser toutes les réactions dans une instance unique',
     ],
     answer: 0,
     explanation:
@@ -541,10 +549,10 @@ reboot`,
       "Uber calcule le prix différemment selon le contexte : normal, heures de pointe, promo. Le code est un gros `switch` de plus en plus long.",
     question: 'Quel pattern remplace ce switch par des algorithmes interchangeables ?',
     options: [
-      'Singleton',
-      "Strategy : encapsuler chaque algorithme de calcul dans une classe, et injecter la stratégie choisie à l'exécution",
-      'Observer',
-      'Facade',
+      'Singleton : une instance de calculateur unique pour tous les cas',
+      "Strategy : chaque algorithme dans une classe, injectée à l'exécution",
+      'Observer : notifier les modules quand le tarif du contexte change',
+      'Facade : masquer le switch derrière une interface simplifiée',
     ],
     answer: 1,
     explanation:
@@ -563,10 +571,10 @@ reboot`,
       "Une classe `OrderService` crée elle-même `new SmtpMailer()` à l'intérieur. Impossible de la tester sans envoyer de vrais emails.",
     question: 'Quel principe rend cette classe testable ?',
     options: [
-      'Rendre SmtpMailer statique',
-      "L'injection de dépendances : passer le mailer (via une interface) au constructeur, pour pouvoir injecter un faux mailer en test",
-      'Mettre OrderService en Singleton',
-      'Déplacer new SmtpMailer() dans une méthode',
+      'Rendre SmtpMailer statique pour y accéder sans instanciation',
+      "Injecter le mailer (via une interface) au constructeur, remplaçable en test",
+      'Mettre OrderService en Singleton pour partager le mailer',
+      'Déplacer new SmtpMailer() dans une méthode privée dédiée',
     ],
     answer: 1,
     explanation:
