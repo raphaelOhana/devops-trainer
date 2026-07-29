@@ -30,7 +30,7 @@ function classify(lang: Lang): { kw: Set<string>; caseSensitive: boolean } {
 
 function commentRegex(lang: Lang): RegExp {
   // Ordre : commentaires spécifiques au langage.
-  if (lang === 'python' || lang === 'yaml' || lang === 'bash' || lang === 'dockerfile' || lang === 'hcl')
+  if (lang === 'python' || lang === 'yaml' || lang === 'bash' || lang === 'dockerfile' || lang === 'hcl' || lang === 'nginx')
     return /#[^\n]*/y;
   if (lang === 'sql') return /--[^\n]*/y;
   return /\/\/[^\n]*|\/\*[\s\S]*?\*\//y; // c, js, ts, php, json-ish

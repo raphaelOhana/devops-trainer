@@ -64,7 +64,8 @@ export interface FindErrorExercise extends BaseExercise {
   code: string;
   language:
     | 'dockerfile' | 'yaml' | 'bash' | 'hcl' | 'json'
-    | 'typescript' | 'javascript' | 'c' | 'python' | 'php' | 'sql';
+    | 'typescript' | 'javascript' | 'c' | 'python' | 'php' | 'sql'
+    | 'go' | 'java' | 'nginx';
   options: string[];
   answer: number;
 }
