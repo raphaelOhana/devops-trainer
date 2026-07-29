@@ -18,10 +18,10 @@ export const algoExercises: Exercise[] = [
     scenario: "Déterminer si une chaîne se lit pareil dans les deux sens (ex. « radar »), en O(1) mémoire.",
     question: 'Quelle est la stratégie la plus efficace ?',
     options: [
-      "Inverser la chaîne et comparer à l'originale",
-      "Deux pointeurs (début et fin) qui se rapprochent en comparant les caractères — O(n) temps, O(1) mémoire",
-      "Trier les caractères et comparer",
-      "Compter la fréquence de chaque lettre",
+      'Inverser la chaîne et la comparer à l\'originale — O(n) mémoire',
+      'Deux pointeurs début/fin qui se rapprochent — O(1) mémoire',
+      'Trier les caractères puis les comparer — O(n log n)',
+      'Compter la fréquence de chaque lettre — O(n) mémoire',
     ],
     answer: 1,
     explanation:
@@ -38,10 +38,10 @@ export const algoExercises: Exercise[] = [
     scenario: "Dans un tableau non trié, trouver deux éléments dont la somme vaut une cible.",
     question: 'Quelle approche donne la meilleure complexité ?',
     options: [
-      "Double boucle testant toutes les paires — O(n²)",
-      "Trier puis deux pointeurs — O(n log n)",
-      "Une table de hachage : pour chaque x, chercher (cible − x) déjà vu — O(n) temps",
-      "Force brute récursive sur tous les sous-ensembles",
+      'Double boucle testant toutes les paires — O(n²)',
+      'Trier puis deux pointeurs convergents — O(n log n)',
+      'Table de hachage : chercher (cible − x) déjà vu — O(n)',
+      'Force brute récursive sur les sous-ensembles — O(2ⁿ)',
     ],
     answer: 2,
     explanation:
@@ -58,10 +58,10 @@ export const algoExercises: Exercise[] = [
     scenario: "Détecter si une liste simplement chaînée contient un cycle, en O(1) mémoire.",
     question: 'Quelle technique ?',
     options: [
-      "Stocker chaque nœud visité dans un ensemble — O(n) mémoire",
-      "Algorithme du lièvre et de la tortue (Floyd) : deux pointeurs à vitesses 1 et 2 ; ils se rencontrent s'il y a un cycle — O(1) mémoire",
-      "Trier les nœuds par adresse",
-      "Compter les nœuds jusqu'à n",
+      'Stocker chaque nœud visité dans un ensemble — O(n) mémoire',
+      'Lièvre et tortue (Floyd) : pointeurs de vitesse 1 et 2 — O(1) mémoire',
+      'Trier les nœuds par adresse mémoire — O(n log n)',
+      'Compter les nœuds jusqu\'à dépasser n — O(n)',
     ],
     answer: 1,
     explanation:
@@ -78,10 +78,10 @@ export const algoExercises: Exercise[] = [
     scenario: "Vérifier si deux chaînes sont des anagrammes (mêmes lettres, mêmes quantités).",
     question: 'Meilleure stratégie ?',
     options: [
-      "Générer toutes les permutations de l'une et chercher l'autre — O(n!)",
-      "Compter la fréquence de chaque caractère (tableau de 26 ou hash map) et comparer — O(n)",
-      "Deux pointeurs aux extrémités",
-      "Recherche binaire",
+      'Générer les permutations de l\'une et chercher l\'autre — O(n!)',
+      'Compter la fréquence de chaque caractère puis comparer — O(n)',
+      'Deux pointeurs aux extrémités des deux chaînes — O(n)',
+      'Recherche binaire sur les caractères triés — O(n log n)',
     ],
     answer: 1,
     explanation:
@@ -98,10 +98,10 @@ export const algoExercises: Exercise[] = [
     scenario: "Trouver la longueur de la plus longue sous-chaîne sans caractère répété.",
     question: 'Quel pattern ?',
     options: [
-      "Tester toutes les sous-chaînes — O(n²) ou O(n³)",
-      "Fenêtre glissante (sliding window) avec un ensemble/map des caractères de la fenêtre courante — O(n)",
-      "Trier la chaîne d'abord",
-      "Programmation dynamique 2D",
+      'Tester toutes les sous-chaînes possibles — O(n²)/O(n³)',
+      'Fenêtre glissante avec un set des caractères — O(n)',
+      'Trier la chaîne puis chercher les doublons — O(n log n)',
+      'Programmation dynamique sur une table 2D — O(n²)',
     ],
     answer: 1,
     explanation:
@@ -118,10 +118,10 @@ export const algoExercises: Exercise[] = [
     scenario: "Vérifier qu'une expression a ses parenthèses/crochets/accolades correctement imbriqués : « {[()]} ».",
     question: 'Quelle structure de données ?',
     options: [
-      "Une file (queue)",
-      "Une pile (stack) : empiler les ouvrants, dépiler et vérifier la correspondance sur les fermants — O(n)",
-      "Un tableau trié",
-      "Une table de hachage seule",
+      'Une file (queue) traitée en mode FIFO — O(n)',
+      'Une pile (stack) : empiler les ouvrants, dépiler aux fermants — O(n)',
+      'Un tableau trié des symboles rencontrés — O(n log n)',
+      'Une table de hachage des positions d\'ouverture — O(n)',
     ],
     answer: 1,
     explanation:
@@ -138,10 +138,10 @@ export const algoExercises: Exercise[] = [
     scenario: "Fusionner les intervalles qui se chevauchent, ex. [1,3],[2,6],[8,10] → [1,6],[8,10].",
     question: 'Première étape déterminante ?',
     options: [
-      "Comparer chaque intervalle à tous les autres — O(n²)",
-      "Trier par borne de début, puis parcourir en fusionnant si l'intervalle courant chevauche le précédent — O(n log n)",
-      "Utiliser une pile sans trier",
-      "Programmation dynamique",
+      'Comparer chaque intervalle à tous les autres — O(n²)',
+      'Trier par borne de début puis fusionner en un passage — O(n log n)',
+      'Empiler les intervalles sans les trier d\'abord — O(n)',
+      'Programmation dynamique sur les bornes — O(n²)',
     ],
     answer: 1,
     explanation:
@@ -158,10 +158,10 @@ export const algoExercises: Exercise[] = [
     scenario: "Trouver les K plus grands éléments d'un flux/tableau de n éléments, avec K ≪ n.",
     question: 'Quelle structure est optimale ?',
     options: [
-      "Trier tout le tableau puis prendre les K derniers — O(n log n)",
-      "Un tas (min-heap) de taille K : on y garde les K plus grands vus, on remplace la racine si mieux — O(n log K)",
-      "Une double boucle — O(n²)",
-      "Une table de hachage",
+      'Trier tout le tableau puis prendre les K derniers — O(n log n)',
+      'Un min-heap de taille K des plus grands vus — O(n log K)',
+      'Une double boucle de sélection des maxima — O(n²)',
+      'Une table de hachage des fréquences — O(n)',
     ],
     answer: 1,
     explanation:
@@ -178,10 +178,10 @@ export const algoExercises: Exercise[] = [
     scenario: "Trouver un élément dans un tableau DÉJÀ trié de n éléments.",
     question: 'Quelle méthode ?',
     options: [
-      "Parcours linéaire — O(n)",
-      "Recherche binaire : comparer au milieu et éliminer la moitié à chaque étape — O(log n)",
-      "Trier à nouveau puis chercher",
-      "Table de hachage",
+      'Parcours linéaire du tableau trié — O(n)',
+      'Recherche binaire éliminant une moitié à chaque étape — O(log n)',
+      'Retrier le tableau puis le parcourir — O(n log n)',
+      'Construire une table de hachage des index — O(n)',
     ],
     answer: 1,
     explanation:
@@ -198,10 +198,10 @@ export const algoExercises: Exercise[] = [
     scenario: "De combien de façons monter n marches en faisant des pas de 1 ou 2 marches ?",
     question: 'Quelle approche évite l\'explosion exponentielle ?',
     options: [
-      "Récursion naïve testant toutes les combinaisons — O(2ⁿ)",
-      "Programmation dynamique / mémoïsation : f(n) = f(n−1) + f(n−2), chaque sous-problème calculé une fois — O(n)",
-      "Trier les marches",
-      "Recherche binaire",
+      'Récursion naïve testant toutes les combinaisons — O(2ⁿ)',
+      'DP/mémoïsation : f(n) = f(n−1) + f(n−2) — O(n)',
+      'Trier les marches par hauteur croissante — O(n log n)',
+      'Recherche binaire sur le nombre de pas — O(log n)',
     ],
     answer: 1,
     explanation:
@@ -218,10 +218,10 @@ export const algoExercises: Exercise[] = [
     scenario: "Trouver le nombre minimal d'arêtes entre deux nœuds d'un graphe NON pondéré.",
     question: 'Quel parcours garantit le plus court chemin ?',
     options: [
-      "DFS (parcours en profondeur)",
-      "BFS (parcours en largeur) : explore niveau par niveau, donc atteint chaque nœud par le chemin le plus court en nombre d'arêtes — O(V+E)",
-      "Dijkstra avec un tas",
-      "Tri topologique",
+      'DFS (parcours en profondeur) récursif — O(V+E)',
+      'BFS (parcours en largeur) niveau par niveau — O(V+E)',
+      'Dijkstra avec un tas de priorité — O(E log V)',
+      'Tri topologique des sommets du graphe — O(V+E)',
     ],
     answer: 1,
     explanation:
@@ -238,10 +238,10 @@ export const algoExercises: Exercise[] = [
     scenario: "Produire toutes les permutations d'un ensemble d'éléments.",
     question: 'Quelle technique ?',
     options: [
-      "Programmation dynamique",
-      "Backtracking : construire une permutation élément par élément, revenir en arrière (annuler le choix) après chaque branche explorée",
-      "Recherche binaire",
-      "Fenêtre glissante",
+      'Programmation dynamique sur les sous-ensembles — O(2ⁿ)',
+      'Backtracking : choisir, récurser, puis défaire le choix — O(n!)',
+      'Recherche binaire sur les positions — O(log n)',
+      'Fenêtre glissante sur les éléments — O(n)',
     ],
     answer: 1,
     explanation:
@@ -258,10 +258,10 @@ export const algoExercises: Exercise[] = [
     scenario: "Trouver l'élément apparaissant strictement plus de n/2 fois, en O(1) mémoire.",
     question: 'Quelle stratégie atteint O(1) mémoire ?',
     options: [
-      "Compter chaque élément dans une table de hachage — O(n) mémoire",
-      "Vote de Boyer-Moore : un candidat + un compteur ; +1 si même élément, −1 sinon, changement de candidat à 0 — O(n) temps, O(1) mémoire",
-      "Trier et prendre l'élément du milieu — O(n log n)",
-      "Double boucle — O(n²)",
+      'Compter chaque élément dans une table de hachage — O(n) mémoire',
+      'Vote de Boyer-Moore : un candidat + un compteur — O(1) mémoire',
+      'Trier et prendre l\'élément du milieu — O(n log n)',
+      'Double boucle comptant les occurrences — O(n²)',
     ],
     answer: 1,
     explanation:
@@ -278,10 +278,10 @@ export const algoExercises: Exercise[] = [
     scenario: "Dans une grille de 0 (eau) et 1 (terre), compter le nombre d'îles (groupes de 1 connectés).",
     question: 'Quelle approche ?',
     options: [
-      "Recherche binaire ligne par ligne",
-      "Parcourir la grille ; à chaque 1 non visité, lancer un DFS/BFS (flood fill) qui marque toute l'île, et incrémenter le compteur — O(lignes × colonnes)",
-      "Trier les cellules",
-      "Programmation dynamique 1D",
+      'Recherche binaire ligne par ligne dans la grille — O(n log n)',
+      'DFS/BFS flood fill depuis chaque terre non visitée — O(m×n)',
+      'Trier les cellules par coordonnée puis grouper — O(mn log mn)',
+      'Programmation dynamique 1D sur les lignes — O(m×n)',
     ],
     answer: 1,
     explanation:
@@ -298,10 +298,10 @@ export const algoExercises: Exercise[] = [
     scenario: "Un tableau trié a été « tourné » (ex. [4,5,6,7,0,1,2]). Trouver un élément en O(log n).",
     question: 'Quelle méthode conserve le O(log n) ?',
     options: [
-      "Parcours linéaire — O(n)",
-      "Recherche binaire modifiée : à chaque étape, une des deux moitiés est forcément triée ; on détermine laquelle et si la cible y est, pour éliminer l'autre moitié — O(log n)",
-      "Trier d'abord puis recherche binaire — O(n log n)",
-      "Table de hachage",
+      'Parcours linéaire du tableau tourné — O(n)',
+      'Recherche binaire modifiée sur la moitié triée — O(log n)',
+      'Trier d\'abord puis recherche binaire — O(n log n)',
+      'Construire une table de hachage des index — O(n)',
     ],
     answer: 1,
     explanation:

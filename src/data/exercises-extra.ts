@@ -17,10 +17,10 @@ export const extraExercises: Exercise[] = [
       "Une équipe provisionne un LoadBalancer cloud par microservice pour les exposer en HTTP : la facture explose.",
     question: 'Quelle est la bonne approche pour du HTTP externe multi-services ?',
     options: [
-      'Un NodePort par service',
-      "Un seul Ingress (derrière un LoadBalancer unique) qui route par host/path vers les ClusterIP internes : un LB au lieu de dix, avec TLS et routage L7",
-      'Un LoadBalancer par service, c\'est la norme',
-      'Exposer les pods directement',
+      'Un NodePort par service, sur un port de chaque nœud',
+      'Un seul Ingress (LB unique) routant par host/path vers les ClusterIP',
+      'Un LoadBalancer cloud par service, c\'est la norme attendue',
+      'Exposer les pods directement via leur IP interne',
     ],
     answer: 1,
     explanation:
@@ -41,10 +41,10 @@ export const extraExercises: Exercise[] = [
       "Une base RDS existe dans AWS mais pas dans le state Terraform. Tu veux la gérer avec Terraform sans la recréer.",
     question: 'Quelle commande utiliser — et quel est le piège de state rm ?',
     options: [
-      'terraform destroy puis apply',
-      "terraform import fait entrer la ressource dans le state (écrire le HCL correspondant). Attention : `state rm` retire du state SANS détruire dans le cloud — à ne pas confondre avec destroy",
-      'Supprimer le state',
-      'terraform refresh',
+      'terraform destroy puis apply pour la recréer proprement',
+      'terraform import fait entrer la ressource dans le state (state rm ≠ destroy)',
+      'Supprimer le fichier de state pour repartir de zéro',
+      'terraform refresh pour synchroniser l\'état réel',
     ],
     answer: 1,
     explanation:
@@ -65,10 +65,10 @@ export const extraExercises: Exercise[] = [
       "Une API microservices est lente. Tu veux méthodiquement instrumenter le système pour trouver la cause.",
     question: 'Comment combiner les méthodes USE et RED ?',
     options: [
-      'Elles sont interchangeables',
-      "RED (Rate, Errors, Duration) par SERVICE = symptôme côté utilisateur ; USE (Utilization, Saturation, Errors) par RESSOURCE = cause côté infra. RED révèle le problème, USE localise la saturation (ex. pool de connexions)",
-      'USE pour les services, RED pour les ressources',
-      'On n\'utilise que le CPU',
+      'Elles sont interchangeables, on choisit l\'une ou l\'autre',
+      'RED par service (symptôme utilisateur), USE par ressource (cause infra)',
+      'USE pour les services et RED pour les ressources',
+      'On ne surveille que l\'utilisation CPU des nœuds',
     ],
     answer: 1,
     explanation:
@@ -87,10 +87,10 @@ export const extraExercises: Exercise[] = [
       "L'équipe on-call est paginée sur chaque « CPU > 90 % » ou « pod redémarré ». Après 50 fausses alertes, un vrai incident passe inaperçu.",
     question: 'Quel principe réduit le bruit ?',
     options: [
-      'Ajouter plus d\'alertes pour tout couvrir',
-      "Alerter sur les SYMPTÔMES visibles par l'utilisateur (taux d'erreur, latence, SLO violé), pas sur les causes internes. Toute alerte doit être actionnable, avec un runbook",
-      'Supprimer toutes les alertes',
-      'Augmenter les seuils au hasard',
+      'Ajouter plus d\'alertes pour couvrir chaque métrique',
+      'Alerter sur les symptômes (SLO, erreurs, latence), pas les causes internes',
+      'Supprimer toutes les alertes pour retrouver le calme',
+      'Augmenter les seuils au hasard jusqu\'à moins de bruit',
     ],
     answer: 1,
     explanation:
@@ -111,10 +111,10 @@ export const extraExercises: Exercise[] = [
       "Un serveur en overcommit manque de RAM. `dmesg` montre : `Out of memory: Killed process 1234 (mysqld)`. Pourquoi la base et pas le fautif ?",
     question: 'Comment l\'OOM killer choisit-il sa victime ?',
     options: [
-      'Il tue le process qui a causé le dépassement',
-      "Il tue le plus gros oom_score (≈ mémoire du process / totale), pas le coupable. On protège un process critique avec oom_score_adj (−1000 = immunisé, ex. OOMScoreAdjust= en unit systemd)",
-      'Il tue le plus ancien process',
-      'Il redémarre la machine',
+      'Il tue le process qui a directement causé le dépassement',
+      'Il tue le plus gros oom_score (protégeable via oom_score_adj)',
+      'Il tue systématiquement le plus ancien process lancé',
+      'Il redémarre la machine pour libérer toute la RAM',
     ],
     answer: 1,
     explanation:
@@ -133,10 +133,10 @@ export const extraExercises: Exercise[] = [
       "Nginx sous charge log `Too many open files` et refuse des connexions. Tu as pourtant réglé `ulimit -n` et `/etc/security/limits.conf`.",
     question: 'Pourquoi le service ne respecte-t-il pas la limite ?',
     options: [
-      'La limite est un bug de Nginx',
-      "Un service démarré par systemd N'HÉRITE PAS de limits.conf : il faut LimitNOFILE=65536 dans la section [Service] de l'unit. Diagnostic : ls /proc/<pid>/fd | wc -l",
-      'Il faut redémarrer la machine',
-      'ulimit -n est obsolète',
+      'C\'est un bug interne de gestion des sockets de Nginx',
+      'Un service systemd n\'hérite pas de limits.conf (mettre LimitNOFILE)',
+      'Il faut redémarrer la machine pour appliquer la limite',
+      'La commande ulimit -n est obsolète sur les noyaux récents',
     ],
     answer: 1,
     explanation:
@@ -157,10 +157,10 @@ export const extraExercises: Exercise[] = [
       "Ta PR contient 12 commits « wip », « fix typo ». Avant merge, tu veux la condenser en 2-3 commits atomiques et lisibles.",
     question: 'Quel outil, et quelle précaution ?',
     options: [
-      'git merge --squash uniquement',
-      "git rebase -i HEAD~12 (squash/fixup/reword/reorder/drop). Précaution : ne le faire que sur ta branche NON partagée, avant la PR — jamais sur des commits déjà tirés par d'autres",
-      'Supprimer et recréer la branche',
-      'git commit --amend 12 fois',
+      'git merge --squash au moment du merge uniquement',
+      'git rebase -i HEAD~12 (squash/fixup) sur ta branche non partagée',
+      'Supprimer la branche puis la recréer proprement',
+      'git commit --amend répété douze fois de suite',
     ],
     answer: 1,
     explanation:
@@ -181,10 +181,10 @@ export const extraExercises: Exercise[] = [
       "Tu dois router `/api` vers un service et `/img` vers un autre, terminer le TLS, et inspecter les headers HTTP.",
     question: 'Quel niveau de load balancing ?',
     options: [
-      'L4 (TCP/UDP)',
-      "L7 : il inspecte le HTTP (host, path, headers, SNI) → routage par URL, sticky sessions, terminaison TLS, WAF. Le L4 route sur IP/port sans lire le payload (débit/latence max, mais pas de routage applicatif)",
-      'Peu importe',
-      'Les deux font la même chose',
+      'L4 (TCP/UDP) qui route uniquement sur IP et port',
+      'L7 : il lit le HTTP (host, path, headers) et termine le TLS',
+      'Peu importe le niveau, le résultat est identique',
+      'Les deux niveaux font exactement la même chose',
     ],
     answer: 1,
     explanation:
@@ -203,10 +203,10 @@ export const extraExercises: Exercise[] = [
       "Malgré HTTPS (TLS 1.3), un FAI arrive à voir quel domaine un utilisateur visite et le censure par nom de domaine.",
     question: 'Pourquoi, et quelle est la parade moderne ?',
     options: [
-      'TLS 1.3 est cassé',
-      "Le SNI (nom d'hôte) reste en CLAIR dans le ClientHello pour permettre le routage. Parade : ECH (Encrypted Client Hello, RFC 9849) chiffre le ClientHello avec une clé publiée en DNS",
-      'Il faut désactiver le HTTPS',
-      'Le certificat est expiré',
+      'TLS 1.3 est cassé et laisse fuir le trafic déchiffré',
+      'Le SNI reste en clair dans le ClientHello ; parade : ECH',
+      'Il faut désactiver HTTPS pour masquer le domaine visité',
+      'Le certificat serveur est expiré et révèle le domaine',
     ],
     answer: 1,
     explanation:
@@ -225,10 +225,10 @@ export const extraExercises: Exercise[] = [
       "Dans un service mesh Zero Trust, chaque service doit prouver son identité, sans se reposer sur « le réseau interne est de confiance ».",
     question: 'Qu\'apporte le mTLS, et sa limite ?',
     options: [
-      'Rien de plus que TLS',
-      "En mTLS, client ET serveur présentent un certificat validé contre une CA : authentification MUTUELLE. Limite : il AUTHENTIFIE mais n'AUTORISE pas — il faut une couche d'authz. Et gérer rotation/révocation, sinon certs expirés = prod cassée",
-      'Il remplace les mots de passe utilisateur',
-      'Il chiffre uniquement côté serveur',
+      'Rien de plus que le TLS classique côté serveur',
+      'Authentification mutuelle par certificats (mais pas d\'autorisation)',
+      'Il remplace les mots de passe des utilisateurs finaux',
+      'Il chiffre le trafic uniquement dans le sens serveur→client',
     ],
     answer: 1,
     explanation:
@@ -249,10 +249,10 @@ export const extraExercises: Exercise[] = [
       "Une équipe déplace tous ses secrets dans Vault, mais code en dur le token racine de Vault dans l'app. Elle a juste déplacé le problème.",
     question: 'Comment résoudre le « secret zéro » (secret d\'amorçage) ?',
     options: [
-      'Mettre le token dans un fichier .env',
-      "Authentifier l'app par son IDENTITÉ de plateforme (AppRole, ServiceAccount K8s, IAM cloud) au lieu d'un secret codé en dur. Vault génère alors des secrets dynamiques à TTL court, révoqués automatiquement",
-      'Chiffrer le token en base64',
-      'Le committer dans un repo privé',
+      'Mettre le token racine dans un fichier .env non versionné',
+      'Authentifier l\'app par son identité de plateforme (AppRole/IAM)',
+      'Chiffrer le token racine en base64 avant de l\'embarquer',
+      'Committer le token dans un dépôt Git privé de l\'équipe',
     ],
     answer: 1,
     explanation:
@@ -271,10 +271,10 @@ export const extraExercises: Exercise[] = [
       "Après Log4Shell, une entreprise met des heures à répondre à « quels services embarquent log4j ? », faute d'inventaire de dépendances.",
     question: 'Quelle pratique permet une réponse instantanée + une provenance vérifiable ?',
     options: [
-      'Relire tout le code à la main',
-      "Un SBOM (CycloneDX/SPDX via Syft) = nomenclature des composants → réponse et scan instantanés. Complété par la signature (cosign/Sigstore) et la provenance de build (SLSA), VÉRIFIÉES au déploiement",
-      'Attendre le prochain audit annuel',
-      'Désactiver les dépendances',
+      'Relire tout le code source à la main, service par service',
+      'Un SBOM (CycloneDX/SPDX) + signature cosign + provenance SLSA',
+      'Attendre le prochain audit de sécurité annuel',
+      'Désactiver toutes les dépendances tierces du projet',
     ],
     answer: 1,
     explanation:
@@ -295,10 +295,10 @@ export const extraExercises: Exercise[] = [
       "Un dashboard ouvert à froid n'affiche rien tant qu'un capteur (qui publie toutes les 10 min) n'a pas re-publié. On veut aussi détecter instantanément un device déconnecté.",
     question: 'Quels deux mécanismes MQTT répondent à ça ?',
     options: [
-      'QoS 2 et keepalive',
-      "Message RETAINED (dernière valeur conservée par topic, livrée à tout nouvel abonné) + Last Will and Testament (LWT, publié automatiquement par le broker si le client se déconnecte anormalement, ex. status=offline)",
-      'Deux brokers',
-      'Un polling HTTP',
+      'Le niveau QoS 2 combiné à un keepalive court',
+      'Message retained (dernière valeur) + Last Will and Testament (LWT)',
+      'Déployer deux brokers MQTT redondants en parallèle',
+      'Un polling HTTP périodique du statut de chaque device',
     ],
     answer: 1,
     explanation:
@@ -318,9 +318,9 @@ export const extraExercises: Exercise[] = [
     question: 'Quel est le bon réflexe de conception pour l\'edge ?',
     options: [
       'Supposer une connexion permanente et pousser de gros volumes',
-      "Traiter les contraintes edge : protocoles légers (MQTT/CoAP), traitement local (n'émettre que l'utile), buffering hors-ligne + resync, images minimalistes, OTA robuste. Concevoir pour l'intermittence, pas l'always-on",
-      'Augmenter la RAM des passerelles',
-      'Réutiliser tels quels les patterns cloud',
+      'Concevoir pour l\'intermittence : protocoles légers, buffering, resync',
+      'Augmenter la RAM des passerelles pour tenir les conteneurs',
+      'Réutiliser tels quels les patterns cloud sur les passerelles',
     ],
     answer: 1,
     explanation:
@@ -341,10 +341,10 @@ export const extraExercises: Exercise[] = [
       "Un asset est servi avec `Cache-Control: max-age=3600` et `ETag: \"abc123\"`. Après expiration, le navigateur renvoie `If-None-Match: \"abc123\"`.",
     question: 'Que fait le serveur si le contenu n\'a pas changé ?',
     options: [
-      'Renvoyer tout le fichier à nouveau',
-      "Répondre 304 Not Modified SANS corps : le navigateur réutilise sa copie cachée. C'est la revalidation — max-age gère la fraîcheur, l'ETag la revalidation quand elle expire",
-      'Renvoyer une erreur 400',
-      'Supprimer le cache',
+      'Renvoyer le fichier entier à nouveau dans la réponse',
+      'Répondre 304 Not Modified sans corps : la copie cachée est réutilisée',
+      'Renvoyer une erreur 400 car l\'en-tête est invalide',
+      'Vider le cache du navigateur et forcer un rechargement',
     ],
     answer: 1,
     explanation:
@@ -363,10 +363,10 @@ export const extraExercises: Exercise[] = [
       "Sur une 4G chargée (~2 % de perte de paquets), un site en HTTP/2 est lent : un paquet perdu (image de fond) bloque la livraison du CSS déjà reçu.",
     question: 'Pourquoi, et qu\'apporte HTTP/3 ?',
     options: [
-      'HTTP/2 n\'a aucun problème',
-      "HTTP/2 multiplexe mais sur TCP : une perte bloque TOUS les streams (head-of-line blocking TCP). HTTP/3 sur QUIC (UDP) a des streams indépendants → une perte ne stalle que son propre stream",
-      'HTTP/3 est plus lent',
-      'Il faut revenir à HTTP/1.1',
+      'HTTP/2 n\'a aucun problème de blocage sur réseau lossy',
+      'HTTP/2 sur TCP : une perte bloque tous les streams (HTTP/3 non)',
+      'HTTP/3 est en réalité plus lent que HTTP/2 partout',
+      'Il faut revenir à HTTP/1.1 pour éviter le problème',
     ],
     answer: 1,
     explanation:
@@ -387,10 +387,10 @@ export const extraExercises: Exercise[] = [
       "Une app garde les sessions en mémoire et compte sur les sticky sessions. Quand une instance est terminée (autoscaling, déploiement), tous ses utilisateurs perdent leur session.",
     question: 'Quel principe corrige cela ?',
     options: [
-      'Renforcer les sticky sessions',
-      "Rendre les process STATELESS (share-nothing, 12-Factor) : aucun état en mémoire locale, la session va dans un backing service (Redis/Memcached). N'importe quelle réplique peut traiter n'importe quelle requête",
-      'Un seul serveur sans scaling',
-      'Doubler la RAM des instances',
+      'Renforcer les sticky sessions pour fixer chaque utilisateur',
+      'Rendre les process stateless : la session dans un backing service (Redis)',
+      'Garder un seul serveur sans aucun scaling horizontal',
+      'Doubler la RAM des instances pour tenir plus de sessions',
     ],
     answer: 1,
     explanation:
@@ -409,10 +409,10 @@ export const extraExercises: Exercise[] = [
       "L'API gateway de Netflix veut éviter qu'un seul service lent épuise tous ses threads et fasse tomber les appels vers les autres services.",
     question: 'Quel pattern isole les défaillances ?',
     options: [
-      'Un thread pool géant partagé',
-      "Le Bulkhead : un pool de ressources (threads/connexions) DÉDIÉ par dépendance. Un service lent épuise seulement son propre pool ; les autres continuent de répondre. Souvent combiné au circuit breaker",
-      'Supprimer les timeouts',
-      'Tout mettre en synchrone',
+      'Un unique thread pool géant partagé par tous les services',
+      'Le Bulkhead : un pool de ressources dédié par dépendance',
+      'Supprimer les timeouts pour laisser les appels aboutir',
+      'Rendre tous les appels inter-services synchrones',
     ],
     answer: 1,
     explanation:
@@ -433,10 +433,10 @@ export const extraExercises: Exercise[] = [
       "Une SPA ajoute des observateurs à un Subject à chaque montage de composant, mais l'app ralentit et la RAM grimpe au fil de la navigation.",
     question: 'Quelle est la cause classique (« lapsed listener ») ?',
     options: [
-      'Le Subject est trop gros',
-      "Les observateurs ne sont jamais désabonnés (removeObserver) au démontage : le Subject garde des références vers des composants morts → fuite mémoire et notifications inutiles. Toujours se désabonner au cleanup",
-      'Il faut plus d\'observateurs',
-      'Observer ne marche pas en JS',
+      'Le Subject observé est devenu trop volumineux en mémoire',
+      'Les observateurs ne sont jamais désabonnés au démontage (lapsed listener)',
+      'Il faudrait ajouter davantage d\'observateurs au Subject',
+      'Le pattern Observer ne fonctionne pas correctement en JS',
     ],
     answer: 1,
     explanation:

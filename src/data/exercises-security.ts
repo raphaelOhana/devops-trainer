@@ -25,10 +25,10 @@ def get_user():
     q = "SELECT * FROM users WHERE name = '" + name + "'"
     return db.execute(q).fetchall()`,
     options: [
-      "Le endpoint devrait être en POST",
-      "SQL injection : le paramètre `name` est concaténé dans la requête. Un input comme ' OR '1'='1 modifie la requête. Il faut une requête PARAMÉTRÉE : db.execute(\"... WHERE name = ?\", (name,))",
-      "fetchall() est trop lent",
-      "Il manque un try/except",
+      'Le endpoint devrait être en POST plutôt qu\'en GET',
+      'Injection SQL : le paramètre name est concaténé dans la requête',
+      'fetchall() charge trop de lignes en mémoire d\'un coup',
+      'Il manque un try/except autour de la requête',
     ],
     answer: 1,
     explanation:
@@ -51,10 +51,10 @@ $pass = $_POST['pass'];
 $sql = "SELECT * FROM users WHERE user='$user' AND pass='$pass'";
 $result = mysqli_query($conn, $sql);`,
     options: [
-      "mysqli_query est déprécié",
-      "SQL injection : $user et $pass sont interpolés directement. `user=admin'--` contourne le mot de passe. Utiliser des requêtes préparées (mysqli_prepare + bind_param)",
-      "Il faut chiffrer la connexion",
-      "$_POST devrait être $_GET",
+      'mysqli_query est déprécié au profit de PDO',
+      'Injection SQL : $user et $pass sont interpolés directement',
+      'La connexion à la base devrait être chiffrée en TLS',
+      '$_POST devrait être remplacé par $_GET ici',
     ],
     answer: 1,
     explanation:
@@ -80,10 +80,10 @@ $result = mysqli_query($conn, $sql);`,
   res.json(rows);
 });`,
     options: [
-      "async/await est mal utilisé",
-      "SQL injection via template literal : `${id}` injecte directement l'input. Utiliser une requête paramétrée : pool.query('SELECT ... WHERE user_id = $1', [id])",
-      "Il faut un middleware CORS",
-      "res.json est incorrect",
+      'async/await est mal utilisé dans ce handler',
+      'Injection SQL : le template literal ${id} concatène l\'input',
+      'Il manque un middleware CORS sur cette route',
+      'res.json n\'est pas la bonne méthode de réponse',
     ],
     answer: 1,
     explanation:
@@ -107,10 +107,10 @@ $result = mysqli_query($conn, $sql);`,
 def convert(filename):
     os.system("convert " + filename + " output.png")`,
     options: [
-      "os.system est lent",
-      "OS command injection : `filename` non validé passe au shell. Un nom comme 'a.png; rm -rf /' exécute des commandes arbitraires. Utiliser subprocess.run([...], shell=False) avec une liste d'arguments",
-      "Il faut vérifier l'extension du fichier",
-      "output.png devrait être unique",
+      'os.system est plus lent que subprocess',
+      'Injection de commande : filename non validé passe au shell',
+      'Il faut d\'abord vérifier l\'extension du fichier',
+      'Le nom de sortie output.png devrait être rendu unique',
     ],
     answer: 1,
     explanation:
@@ -133,10 +133,10 @@ app.get('/ping', (req, res) => {
   exec('ping -c 1 ' + req.query.host, (e, out) => res.send(out));
 });`,
     options: [
-      "exec est asynchrone",
-      "Command injection : `host` va au shell via exec(). '8.8.8.8; cat /etc/passwd' exécute des commandes. Utiliser execFile('ping', ['-c','1', host]) qui n'invoque pas de shell",
-      "ping nécessite root",
-      "Il manque un timeout",
+      'exec est asynchrone et non attendu ici',
+      'Injection de commande : host passe au shell via exec()',
+      'La commande ping nécessite les droits root',
+      'Il manque un timeout sur l\'exécution du process',
     ],
     answer: 1,
     explanation:
@@ -160,10 +160,10 @@ app.get('/ping', (req, res) => {
 document.getElementById('results').innerHTML =
   'Résultats pour : ' + q;`,
     options: [
-      "innerHTML est déprécié",
-      "XSS DOM-based : `q` (contrôlé par l'URL) est injecté via innerHTML. Un payload <img src=x onerror=alert(1)> s'exécute. Utiliser textContent (pas innerHTML) ou échapper/assainir",
-      "URLSearchParams ne marche pas partout",
-      "Il faut encoder l'URL",
+      'innerHTML est une propriété dépréciée',
+      'XSS DOM : q (venant de l\'URL) est injecté via innerHTML',
+      'URLSearchParams n\'est pas supporté par tous les navigateurs',
+      'Il faut encoder l\'URL avant de lire le paramètre',
     ],
     answer: 1,
     explanation:
@@ -185,10 +185,10 @@ document.getElementById('results').innerHTML =
 echo "Bonjour " . $_GET['name'] . " !";
 ?>`,
     options: [
-      "echo est lent",
-      "XSS reflected : $_GET['name'] est affiché sans échappement. name=<script>...</script> s'exécute chez la victime. Échapper avec htmlspecialchars($_GET['name'], ENT_QUOTES)",
-      "Il faut utiliser print au lieu de echo",
-      "$_GET devrait être $_REQUEST",
+      'echo est plus lent que les alternatives',
+      'XSS reflected : $_GET[name] est affiché sans échappement',
+      'Il faut utiliser print au lieu de echo',
+      '$_GET devrait être remplacé par $_REQUEST',
     ],
     answer: 1,
     explanation:
@@ -213,10 +213,10 @@ def download():
     fn = request.args.get("file")
     return send_file("/var/www/files/" + fn)`,
     options: [
-      "send_file est obsolète",
-      "Path traversal : fn peut contenir ../../ pour sortir du dossier (file=../../etc/passwd). Il faut valider/normaliser : rejeter les .., utiliser os.path.basename ou vérifier que le chemin résolu reste dans le dossier",
-      "Il manque un Content-Type",
-      "Le dossier devrait être relatif",
+      'send_file est une fonction obsolète',
+      'Path traversal : fn peut contenir ../ pour sortir du dossier',
+      'Il manque un en-tête Content-Type dans la réponse',
+      'Le chemin du dossier de base devrait être relatif',
     ],
     answer: 1,
     explanation:
@@ -239,10 +239,10 @@ def download():
   res.send(await r.text());
 });`,
     options: [
-      "fetch n'existe pas en Node",
-      "SSRF : l'URL non validée peut viser des ressources internes (http://169.254.169.254/ métadonnées cloud, http://localhost:.../, réseau interne). Valider par allowlist de domaines et bloquer les IP privées/loopback",
-      "Il faut un cache",
-      "res.send est incorrect",
+      'fetch n\'est pas disponible nativement en Node',
+      'SSRF : l\'URL non validée peut viser des ressources internes',
+      'Il faudrait mettre en cache les aperçus générés',
+      'res.send n\'est pas la bonne méthode de réponse',
     ],
     answer: 1,
     explanation:
@@ -267,10 +267,10 @@ def store_password(pw):
     h = hashlib.md5(pw.encode()).hexdigest()
     db.save(h)`,
     options: [
-      "hashlib est déprécié",
-      "MD5 est rapide et cassé pour les mots de passe : pas de sel, vulnérable aux rainbow tables et au bruteforce GPU. Utiliser un algo lent à sel (bcrypt, argon2, scrypt)",
-      "Il faut chiffrer, pas hacher",
-      "hexdigest devrait être digest",
+      'Le module hashlib est déprécié en Python 3',
+      'MD5 est rapide et sans sel : rainbow tables et bruteforce GPU',
+      'Il faut chiffrer le mot de passe, pas le hacher',
+      'hexdigest() devrait être remplacé par digest()',
     ],
     answer: 1,
     explanation:
@@ -292,10 +292,10 @@ def store_password(pw):
   return Math.random().toString(36).slice(2);
 }`,
     options: [
-      "toString(36) est incorrect",
-      "Math.random() n'est PAS cryptographiquement sûr : son PRNG est prévisible, un attaquant peut deviner les tokens. Utiliser crypto.randomBytes(32).toString('hex')",
-      "slice(2) enlève trop de caractères",
-      "Il faut ajouter un timestamp",
+      'toString(36) produit un format de token incorrect',
+      'Math.random() n\'est pas cryptographiquement sûr (prévisible)',
+      'slice(2) enlève trop de caractères au token généré',
+      'Il faudrait ajouter un timestamp au token',
     ],
     answer: 1,
     explanation:
@@ -317,10 +317,10 @@ def store_password(pw):
 // ...pas d'option algorithms
 req.user = decoded;`,
     options: [
-      "Il faut décoder avant de vérifier",
-      "Ne pas fixer `algorithms` permet l'attaque alg=none ou une confusion RS256/HS256 (utiliser la clé publique comme secret HMAC). Toujours : jwt.verify(token, secret, { algorithms: ['HS256'] })",
-      "secret devrait être en clair",
-      "req.user est mal nommé",
+      'Il faut décoder le token avant de le vérifier',
+      'Sans algorithms fixé : attaque alg=none ou confusion RS256/HS256',
+      'Le secret de signature devrait être stocké en clair',
+      'La variable req.user est mal nommée',
     ],
     answer: 1,
     explanation:
@@ -342,10 +342,10 @@ req.user = decoded;`,
 client = boto3.client("s3",
     aws_secret_access_key=AWS_SECRET)`,
     options: [
-      "boto3 est obsolète",
-      "Secret codé en dur : une fois commité, il reste dans l'historique Git même après suppression, et fuit avec le code. Utiliser des variables d'environnement / un gestionnaire de secrets, et rotationner la clé exposée",
-      "Il faut une région",
-      "La clé est trop courte",
+      'La bibliothèque boto3 est obsolète',
+      'Secret en dur : il reste dans l\'historique Git et fuit avec le code',
+      'Il manque la région AWS dans la configuration du client',
+      'La clé secrète fournie est trop courte',
     ],
     answer: 1,
     explanation:
@@ -366,10 +366,10 @@ client = boto3.client("s3",
     code: `def check(token):
     return token == SECRET_TOKEN`,
     options: [
-      "== ne marche pas sur les strings",
-      "Comparaison non constante en temps : == s'arrête au premier caractère différent, fuitant de l'information temporelle qui permet de deviner le token octet par octet. Utiliser hmac.compare_digest",
-      "Il faut hacher le token",
-      "SECRET_TOKEN doit être global",
+      'L\'opérateur == ne fonctionne pas sur les chaînes',
+      'Comparaison non constante : == s\'arrête au premier écart (timing)',
+      'Il faudrait hacher le token avant de le comparer',
+      'SECRET_TOKEN devrait être une variable globale',
     ],
     answer: 1,
     explanation:
@@ -393,10 +393,10 @@ client = boto3.client("s3",
 def load_session(data):
     return pickle.loads(data)`,
     options: [
-      "pickle est lent",
-      "pickle.loads sur des données non fiables = RCE : le format pickle peut exécuter du code arbitraire à la désérialisation (__reduce__). Utiliser un format de données pur (JSON) pour les entrées externes",
-      "Il faut préciser l'encodage",
-      "data devrait être une string",
+      'pickle est plus lent que les autres formats',
+      'pickle.loads sur données non fiables = exécution de code (RCE)',
+      'Il faut préciser l\'encodage des données lues',
+      'Le paramètre data devrait être une chaîne',
     ],
     answer: 1,
     explanation:
@@ -419,10 +419,10 @@ def load_session(data):
   res.send(String(result));
 });`,
     options: [
-      "eval est juste lent",
-      "Code injection : eval() exécute l'input comme du JS. expr=require('child_process').execSync('...') donne une RCE serveur. Utiliser un parseur d'expression mathématique dédié, jamais eval sur de l'input",
-      "req.query.expr peut être undefined",
-      "String(result) est inutile",
+      'eval est simplement plus lent qu\'un parseur',
+      'Injection de code : eval() exécute l\'input comme du JS (RCE)',
+      'req.query.expr peut être undefined dans ce cas',
+      'L\'appel String(result) est totalement inutile',
     ],
     answer: 1,
     explanation:
@@ -448,10 +448,10 @@ def load_session(data):
     printf("Hello %s\\n", buf);
 }`,
     options: [
-      "printf est mal utilisé",
-      "Buffer overflow : strcpy ne vérifie pas la taille. Si name > 31 octets, il écrase la pile (stack smashing) → crash ou exécution de code. Utiliser strncpy/snprintf avec la taille du buffer",
-      "buf devrait être global",
-      "Il manque un free(buf)",
+      'printf est utilisé de manière incorrecte',
+      'Buffer overflow : strcpy ne vérifie pas la taille du buffer',
+      'Le buffer buf devrait être déclaré en global',
+      'Il manque un free(buf) à la fin de la fonction',
     ],
     answer: 1,
     explanation:
@@ -473,10 +473,10 @@ def load_session(data):
 gets(line);
 process(line);`,
     options: [
-      "line est trop petit",
-      "gets() ne limite JAMAIS la taille lue → débordement de buffer garanti pour toute entrée > 63 octets. La fonction est si dangereuse qu'elle a été retirée du C11. Utiliser fgets(line, sizeof(line), stdin)",
-      "Il faut initialiser line",
-      "process devrait retourner un int",
+      'Le buffer line est déclaré trop petit',
+      'gets() ne borne jamais la lecture : débordement garanti',
+      'Il faut initialiser line avant de le lire',
+      'La fonction process devrait retourner un int',
     ],
     answer: 1,
     explanation:
@@ -498,10 +498,10 @@ process(line);`,
     printf(user_input);
 }`,
     options: [
-      "Il manque un \\n",
-      "Format string : passer l'input comme chaîne de format permet %x/%n de lire la pile ou d'écrire en mémoire. Toujours printf(\"%s\", user_input)",
-      "printf devrait être puts",
-      "user_input doit être const",
+      'Il manque un \\n à la fin du message',
+      'Format string : l\'input sert de chaîne de format (%n/%x)',
+      'printf devrait être remplacé par puts',
+      'Le paramètre user_input devrait être const',
     ],
     answer: 1,
     explanation:
@@ -525,10 +525,10 @@ free(b);
 // ... plus loin
 printf("%s\\n", b);`,
     options: [
-      "malloc peut échouer",
-      "Use-after-free : b est utilisé APRÈS free(b). Le bloc libéré peut être réalloué → lecture de données arbitraires, corruption, ou exécution de code. Mettre b = NULL après free et ne plus l'utiliser",
-      "strcpy est correct ici",
-      "Il faut caster malloc",
+      'L\'appel malloc peut échouer sans être vérifié',
+      'Use-after-free : b est utilisé après free(b)',
+      'strcpy est parfaitement correct dans ce cas',
+      'Le retour de malloc devrait être casté',
     ],
     answer: 1,
     explanation:
@@ -550,10 +550,10 @@ printf("%s\\n", b);`,
 int *arr = malloc(n * sizeof(int));
 for (int i = 0; i < n; i++) arr[i] = 0;`,
     options: [
-      "La boucle est trop lente",
-      "Integer overflow : n * sizeof(int) peut déborder la taille de size_t et wrapper à une petite valeur → malloc alloue trop peu, la boucle écrit hors du tas. Vérifier n et utiliser calloc(n, sizeof(int)) qui détecte l'overflow",
-      "arr devrait être un char*",
-      "Il faut free(arr)",
+      'La boucle d\'initialisation est trop lente',
+      'Integer overflow : n * sizeof(int) peut wrapper à une petite valeur',
+      'La variable arr devrait être déclarée char*',
+      'Il manque un free(arr) en fin de fonction',
     ],
     answer: 1,
     explanation:
@@ -581,10 +581,10 @@ for (int i = 0; i < n; i++) arr[i] = 0;`,
   }
 }`,
     options: [
-      "La récursion peut être infinie",
-      "Prototype pollution : une clé '__proto__' (ou 'constructor'.'prototype') dans src modifie Object.prototype globalement → altère tous les objets (contournement d'auth, DoS, RCE). Rejeter les clés __proto__/constructor/prototype",
-      "for...in est déprécié",
-      "Il faut cloner target",
+      'La récursion peut devenir infinie sur un cycle',
+      'Prototype pollution : une clé __proto__ modifie Object.prototype',
+      'La boucle for...in est dépréciée en JS moderne',
+      'Il faudrait cloner target avant la fusion',
     ],
     answer: 1,
     explanation:
@@ -605,10 +605,10 @@ for (int i = 0; i < n; i++) arr[i] = 0;`,
     code: `const re = /^(a+)+$/;
 if (re.test(req.body.input)) { /* ... */ }`,
     options: [
-      "La regex ne valide pas les emails",
-      "ReDoS : le motif (a+)+ est catastrophiquement rétrograde. Une entrée comme 'aaaa...!' provoque un backtracking exponentiel qui gèle le thread (DoS). Éviter les quantificateurs imbriqués ; utiliser une regex linéaire ou un validateur non-backtracking",
-      "test() renvoie toujours true",
-      "Il faut compiler la regex",
+      'La regex ne valide pas correctement les emails',
+      'ReDoS : le motif (a+)+ provoque un backtracking exponentiel',
+      'La méthode test() renvoie toujours true ici',
+      'Il faut compiler la regex avant de l\'utiliser',
     ],
     answer: 1,
     explanation:
@@ -632,10 +632,10 @@ if (re.test(req.body.input)) { /* ... */ }`,
 def parse(xml_bytes):
     return etree.fromstring(xml_bytes)`,
     options: [
-      "lxml est lent",
-      "XXE : le parseur autorise par défaut les entités externes. Un XML avec <!ENTITY xxe SYSTEM 'file:///etc/passwd'> lit des fichiers locaux / fait du SSRF. Configurer un parser avec resolve_entities=False (no_network, no DTD)",
-      "fromstring devrait être parse",
-      "Il faut décoder en UTF-8",
+      'La bibliothèque lxml est plus lente qu\'ElementTree',
+      'XXE : le parseur résout les entités externes par défaut',
+      'fromstring devrait être remplacé par parse',
+      'Il faut d\'abord décoder les octets en UTF-8',
     ],
     answer: 1,
     explanation:
@@ -658,10 +658,10 @@ def parse(xml_bytes):
   res.json(inv);
 });`,
     options: [
-      "findById peut renvoyer null",
-      "IDOR : l'utilisateur est authentifié mais on ne vérifie pas qu'il POSSÈDE la facture. Changer :id accède aux factures d'autrui. Filtrer par propriétaire : findOne({ _id: id, userId: req.user.id })",
-      "Il manque un try/catch",
-      "auth est mal placé",
+      'findById peut renvoyer null sans être géré',
+      'IDOR : on ne vérifie pas que l\'utilisateur possède la facture',
+      'Il manque un bloc try/catch autour de la requête',
+      'Le middleware auth est placé au mauvais endroit',
     ],
     answer: 1,
     explanation:
@@ -682,10 +682,10 @@ def parse(xml_bytes):
     code: `res.setHeader('Access-Control-Allow-Origin', req.headers.origin);
 res.setHeader('Access-Control-Allow-Credentials', 'true');`,
     options: [
-      "Il manque Allow-Methods",
-      "Refléter aveuglément l'Origin + Allow-Credentials:true revient à autoriser TOUTE origine avec les cookies : n'importe quel site peut faire des requêtes authentifiées au nom de la victime. Valider l'Origin contre une allowlist stricte",
-      "setHeader est déprécié",
-      "true doit être un booléen",
+      'Il manque l\'en-tête Access-Control-Allow-Methods',
+      'Refléter l\'Origin + Allow-Credentials autorise toute origine',
+      'La méthode setHeader est dépréciée',
+      'La valeur true devrait être un booléen, pas une chaîne',
     ],
     answer: 1,
     explanation:
@@ -709,10 +709,10 @@ res.setHeader('Access-Control-Allow-Credentials', 'true');`,
 $sql = "SELECT COUNT(*) FROM tracking WHERE id = '$tracking'";
 mysqli_query($conn, $sql);`,
     options: [
-      "Sûr : le résultat n'est jamais affiché",
-      "Blind SQL injection : même sans sortie, l'attaquant infère l'info par le comportement (' AND 1=1-- vs 1=2--) ou le temps (WAITFOR/SLEEP). Un cookie est une source non fiable. Paramétrer la requête",
-      "Le problème est mysqli, il faut PDO",
-      "COUNT(*) est trop lent",
+      'C\'est sûr : le résultat n\'est jamais affiché au client',
+      'Blind SQLi : l\'info fuit par le comportement ou le temps de réponse',
+      'Le vrai problème est mysqli, il faudrait utiliser PDO',
+      'La requête COUNT(*) est trop lente à exécuter',
     ],
     answer: 1,
     explanation:
@@ -735,10 +735,10 @@ mysqli_query($conn, $sql);`,
   password: req.body.password
 });`,
     options: [
-      "findOne renvoie plusieurs résultats",
-      "NoSQL injection : un body JSON {\"username\":\"admin\",\"password\":{\"$ne\":null}} injecte un OPÉRATEUR Mongo qui matche tout mot de passe. Caster en String et valider les types (schéma)",
-      "Il faut un index sur username",
-      "MongoDB est déprécié",
+      'findOne peut renvoyer plusieurs résultats à la fois',
+      'Injection NoSQL : un objet {$ne:null} matche tout mot de passe',
+      'Il faut ajouter un index sur le champ username',
+      'MongoDB est déprécié au profit d\'alternatives SQL',
     ],
     answer: 1,
     explanation:
@@ -760,10 +760,10 @@ mysqli_query($conn, $sql);`,
 name = request.args.get('name')
 return Template("<h1>Hello " + name + "</h1>").render()`,
     options: [
-      "Il manque un doctype HTML",
-      "SSTI : name est concaténé dans la SOURCE du template puis compilé. ?name={{7*7}} donne 49 ; {{config}} ou l'accès aux classes mène à la RCE. Passer name en VARIABLE : render_template_string('Hello {{name}}', name=name)",
-      "Template est déprécié",
-      "Il faut échapper le HTML",
+      'Il manque un doctype HTML dans la sortie',
+      'SSTI : name est concaténé dans la source du template compilé',
+      'La classe Template est dépréciée dans Jinja2',
+      'Il faut simplement échapper le HTML de name',
     ],
     answer: 1,
     explanation:
@@ -785,10 +785,10 @@ return Template("<h1>Hello " + name + "</h1>").render()`,
 $filter = "(&(objectClass=person)(uid=$user))";
 ldap_search($ds, "dc=example,dc=com", $filter);`,
     options: [
-      "objectClass devrait être en minuscules",
-      "LDAP injection : $user injecté dans le filtre. Un input *)(uid=*))(|(uid=* altère la logique du filtre (contournement d'auth, énumération). Échapper avec ldap_escape($user, '', LDAP_ESCAPE_FILTER)",
-      "ldap_search est obsolète",
-      "Il faut une connexion TLS",
+      'objectClass devrait être écrit en minuscules',
+      'Injection LDAP : $user injecté altère la logique du filtre',
+      'La fonction ldap_search est obsolète',
+      'Il faut établir une connexion LDAP en TLS',
     ],
     answer: 1,
     explanation:
@@ -814,10 +814,10 @@ def change_email():
     update_email(user, request.form['email'])
     return "OK"`,
     options: [
-      "Il faut du HTTPS",
-      "CSRF : une action à effet de bord n'est protégée que par le cookie (envoyé automatiquement par le navigateur). Un formulaire malveillant auto-soumis change l'email de la victime. Ajouter un token anti-CSRF + SameSite",
-      "session est mal utilisé",
-      "POST devrait être GET",
+      'Il faudrait servir cet endpoint en HTTPS',
+      'CSRF : l\'action à effet de bord n\'a qu\'un cookie pour protection',
+      'La variable session est mal utilisée ici',
+      'La méthode POST devrait plutôt être un GET',
     ],
     answer: 1,
     explanation:
@@ -839,10 +839,10 @@ def change_email():
 header("Location: " . $next);
 exit;`,
     options: [
-      "header() doit être avant tout output",
-      "Open redirect : next=https://evil.com redirige la victime vers un site de phishing (ou vole un token OAuth). N'autoriser que des chemins relatifs internes / une allowlist d'hôtes",
-      "exit est inutile",
-      "Il faut encoder l'URL",
+      'header() doit être appelé avant tout output',
+      'Open redirect : next=https://evil.com redirige vers du phishing',
+      'L\'appel exit est inutile après le header',
+      'Il faut encoder l\'URL de destination',
     ],
     answer: 1,
     explanation:
@@ -866,10 +866,10 @@ exit;`,
 move_uploaded_file(
   $_FILES['avatar']['tmp_name'], "uploads/$name");`,
     options: [
-      "Il faut limiter la taille",
-      "Unrestricted file upload : un shell.php uploadé dans un dossier exécutable = RCE. Valider l'extension/MIME par CONTENU, renommer avec un id aléatoire, stocker hors webroot ou désactiver l'exécution",
-      "move_uploaded_file est déprécié",
-      "$_FILES devrait être $_POST",
+      'Il faut limiter la taille du fichier uploadé',
+      'Upload non restreint : un shell.php uploadé donne une RCE',
+      'move_uploaded_file est une fonction dépréciée',
+      '$_FILES devrait être remplacé par $_POST',
     ],
     answer: 1,
     explanation:
@@ -891,10 +891,10 @@ move_uploaded_file(
 $dom->loadXML($_POST['xml'],
   LIBXML_NOENT | LIBXML_DTDLOAD);`,
     options: [
-      "LIBXML_DTDLOAD est inoffensif",
-      "LIBXML_NOENT (malgré son nom = 'substituer les entités', pas 'no entity') + LIBXML_DTDLOAD activent les entités externes → lecture de fichiers / SSRF. Retirer ces flags",
-      "Il faut utiliser SimpleXML",
-      "loadXML est obsolète",
+      'Le flag LIBXML_DTDLOAD est totalement inoffensif',
+      'LIBXML_NOENT (« substituer les entités ») + DTDLOAD activent l\'XXE',
+      'Il faudrait utiliser SimpleXML à la place',
+      'La méthode loadXML est obsolète en PHP 8',
     ],
     answer: 1,
     explanation:
@@ -917,10 +917,10 @@ $dom->loadXML($_POST['xml'],
     code: `const decoded = jwt.verify(token, publicKey);
 // aucun algorithms fixé`,
     options: [
-      "Il faut vérifier l'expiration",
-      "Algorithm confusion : sans algorithme forcé, l'attaquant signe un token en HS256 en utilisant la CLÉ PUBLIQUE (connue) comme secret HMAC. Le serveur la vérifie et l'accepte. Forcer algorithms: ['RS256']",
-      "publicKey doit être secrète",
-      "jwt.verify est asynchrone",
+      'Il faut aussi vérifier la date d\'expiration du token',
+      'Confusion d\'algo : l\'attaquant signe en HS256 avec la clé publique',
+      'La clé publique devrait rester secrète',
+      'jwt.verify est une fonction asynchrone',
     ],
     answer: 1,
     explanation:
@@ -942,10 +942,10 @@ $dom->loadXML($_POST['xml'],
 cipher = AES.new(key, AES.MODE_ECB)
 ct = cipher.encrypt(pad(plaintext, 16))`,
     options: [
-      "La clé est trop courte",
-      "Mode ECB : des blocs de clair identiques donnent des blocs chiffrés identiques → fuite de motifs (le fameux 'pingouin ECB'), cut-and-paste. Utiliser un mode authentifié (AES-GCM) avec nonce aléatoire",
-      "pad() est incorrect",
-      "Il faut AES-256 au lieu d'AES-128",
+      'La clé de chiffrement utilisée est trop courte',
+      'Mode ECB : deux blocs de clair identiques donnent le même chiffré',
+      'La fonction pad() est mal appliquée ici',
+      'Il faut passer à AES-256 plutôt qu\'AES-128',
     ],
     answer: 1,
     explanation:
@@ -966,10 +966,10 @@ ct = cipher.encrypt(pad(plaintext, 16))`,
     code: `const iv = Buffer.alloc(16, 0); // IV = 0
 const c = crypto.createCipheriv('aes-256-cbc', key, iv);`,
     options: [
-      "aes-256-cbc est cassé",
-      "IV constant (zéro) réutilisé : en CBC, un IV fixe rend le chiffrement déterministe (fuite d'égalité de préfixes, chosen-plaintext). L'IV doit être ALÉATOIRE et UNIQUE par message (crypto.randomBytes(16)), transmis en clair",
-      "L'IV doit être secret et chiffré",
-      "Il faut un IV de 32 octets",
+      'L\'algorithme aes-256-cbc est cryptographiquement cassé',
+      'IV constant (zéro) : le chiffrement devient déterministe en CBC',
+      'L\'IV devrait être secret et lui-même chiffré',
+      'Il faut un IV de 32 octets au lieu de 16',
     ],
     answer: 1,
     explanation:
@@ -993,10 +993,10 @@ const c = crypto.createCipheriv('aes-256-cbc', key, iv);`,
 for (int i = 0; i <= 8; i++)
     dst[i] = src[i];`,
     options: [
-      "src doit être plus grand",
-      "Off-by-one : la condition i <= 8 accède à dst[8], le 9e élément d'un tableau de 8 → écriture hors bornes. Utiliser i < 8 (et prévoir la place du \\0 si c'est une chaîne)",
-      "char devrait être int",
-      "Il faut memcpy",
+      'Le tableau source src devrait être plus grand',
+      'Off-by-one : i <= 8 écrit dst[8], hors d\'un tableau de 8',
+      'Le type char devrait plutôt être un int',
+      'Il faudrait utiliser memcpy à la place',
     ],
     answer: 1,
     explanation:
@@ -1021,10 +1021,10 @@ for (int i = 0; i <= 8; i++)
   u.save();
 });`,
     options: [
-      "save() est asynchrone",
-      "Mass assignment : tout req.body est lié au modèle. Un body {\"email\":\"x\",\"isAdmin\":true} écrit un champ privilégié non prévu. Allowlister les champs autorisés (pick) ou un DTO strict",
-      "new User est incorrect",
-      "Il faut valider l'email",
+      'La méthode save() est asynchrone et non attendue',
+      'Mass assignment : tout req.body est lié au modèle, dont isAdmin',
+      'L\'appel new User est syntaxiquement incorrect',
+      'Il faut valider le format de l\'email fourni',
     ],
     answer: 1,
     explanation:
@@ -1045,10 +1045,10 @@ for (int i = 0; i <= 8; i++)
     code: `if get_balance(user) >= amount:  # check
     debit(user, amount)          # use`,
     options: [
-      "get_balance est lent",
-      "TOCTOU : des requêtes concurrentes passent TOUTES le check avant que le débit s'applique → solde négatif / double-dépense. Rendre l'opération atomique : UPDATE ... WHERE balance >= amount, ou verrou SELECT FOR UPDATE",
-      "Il faut un try/except",
-      "amount peut être négatif",
+      'La fonction get_balance est trop lente à exécuter',
+      'TOCTOU : des requêtes concurrentes passent toutes le check',
+      'Il manque un bloc try/except autour du débit',
+      'Le montant amount peut être négatif ici',
     ],
     answer: 1,
     explanation:
@@ -1069,10 +1069,10 @@ for (int i = 0; i <= 8; i++)
     code: `app = Flask(__name__)
 app.config['DEBUG'] = True   # en production`,
     options: [
-      "C'est juste moins performant",
-      "Le mode debug expose stack traces, code source, variables d'env ET une console interactive Werkzeug qui peut mener à une RCE. Désactiver DEBUG en prod, page d'erreur générique, logs côté serveur",
-      "Il faut un __name__ différent",
-      "DEBUG doit être une string",
+      'C\'est juste un peu moins performant en production',
+      'Le mode debug expose stack traces, code et console RCE Werkzeug',
+      'Il faut passer un __name__ différent à Flask',
+      'DEBUG devrait être une chaîne, pas un booléen',
     ],
     answer: 1,
     explanation:
