@@ -18,6 +18,8 @@ export const TOPIC_ICON: Record<Topic, string> = {
   'iot-edge': '📡',
   frontend: '🎨',
   backend: '⚙️',
+  appsec: '🛡️',
+  algorithms: '🧠',
 };
 
 export const DOMAIN_LABEL: Record<Domain, string> = {

@@ -23,7 +23,9 @@ export type Topic =
   | 'design-patterns'
   | 'iot-edge'
   | 'frontend'
-  | 'backend';
+  | 'backend'
+  | 'appsec'
+  | 'algorithms';
 
 export type Difficulty = 'junior' | 'intermediate' | 'senior';
 
@@ -60,7 +62,9 @@ export interface FindErrorExercise extends BaseExercise {
   question: string;
   /** Le bloc de code/config présenté. */
   code: string;
-  language: 'dockerfile' | 'yaml' | 'bash' | 'hcl' | 'json' | 'typescript' | 'javascript';
+  language:
+    | 'dockerfile' | 'yaml' | 'bash' | 'hcl' | 'json'
+    | 'typescript' | 'javascript' | 'c' | 'python' | 'php' | 'sql';
   options: string[];
   answer: number;
 }
