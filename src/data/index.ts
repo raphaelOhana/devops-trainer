@@ -26,6 +26,8 @@ import { cloudArchExercises } from './exercises-cloud-arch';
 import { databasesExercises } from './exercises-databases';
 import { performanceExercises } from './exercises-performance';
 import { mcpExercises } from './exercises-mcp';
+import { interviewExercises } from './exercises-interview';
+import { reversingExercises } from './exercises-reversing';
 import { shuffleAll } from './shuffle';
 import type { Exercise } from '../engine/types';
 
@@ -60,4 +62,6 @@ export const exercises: Exercise[] = shuffleAll([
   ...databasesExercises,
   ...performanceExercises,
   ...mcpExercises,
+  ...interviewExercises,
+  ...reversingExercises,
 ]);
