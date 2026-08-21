@@ -29,7 +29,16 @@ export type Topic =
   | 'system-design'
   | 'languages'
   | 'memory-safety'
-  | 'problem-solving';
+  | 'problem-solving'
+  | 'ai-llm'
+  | 'hardware'
+  | 'secure-review'
+  | 'cloud-arch'
+  | 'databases'
+  | 'performance'
+  | 'mcp'
+  | 'interview'
+  | 'reversing';
 
 export type Difficulty = 'junior' | 'intermediate' | 'senior';
 

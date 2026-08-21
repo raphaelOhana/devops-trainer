@@ -24,6 +24,15 @@ export const TOPIC_ICON: Record<Topic, string> = {
   languages: '🐛',
   'memory-safety': '🧨',
   'problem-solving': '🧭',
+  'ai-llm': '🤖',
+  hardware: '🔩',
+  'secure-review': '🔎',
+  'cloud-arch': '☁️',
+  databases: '🗄️',
+  performance: '⚡',
+  mcp: '🔌',
+  interview: '💼',
+  reversing: '🔬',
 };
 
 // Libellés courts (français) pour le filtre par sujet.
@@ -48,6 +57,15 @@ export const TOPIC_LABEL: Record<Topic, string> = {
   languages: 'Pièges langages',
   'memory-safety': 'Sécurité mémoire (C)',
   'problem-solving': 'Décortiquer un problème',
+  'ai-llm': 'IA & LLM',
+  hardware: 'Hardware',
+  'secure-review': 'Revue de code sécu',
+  'cloud-arch': 'Architecture cloud',
+  databases: 'Bases de données',
+  performance: 'Optimisation',
+  mcp: 'MCP',
+  interview: 'Coding interview',
+  reversing: 'Reverse engineering',
 };
 
 export const DOMAIN_LABEL: Record<Domain, string> = {

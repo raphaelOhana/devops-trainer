@@ -19,6 +19,13 @@ import { sreExercises } from './exercises-sre';
 import { memoryExercises } from './exercises-memory';
 import { ops2Exercises } from './exercises-ops2';
 import { problemSolvingExercises } from './exercises-problem-solving';
+import { aiLlmExercises } from './exercises-ai-llm';
+import { hardwareExercises } from './exercises-hardware';
+import { secureReviewExercises } from './exercises-secure-review';
+import { cloudArchExercises } from './exercises-cloud-arch';
+import { databasesExercises } from './exercises-databases';
+import { performanceExercises } from './exercises-performance';
+import { mcpExercises } from './exercises-mcp';
 import { shuffleAll } from './shuffle';
 import type { Exercise } from '../engine/types';
 
@@ -46,4 +53,11 @@ export const exercises: Exercise[] = shuffleAll([
   ...memoryExercises,
   ...ops2Exercises,
   ...problemSolvingExercises,
+  ...aiLlmExercises,
+  ...hardwareExercises,
+  ...secureReviewExercises,
+  ...cloudArchExercises,
+  ...databasesExercises,
+  ...performanceExercises,
+  ...mcpExercises,
 ]);
