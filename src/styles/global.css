@@ -288,6 +288,48 @@ textarea.editor:focus { outline: none; border-color: var(--blue); }
 .bar { height: 12px; background: #eceef3; border-radius: 99px; overflow: hidden; }
 .bar i { display: block; height: 100%; border-radius: 99px; transition: width .4s; box-shadow: inset 0 -2px 0 rgba(0,0,0,.08); }
 
+/* ============ Carte de maîtrise (Stats) ============ */
+.review-list { display: flex; flex-direction: column; gap: 10px; margin-bottom: 6px; }
+.review-row {
+  display: flex; align-items: center; gap: 12px;
+  background: #fff5e9; border: 1.5px solid #ffddb0; border-radius: 15px; padding: 12px 14px;
+}
+.review-ico {
+  width: 40px; height: 40px; border-radius: 12px; flex-shrink: 0; display: grid; place-items: center;
+  font-size: 20px; background: #fff; border: 1.5px solid #ffe4bd;
+}
+.review-body { flex: 1; min-width: 0; }
+.review-name { font-size: 14.5px; font-weight: 800; color: var(--text); }
+.review-meta { font-size: 12px; font-weight: 700; color: var(--orange); }
+.review-go {
+  flex-shrink: 0; font-size: 12.5px; font-weight: 900; color: #fff; background: var(--orange);
+  padding: 8px 14px; border-radius: 11px; box-shadow: 0 3px 0 #e6820c;
+}
+.review-go:active { transform: translateY(2px); box-shadow: 0 1px 0 #e6820c; }
+
+.skill-list { display: flex; flex-direction: column; gap: 10px; }
+.skill-row {
+  display: flex; align-items: center; gap: 13px; width: 100%; text-align: left;
+  background: var(--card); border: 1.5px solid var(--border); border-radius: 15px; padding: 12px 14px;
+  box-shadow: var(--shadow); transition: transform .1s, border-color .1s;
+}
+.skill-row:active { transform: scale(.99); border-color: var(--border-strong); }
+.skill-ico {
+  width: 42px; height: 42px; border-radius: 12px; flex-shrink: 0; display: grid; place-items: center;
+  font-size: 21px; background: var(--bg-soft); border: 1.5px solid var(--border);
+}
+.skill-body { flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 7px; }
+.skill-top { display: flex; align-items: center; justify-content: space-between; gap: 8px; }
+.skill-name { font-size: 14.5px; font-weight: 800; color: var(--text); }
+.skill-lvl { font-size: 11px; font-weight: 900; padding: 2px 9px; border-radius: 7px; flex-shrink: 0; }
+.skill-lvl.exp { background: var(--green-soft); color: var(--green-d); }
+.skill-lvl.conf { background: var(--blue-soft); color: var(--blue-d); }
+.skill-lvl.nov { background: #f0f1f5; color: var(--text-dim); }
+.skill-barwrap { display: flex; align-items: center; gap: 9px; }
+.skill-bar { flex: 1; height: 9px; border-radius: 99px; background: #eceef4; overflow: hidden; }
+.skill-bar i { display: block; height: 100%; border-radius: 99px; transition: width .4s; }
+.skill-pct { font-size: 12px; font-weight: 900; font-variant-numeric: tabular-nums; min-width: 34px; text-align: right; }
+
 /* ============ Confettis / level-up ============ */
 .confetti { position: fixed; inset: 0; pointer-events: none; z-index: 40; overflow: hidden; }
 .confetti span { position: absolute; top: -10px; width: 9px; height: 9px; border-radius: 2px; animation: fall linear forwards; }

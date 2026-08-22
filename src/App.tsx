@@ -124,6 +124,11 @@ export default function App() {
     const pool = exercises.filter((e) => e.topic === l.topic);
     if (pool.length) { setSession(pool); setPos(0); setLesson(null); setTab('learn'); }
   }
+  function reviewTopic(t: Topic) {
+    const pool = exercises.filter((e) => e.topic === t);
+    const q = buildRevision(progress, pool);
+    if (q.length) { setSession(q); setPos(0); }
+  }
 
   // ---- Leçon (prioritaire : peut être ouverte depuis un exercice) ----
   if (lesson) {
@@ -159,7 +164,7 @@ export default function App() {
 
   return (
     <>
-      {tab === 'stats' && <div className="tab-body"><Stats progress={progress} onBack={() => setTab('learn')} /></div>}
+      {tab === 'stats' && <div className="tab-body"><Stats progress={progress} onBack={() => setTab('learn')} onReviewTopic={reviewTopic} /></div>}
       {tab === 'courses' && <div className="tab-body"><Courses onOpen={setLesson} /></div>}
 
       {tab === 'learn' && (
