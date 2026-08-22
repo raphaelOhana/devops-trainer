@@ -32,6 +32,38 @@ function buildRevision(p: Progress, pool: Exercise[]): Exercise[] {
   return [...due, ...failed, ...fresh];
 }
 
+/**
+ * Session « mixte » (interleaving) : on panache les sujets en round-robin
+ * pour qu'on tombe rarement deux fois de suite sur le même thème — la
+ * pratique entrelacée grave mieux que les blocs d'un seul sujet.
+ */
+function buildMixedSession(pool: Exercise[], n = 20): Exercise[] {
+  if (pool.length <= 1) return [...pool];
+  const byTopic = new Map<Topic, Exercise[]>();
+  for (const e of pool) {
+    const arr = byTopic.get(e.topic) ?? [];
+    arr.push(e);
+    byTopic.set(e.topic, arr);
+  }
+  const groups = [...byTopic.values()];
+  for (const g of groups) g.sort(() => Math.random() - 0.5);
+  groups.sort(() => Math.random() - 0.5);
+  const out: Exercise[] = [];
+  let progressed = true;
+  while (out.length < n && progressed) {
+    progressed = false;
+    for (const g of groups) {
+      const e = g.pop();
+      if (e) {
+        out.push(e);
+        progressed = true;
+        if (out.length >= n) break;
+      }
+    }
+  }
+  return out;
+}
+
 export default function App() {
   const [tab, setTab] = useState<Tab>('learn');
   const [domain, setDomain] = useState<Domain | 'all'>('all');
@@ -156,6 +188,16 @@ export default function App() {
               onClick={() => { if (revisionQueue.length) { setSession(revisionQueue); setPos(0); } }}
             >
               {reviseLabel}<span className="revise-count">{reviseNum}</span>
+            </button>
+          )}
+
+          {filtered.length > 4 && (
+            <button
+              className="revise-btn"
+              style={{ background: 'linear-gradient(135deg, #7c4dff, #b26bff)', color: '#fff', boxShadow: '0 4px 0 #5b2fd6' }}
+              onClick={() => { const s = buildMixedSession(filtered); if (s.length) { setSession(s); setPos(0); } }}
+            >
+              🔀 Série mixte<span className="revise-count">{Math.min(20, filtered.length)}</span>
             </button>
           )}
 
