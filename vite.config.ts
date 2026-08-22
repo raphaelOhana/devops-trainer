@@ -34,6 +34,9 @@ export default defineConfig({
       },
       workbox: {
         globPatterns: ['**/*.{js,css,html,svg,png,woff2}'],
+        // Le bundle contient toutes les questions (data-driven) : relever la
+        // limite de précache pour que l'app reste 100% offline malgré sa taille.
+        maximumFileSizeToCacheInBytes: 6 * 1024 * 1024,
         // Le fallback de navigation doit pointer vers l'index sous le base.
         navigateFallback: `${base}index.html`,
       },

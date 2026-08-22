@@ -28,6 +28,15 @@ import { performanceExercises } from './exercises-performance';
 import { mcpExercises } from './exercises-mcp';
 import { interviewExercises } from './exercises-interview';
 import { reversingExercises } from './exercises-reversing';
+import { aiLlmBasicsExercises } from './exercises-ai-llm-basics';
+import { hardwareBasicsExercises } from './exercises-hardware-basics';
+import { secureReviewBasicsExercises } from './exercises-secure-review-basics';
+import { cloudArchBasicsExercises } from './exercises-cloud-arch-basics';
+import { databasesBasicsExercises } from './exercises-databases-basics';
+import { performanceBasicsExercises } from './exercises-performance-basics';
+import { mcpBasicsExercises } from './exercises-mcp-basics';
+import { interviewBasicsExercises } from './exercises-interview-basics';
+import { reversingBasicsExercises } from './exercises-reversing-basics';
 import { shuffleAll } from './shuffle';
 import type { Exercise } from '../engine/types';
 
@@ -64,4 +73,13 @@ export const exercises: Exercise[] = shuffleAll([
   ...mcpExercises,
   ...interviewExercises,
   ...reversingExercises,
+  ...aiLlmBasicsExercises,
+  ...hardwareBasicsExercises,
+  ...secureReviewBasicsExercises,
+  ...cloudArchBasicsExercises,
+  ...databasesBasicsExercises,
+  ...performanceBasicsExercises,
+  ...mcpBasicsExercises,
+  ...interviewBasicsExercises,
+  ...reversingBasicsExercises,
 ]);
