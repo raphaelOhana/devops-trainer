@@ -53,7 +53,11 @@ function withShuffledOptions(ex: Exercise, salt = 0): Exercise {
   const order = shuffledOrder(ex.options.length, seed);
   const options = order.map((i) => ex.options[i]);
   const answer = order.indexOf(ex.answer); // nouvelle position de la bonne réponse
-  return { ...ex, options, answer };
+  // Les notes par option doivent suivre la même permutation que les options.
+  const optionNotes = ex.optionNotes
+    ? order.map((i) => ex.optionNotes![i] ?? '')
+    : undefined;
+  return { ...ex, options, answer, optionNotes };
 }
 
 /**

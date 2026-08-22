@@ -58,6 +58,13 @@ interface BaseExercise {
   explanation: string;
   /** Étiquettes libres pour la recherche. */
   tags?: string[];
+  /**
+   * Feedback par option (QCM / trouve-l'erreur) : une phrase courte par
+   * option, dans le même ordre que `options`. Montré après la réponse
+   * (pourquoi la bonne est juste / pourquoi chaque distracteur est faux).
+   * Optionnel : l'UI dégrade proprement s'il est absent.
+   */
+  optionNotes?: string[];
 }
 
 /** QCM à choix unique. */

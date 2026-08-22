@@ -5,7 +5,7 @@ import { recordAttempt, type RecordResult } from '../store/progress';
 import { Markdown } from './Markdown';
 import { Confetti } from './Confetti';
 import { CodeBlock } from './CodeBlock';
-import { TOPIC_ICON, DIFFICULTY_META, TYPE_LABEL, DOMAIN_COLOR } from '../engine/meta';
+import { TOPIC_ICON, TOPIC_LABEL, DIFFICULTY_META, TYPE_LABEL, DOMAIN_COLOR } from '../engine/meta';
 
 interface Props {
   exercise: Exercise;
@@ -65,7 +65,7 @@ export function ExerciseView({ exercise, onBack, onResult, onNext, position, onO
       </div>
 
       <div className="chip-line">
-        <span className="tag">{TOPIC_ICON[exercise.topic]} {exercise.topic}</span>
+        <span className="tag">{TOPIC_ICON[exercise.topic]} {TOPIC_LABEL[exercise.topic]}</span>
         <span className="tag" style={{ color: diff.color }}>{diff.label}</span>
         <span className="tag">{TYPE_LABEL[exercise.type]}</span>
       </div>
@@ -102,10 +102,15 @@ export function ExerciseView({ exercise, onBack, onResult, onNext, position, onO
               if (i === exercise.answer) cls += ' correct';
               else if (i === picked) cls += ' wrong';
             } else if (i === picked) cls += ' picked';
+            const note = result && exercise.optionNotes?.[i]?.trim();
+            const noteKind = i === exercise.answer ? 'ok' : 'ko';
             return (
               <button key={i} className={cls} disabled={!!result} onClick={() => setPicked(i)}>
-                <span className="letter">{String.fromCharCode(65 + i)}</span>
-                <span>{opt}</span>
+                <span className="opt-main">
+                  <span className="letter">{String.fromCharCode(65 + i)}</span>
+                  <span>{opt}</span>
+                </span>
+                {note && <span className={`opt-note ${noteKind}`}>{note}</span>}
               </button>
             );
           })}
