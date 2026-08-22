@@ -155,7 +155,6 @@ export default function App() {
     );
   }
 
-  const reviseLabel = dueToday > 0 ? '🔥 À réviser aujourd\'hui' : '🎯 Réviser mes lacunes';
   const reviseNum = dueToday > 0 ? dueToday : revisionQueue.length;
 
   return (
@@ -183,21 +182,25 @@ export default function App() {
 
           {revisionQueue.length > 0 && (
             <button
-              className="revise-btn"
-              style={dueToday > 0 ? { background: 'linear-gradient(135deg, var(--streak), #ff9147)', color: '#231004', boxShadow: '0 6px 18px rgba(255,122,61,.35)' } : undefined}
-              onClick={() => { if (revisionQueue.length) { setSession(revisionQueue); setPos(0); } }}
+              className={`continue-card ${dueToday > 0 ? 'due' : ''}`}
+              onClick={() => { setSession(revisionQueue); setPos(0); }}
             >
-              {reviseLabel}<span className="revise-count">{reviseNum}</span>
+              <span className="cc-ico">{TOPIC_ICON[revisionQueue[0].topic]}</span>
+              <span className="cc-body">
+                <span className="cc-eyebrow">{dueToday > 0 ? '🔥 À réviser aujourd’hui' : 'Reprends ta série'}</span>
+                <span className="cc-title">{TOPIC_LABEL[revisionQueue[0].topic]}</span>
+                <span className="cc-sub"><b>{reviseNum}</b> exercice{reviseNum > 1 ? 's' : ''} à travailler</span>
+              </span>
+              <span className="cc-go" aria-hidden>→</span>
             </button>
           )}
 
           {filtered.length > 4 && (
             <button
-              className="revise-btn"
-              style={{ background: 'linear-gradient(135deg, #7c4dff, #b26bff)', color: '#fff', boxShadow: '0 4px 0 #5b2fd6' }}
+              className="mixed-btn"
               onClick={() => { const s = buildMixedSession(filtered); if (s.length) { setSession(s); setPos(0); } }}
             >
-              🔀 Série mixte<span className="revise-count">{Math.min(20, filtered.length)}</span>
+              🔀 Série mixte <span className="mixed-count">{Math.min(20, filtered.length)}</span>
             </button>
           )}
 

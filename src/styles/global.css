@@ -81,6 +81,43 @@ code, pre, .mono { font-family: var(--mono); }
 }
 .hud-stats-btn:active { transform: translateY(2px); border-bottom-width: 2px; }
 
+/* ============ Carte « Continuer » (accueil) ============ */
+.continue-card {
+  display: flex; align-items: center; gap: 14px; width: 100%; text-align: left;
+  margin: 8px 0 2px; padding: 16px 18px; border-radius: 20px;
+  background: var(--card); border: 1.5px solid var(--border);
+  box-shadow: 0 8px 22px rgba(30,34,50,.07); transition: transform .12s, box-shadow .12s;
+}
+.continue-card:active { transform: scale(.99); box-shadow: 0 3px 10px rgba(30,34,50,.08); }
+.cc-ico {
+  width: 52px; height: 52px; border-radius: 15px; flex-shrink: 0;
+  display: grid; place-items: center; font-size: 26px;
+  background: linear-gradient(135deg, var(--green-soft), #e5f7d0);
+  border: 1.5px solid #cdeeae;
+}
+.continue-card.due .cc-ico { background: linear-gradient(135deg, #ffe9d4, #ffdcc0); border-color: #ffcfa8; }
+.cc-body { flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 2px; }
+.cc-eyebrow { font-size: 12px; font-weight: 800; letter-spacing: .02em; color: var(--text-dim); }
+.continue-card.due .cc-eyebrow { color: var(--orange); }
+.cc-title { font-size: 18px; font-weight: 900; letter-spacing: -.01em; color: var(--text); line-height: 1.15; }
+.cc-sub { font-size: 13px; font-weight: 700; color: var(--text-dim); }
+.cc-sub b { color: var(--green-d); }
+.continue-card.due .cc-sub b { color: var(--orange); }
+.cc-go {
+  flex-shrink: 0; width: 44px; height: 44px; border-radius: 14px; display: grid; place-items: center;
+  font-size: 22px; font-weight: 900; color: #fff; background: var(--green); box-shadow: 0 3px 0 var(--green-d);
+}
+.continue-card.due .cc-go { background: var(--orange); box-shadow: 0 3px 0 var(--orange-d, #e6820c); }
+
+/* Bouton « Série mixte » (secondaire) */
+.mixed-btn {
+  display: flex; align-items: center; justify-content: center; gap: 8px; width: 100%;
+  margin: 12px 0 2px; padding: 13px; border-radius: 15px; font-weight: 800; font-size: 14.5px;
+  color: #8a4fe0; background: #f6f0ff; border: 1.5px solid #e6d8ff; transition: .12s;
+}
+.mixed-btn:active { transform: scale(.99); }
+.mixed-count { background: #a86bff; color: #fff; font-size: 12px; font-weight: 900; padding: 2px 9px; border-radius: 99px; }
+
 /* ============ Bouton révision ============ */
 .revise-btn {
   display: flex; align-items: center; justify-content: center; gap: 8px; width: 100%;
