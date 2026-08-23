@@ -40,7 +40,8 @@ export type Topic =
   | 'interview'
   | 'reversing'
   | 'cryptography'
-  | 'testing';
+  | 'testing'
+  | 'ai-engineering';
 
 export type Difficulty = 'junior' | 'intermediate' | 'senior';
 

@@ -39,6 +39,7 @@ import { interviewBasicsExercises } from './exercises-interview-basics';
 import { reversingBasicsExercises } from './exercises-reversing-basics';
 import { cryptographyExercises } from './exercises-cryptography';
 import { testingExercises } from './exercises-testing';
+import { aiEngExercises } from './exercises-ai-engineering';
 import { shuffleAll } from './shuffle';
 import type { Exercise } from '../engine/types';
 
@@ -86,4 +87,5 @@ export const exercises: Exercise[] = shuffleAll([
   ...reversingBasicsExercises,
   ...cryptographyExercises,
   ...testingExercises,
+  ...aiEngExercises,
 ]);

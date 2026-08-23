@@ -35,6 +35,7 @@ export const TOPIC_ICON: Record<Topic, string> = {
   reversing: '🔬',
   cryptography: '🔐',
   testing: '🧪',
+  'ai-engineering': '🛠️',
 };
 
 // Libellés courts (français) pour le filtre par sujet.
@@ -70,6 +71,7 @@ export const TOPIC_LABEL: Record<Topic, string> = {
   reversing: 'Reverse engineering',
   cryptography: 'Cryptographie',
   testing: 'Tests & qualité',
+  'ai-engineering': 'AI Engineering',
 };
 
 export const DOMAIN_LABEL: Record<Domain, string> = {
