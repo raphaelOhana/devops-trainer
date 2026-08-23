@@ -38,7 +38,9 @@ export type Topic =
   | 'performance'
   | 'mcp'
   | 'interview'
-  | 'reversing';
+  | 'reversing'
+  | 'cryptography'
+  | 'testing';
 
 export type Difficulty = 'junior' | 'intermediate' | 'senior';
 

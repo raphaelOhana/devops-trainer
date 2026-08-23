@@ -37,6 +37,8 @@ import { performanceBasicsExercises } from './exercises-performance-basics';
 import { mcpBasicsExercises } from './exercises-mcp-basics';
 import { interviewBasicsExercises } from './exercises-interview-basics';
 import { reversingBasicsExercises } from './exercises-reversing-basics';
+import { cryptographyExercises } from './exercises-cryptography';
+import { testingExercises } from './exercises-testing';
 import { shuffleAll } from './shuffle';
 import type { Exercise } from '../engine/types';
 
@@ -82,4 +84,6 @@ export const exercises: Exercise[] = shuffleAll([
   ...mcpBasicsExercises,
   ...interviewBasicsExercises,
   ...reversingBasicsExercises,
+  ...cryptographyExercises,
+  ...testingExercises,
 ]);

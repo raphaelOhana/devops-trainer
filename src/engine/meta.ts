@@ -33,6 +33,8 @@ export const TOPIC_ICON: Record<Topic, string> = {
   mcp: '🔌',
   interview: '💼',
   reversing: '🔬',
+  cryptography: '🔐',
+  testing: '🧪',
 };
 
 // Libellés courts (français) pour le filtre par sujet.
@@ -66,6 +68,8 @@ export const TOPIC_LABEL: Record<Topic, string> = {
   mcp: 'MCP',
   interview: 'Coding interview',
   reversing: 'Reverse engineering',
+  cryptography: 'Cryptographie',
+  testing: 'Tests & qualité',
 };
 
 export const DOMAIN_LABEL: Record<Domain, string> = {
