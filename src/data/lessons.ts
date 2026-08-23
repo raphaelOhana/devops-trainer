@@ -12,6 +12,15 @@ import opsMd from './courses/ops.md?raw';
 import csMd from './courses/cs.md?raw';
 import memoryMd from './courses/memory.md?raw';
 import problemSolvingMd from './courses/problem-solving.md?raw';
+import aiLlmMd from './courses/ai-llm.md?raw';
+import hardwareMd from './courses/hardware.md?raw';
+import secureReviewMd from './courses/secure-review.md?raw';
+import cloudArchMd from './courses/cloud-arch.md?raw';
+import databasesMd from './courses/databases.md?raw';
+import performanceMd from './courses/performance.md?raw';
+import mcpMd from './courses/mcp.md?raw';
+import interviewMd from './courses/interview.md?raw';
+import reversingMd from './courses/reversing.md?raw';
 
 // Décode les entités HTML laissées par la génération (&lt; &gt; &amp; …).
 function decode(s: string): string {
@@ -63,6 +72,15 @@ export const lessons: Lesson[] = [
   ...parse(csMd),
   ...parse(memoryMd),
   ...parse(problemSolvingMd),
+  ...parse(aiLlmMd),
+  ...parse(hardwareMd),
+  ...parse(secureReviewMd),
+  ...parse(cloudArchMd),
+  ...parse(databasesMd),
+  ...parse(performanceMd),
+  ...parse(mcpMd),
+  ...parse(interviewMd),
+  ...parse(reversingMd),
 ];
 
 /** Première leçon associée à un sujet (pour le lien exercice → cours). */
