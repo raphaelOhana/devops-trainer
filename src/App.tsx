@@ -6,7 +6,10 @@ import { LevelUp } from './components/LevelUp';
 import { Stats } from './components/Stats';
 import { Courses } from './components/Courses';
 import { LessonView } from './components/LessonView';
+import { Library } from './components/Library';
+import { ChapterView } from './components/ChapterView';
 import { lessonForTopic } from './data/lessons';
+import type { Chapter } from './data/library';
 import {
   loadProgress, isMastered, resetProgress, levelInfo, isDue,
   XP_BY_DIFFICULTY, type Progress,
@@ -17,7 +20,7 @@ const DOMAINS: (Domain | 'all')[] = ['all', 'devops', 'software', 'web', 'iot'];
 const DIFFICULTIES: (Difficulty | 'all')[] = ['all', 'junior', 'intermediate', 'senior'];
 const TYPES: (ExerciseType | 'all')[] = ['all', 'mcq', 'find-error', 'write-config'];
 
-type Tab = 'learn' | 'courses' | 'stats';
+type Tab = 'learn' | 'courses' | 'library' | 'stats';
 
 /**
  * Session de révision espacée : d'abord les exercices « dus » (dont les
@@ -76,6 +79,7 @@ export default function App() {
   const [session, setSession] = useState<Exercise[] | null>(null);
   const [pos, setPos] = useState(0);
   const [lesson, setLesson] = useState<Lesson | null>(null);
+  const [article, setArticle] = useState<Chapter | null>(null);
 
   const topicsInDomain = useMemo(() => {
     const pool = domain === 'all' ? exercises : exercises.filter((e) => e.domain === domain);
@@ -130,6 +134,11 @@ export default function App() {
     if (q.length) { setSession(q); setPos(0); }
   }
 
+  // ---- Chapitre de la Bibliothèque (lecture plein écran) ----
+  if (article) {
+    return <ChapterView chapter={article} onBack={() => setArticle(null)} />;
+  }
+
   // ---- Leçon (prioritaire : peut être ouverte depuis un exercice) ----
   if (lesson) {
     return (
@@ -166,6 +175,7 @@ export default function App() {
     <>
       {tab === 'stats' && <div className="tab-body"><Stats progress={progress} onBack={() => setTab('learn')} onReviewTopic={reviewTopic} /></div>}
       {tab === 'courses' && <div className="tab-body"><Courses onOpen={setLesson} /></div>}
+      {tab === 'library' && <div className="tab-body"><Library onOpen={setArticle} /></div>}
 
       {tab === 'learn' && (
         <div className="app tab-body">
@@ -302,6 +312,9 @@ export default function App() {
         </button>
         <button className={tab === 'courses' ? 'active' : ''} onClick={() => setTab('courses')}>
           <span className="nav-ico">📚</span><span className="nav-lbl">Cours</span>
+        </button>
+        <button className={tab === 'library' ? 'active' : ''} onClick={() => setTab('library')}>
+          <span className="nav-ico">📖</span><span className="nav-lbl">Lire</span>
         </button>
         <button className={tab === 'stats' ? 'active' : ''} onClick={() => setTab('stats')}>
           <span className="nav-ico">📊</span><span className="nav-lbl">Stats</span>
