@@ -519,6 +519,38 @@ textarea.editor:focus { outline: none; border-color: var(--blue); }
 .ar-table td { font-weight: 600; }
 .article-top { width: 100%; margin-top: 24px; text-transform: none; letter-spacing: 0; }
 
+/* ============ Redesign épuré : HUD compact + liste dense (placement A) ============ */
+.level-badge { width: 34px; height: 34px; border-radius: 11px; font-size: 15px; box-shadow: 0 2px 0 var(--yellow-d); }
+.xp-bar { height: 10px; }
+.streak { padding: 6px 10px; font-size: 15px; }
+
+/* Liste dense à séparateurs : plus d'exercices visibles, moins de chrome */
+.xlist { gap: 0; }
+.xrow {
+  display: flex; align-items: flex-start; gap: 12px; width: 100%; text-align: left;
+  padding: 12px 4px; border-bottom: 1px solid #f0f1f5; transition: background .1s;
+}
+.xrow:active { background: var(--bg-soft); }
+.xrow-ico {
+  width: 34px; height: 34px; border-radius: 10px; flex-shrink: 0; display: grid; place-items: center;
+  font-size: 18px; background: var(--bg-soft); border: 1.5px solid var(--border); margin-top: 1px;
+}
+.xrow.done .xrow-ico { background: #f6ffed; border-color: #d7f0bd; }
+.xrow-body { flex: 1; min-width: 0; }
+/* Titre + pastille de difficulté sur la même ligne (tag à côté du titre) */
+.xrow-top { display: flex; align-items: flex-start; gap: 8px; }
+.xrow-title { flex: 1; min-width: 0; font-size: 14.5px; font-weight: 800; color: var(--text); line-height: 1.3; }
+.xrow-diff { flex-shrink: 0; padding: 2px 8px; border-radius: 6px; font-size: 11px; font-weight: 800; margin-top: 1px; }
+/* Méta secondaire en ligne, discrète */
+.xrow-meta { display: flex; align-items: center; flex-wrap: wrap; gap: 6px; margin-top: 4px; font-size: 11.5px; font-weight: 800; color: var(--text-dim); }
+.xrow-xp { color: var(--yellow-d); }
+.xrow-dot { opacity: .45; }
+.xrow-check {
+  flex-shrink: 0; width: 24px; height: 24px; border-radius: 50%; display: grid; place-items: center;
+  background: var(--green); color: #fff; font-weight: 900; font-size: 13px; margin-top: 4px;
+}
+.xrow-chev { flex-shrink: 0; color: #c2c6d0; font-size: 22px; font-weight: 700; line-height: 1; margin-top: 2px; }
+
 /* ============ Lien exercice → cours ============ */
 .course-link {
   display: flex; align-items: center; justify-content: center; gap: 8px; width: 100%;

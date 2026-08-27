@@ -278,23 +278,29 @@ export default function App() {
             )}
           </div>
 
-          <div className="list">
+          <div className="list xlist">
             {filtered.map((e) => {
               const done = isMastered(progress, e.id);
               const diff = DIFFICULTY_META[e.difficulty];
               return (
-                <button key={e.id} className={`xcard ${done ? 'done' : ''}`}
+                <button key={e.id} className={`xrow ${done ? 'done' : ''}`}
                   onClick={() => { setSession([e]); setPos(0); }}>
-                  <div className="xicon">{TOPIC_ICON[e.topic]}</div>
-                  <div className="xbody">
-                    <div className="xtitle">{e.title}</div>
-                    {e.company && <div className="xcompany">📍 {e.company}</div>}
-                    <div className="xtags">
-                      <span className="pill" style={{ background: `${diff.color}22`, color: diff.color }}>{diff.label}</span>
-                      <span className="pill xp">+{XP_BY_DIFFICULTY[e.difficulty]} XP</span>
+                  <div className="xrow-ico">{TOPIC_ICON[e.topic]}</div>
+                  <div className="xrow-body">
+                    <div className="xrow-top">
+                      <span className="xrow-title">{e.title}</span>
+                      <span className="xrow-diff" style={{ background: `${diff.color}1f`, color: diff.color }}>{diff.label}</span>
+                    </div>
+                    <div className="xrow-meta">
+                      <span className="xrow-xp">+{XP_BY_DIFFICULTY[e.difficulty]} XP</span>
+                      <span className="xrow-dot">·</span>
+                      <span>{TOPIC_LABEL[e.topic]}</span>
+                      {e.company && <><span className="xrow-dot">·</span><span>{e.company}</span></>}
                     </div>
                   </div>
-                  {done && <div className="check-round">✓</div>}
+                  {done
+                    ? <span className="xrow-check">✓</span>
+                    : <span className="xrow-chev" aria-hidden>›</span>}
                 </button>
               );
             })}
