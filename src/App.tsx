@@ -14,11 +14,8 @@ import {
   loadProgress, isMastered, resetProgress, levelInfo, isDue,
   XP_BY_DIFFICULTY, type Progress,
 } from './store/progress';
-import { TOPIC_ICON, TOPIC_LABEL, DOMAIN_LABEL, DOMAIN_COLOR, DIFFICULTY_META, TYPE_LABEL } from './engine/meta';
-
-const DOMAINS: (Domain | 'all')[] = ['all', 'devops', 'software', 'web', 'iot'];
-const DIFFICULTIES: (Difficulty | 'all')[] = ['all', 'junior', 'intermediate', 'senior'];
-const TYPES: (ExerciseType | 'all')[] = ['all', 'mcq', 'find-error', 'write-config'];
+import { FilterSheet } from './components/FilterSheet';
+import { TOPIC_ICON, TOPIC_LABEL, DOMAIN_LABEL, DIFFICULTY_META, TYPE_LABEL } from './engine/meta';
 
 type Tab = 'learn' | 'courses' | 'library' | 'stats';
 
@@ -80,13 +77,7 @@ export default function App() {
   const [pos, setPos] = useState(0);
   const [lesson, setLesson] = useState<Lesson | null>(null);
   const [article, setArticle] = useState<Chapter | null>(null);
-
-  const topicsInDomain = useMemo(() => {
-    const pool = domain === 'all' ? exercises : exercises.filter((e) => e.domain === domain);
-    const counts = new Map<Topic, number>();
-    pool.forEach((e) => counts.set(e.topic, (counts.get(e.topic) ?? 0) + 1));
-    return [...counts.entries()].sort((a, b) => b[1] - a[1]).map(([t]) => t);
-  }, [domain]);
+  const [filtersOpen, setFiltersOpen] = useState(false);
 
   const filtered = useMemo(() => {
     const q = query.trim().toLowerCase();
@@ -226,44 +217,32 @@ export default function App() {
             {query && <button className="search-clear" onClick={() => setQuery('')}>✕</button>}
           </div>
 
-          <div className="filters" aria-label="Domaine">
-            {DOMAINS.map((d) => {
-              const active = domain === d;
-              const color = d === 'all' ? '#4f8cff' : DOMAIN_COLOR[d];
-              return (
-                <button key={d} className={`chip ${active ? 'active' : ''}`}
-                  style={active ? { background: color } : undefined}
-                  onClick={() => { setDomain(d); setTopic('all'); }}>
-                  {d === 'all' ? '⭐ Tout' : DOMAIN_LABEL[d]}
-                </button>
-              );
-            })}
-          </div>
-
-          <div className="filters scroll-x" aria-label="Sujet">
-            <button className={`chip sm ${topic === 'all' ? 'active' : ''}`} onClick={() => setTopic('all')}>
-              Tous les sujets
+          <div className="filterbar">
+            <button className="filterbtn" onClick={() => setFiltersOpen(true)}>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.3" strokeLinecap="round" strokeLinejoin="round"><path d="M3 5h18l-7 8v6l-4 2v-8z" /></svg>
+              Filtres
+              {activeFilters > 0 && <span className="filterbtn-badge">{activeFilters}</span>}
             </button>
-            {topicsInDomain.map((t) => (
-              <button key={t} className={`chip sm ${topic === t ? 'active' : ''}`} onClick={() => setTopic(t)}>
-                {TOPIC_ICON[t]} {TOPIC_LABEL[t]}
+            {domain !== 'all' && (
+              <button className="fchip" onClick={() => { setDomain('all'); setTopic('all'); }}>
+                {DOMAIN_LABEL[domain]} <span className="fchip-x">✕</span>
               </button>
-            ))}
-          </div>
-
-          <div className="filters scroll-x" aria-label="Difficulté et type">
-            {DIFFICULTIES.map((d) => (
-              <button key={d} className={`chip sm ${difficulty === d ? 'active' : ''}`}
-                style={difficulty === d && d !== 'all' ? { background: DIFFICULTY_META[d].color, color: '#fff' } : undefined}
-                onClick={() => setDifficulty(d)}>
-                {d === 'all' ? 'Toute difficulté' : DIFFICULTY_META[d].label}
+            )}
+            {topic !== 'all' && (
+              <button className="fchip" onClick={() => setTopic('all')}>
+                {TOPIC_ICON[topic]} {TOPIC_LABEL[topic]} <span className="fchip-x">✕</span>
               </button>
-            ))}
-            {TYPES.map((t) => (
-              <button key={t} className={`chip sm ${exType === t ? 'active' : ''}`} onClick={() => setExType(t)}>
-                {t === 'all' ? 'Tout format' : TYPE_LABEL[t]}
+            )}
+            {difficulty !== 'all' && (
+              <button className="fchip" onClick={() => setDifficulty('all')}>
+                {DIFFICULTY_META[difficulty].label} <span className="fchip-x">✕</span>
               </button>
-            ))}
+            )}
+            {exType !== 'all' && (
+              <button className="fchip" onClick={() => setExType('all')}>
+                {TYPE_LABEL[exType]} <span className="fchip-x">✕</span>
+              </button>
+            )}
           </div>
 
           <div className="list-meta">
@@ -326,6 +305,19 @@ export default function App() {
           <span className="nav-ico">📊</span><span className="nav-lbl">Stats</span>
         </button>
       </nav>
+
+      {filtersOpen && (
+        <FilterSheet
+          onClose={() => setFiltersOpen(false)}
+          exercises={exercises}
+          domain={domain} setDomain={setDomain}
+          topic={topic} setTopic={setTopic}
+          difficulty={difficulty} setDifficulty={setDifficulty}
+          exType={exType} setExType={setExType}
+          resultCount={filtered.length}
+          onReset={resetFilters}
+        />
+      )}
 
       {levelUpTo !== null && <LevelUp level={levelUpTo} onClose={() => setLevelUpTo(null)} />}
     </>

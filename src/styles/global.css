@@ -551,6 +551,68 @@ textarea.editor:focus { outline: none; border-color: var(--blue); }
 }
 .xrow-chev { flex-shrink: 0; color: #c2c6d0; font-size: 22px; font-weight: 700; line-height: 1; margin-top: 2px; }
 
+/* ============ Barre de filtres compacte + filtres actifs ============ */
+.filterbar { display: flex; align-items: center; gap: 8px; padding: 12px 0 8px; overflow-x: auto; scrollbar-width: none; }
+.filterbar::-webkit-scrollbar { display: none; }
+.filterbtn {
+  display: flex; align-items: center; gap: 7px; flex-shrink: 0;
+  padding: 8px 14px; border-radius: 99px; font-size: 13.5px; font-weight: 800;
+  color: var(--text); background: var(--card); border: 2px solid var(--border-strong);
+}
+.filterbtn:active { transform: scale(.97); }
+.filterbtn-badge {
+  background: var(--blue); color: #fff; font-size: 11px; font-weight: 900;
+  min-width: 18px; height: 18px; padding: 0 5px; border-radius: 99px; display: grid; place-items: center;
+}
+.fchip {
+  display: flex; align-items: center; gap: 6px; flex-shrink: 0;
+  padding: 8px 12px; border-radius: 99px; font-size: 13px; font-weight: 800;
+  color: var(--blue-d); background: var(--blue-soft); border: 1.5px solid #b8e6ff;
+}
+.fchip-x { opacity: .55; font-weight: 900; }
+
+/* ============ Panneau de filtres (bottom sheet) ============ */
+.sheet-overlay {
+  position: fixed; inset: 0; z-index: 60; background: rgba(24,28,40,.42);
+  display: flex; align-items: flex-end; justify-content: center; animation: fadein .18s ease;
+}
+@keyframes fadein { from { opacity: 0; } to { opacity: 1; } }
+.sheet {
+  width: 100%; max-width: 480px; background: var(--card);
+  border-radius: 22px 22px 0 0; max-height: 86vh; display: flex; flex-direction: column;
+  animation: slideup .26s cubic-bezier(.2,.8,.2,1); box-shadow: 0 -8px 40px rgba(24,28,40,.18);
+}
+@keyframes slideup { from { transform: translateY(100%); } to { transform: translateY(0); } }
+.sheet-grip { width: 40px; height: 5px; border-radius: 99px; background: #e0e2e8; margin: 10px auto 2px; flex-shrink: 0; }
+.sheet-head { display: flex; align-items: center; justify-content: space-between; padding: 6px 18px 8px; flex-shrink: 0; }
+.sheet-title { font-size: 18px; font-weight: 900; color: var(--text); }
+.sheet-reset { font-size: 13px; font-weight: 800; color: var(--blue-d); }
+.sheet-reset:active { opacity: .6; }
+.sheet-body { overflow-y: auto; padding: 4px 18px 14px; }
+.sheet-sec { margin-bottom: 18px; }
+.sheet-sec-title { font-size: 12px; font-weight: 900; text-transform: uppercase; letter-spacing: .5px; color: var(--text-dim); margin-bottom: 10px; }
+.sheet-chips { display: flex; flex-wrap: wrap; gap: 8px; }
+.sheet-chip {
+  padding: 8px 13px; border-radius: 99px; font-size: 13.5px; font-weight: 800;
+  background: var(--card); border: 2px solid var(--border); color: var(--text-dim); transition: .1s;
+}
+.sheet-chip.active { background: var(--blue); color: #fff; border-color: transparent; }
+.sheet-chip:active { transform: scale(.97); }
+.sheet-search {
+  display: flex; align-items: center; gap: 8px; background: var(--bg-soft);
+  border: 1.5px solid var(--border); border-radius: 12px; padding: 9px 12px; margin-bottom: 11px;
+}
+.sheet-search input { flex: 1; border: none; background: transparent; font: inherit; font-size: 14px; color: var(--text); outline: none; font-weight: 700; }
+.sheet-search input::placeholder { color: var(--text-dim); }
+.sheet-empty { font-size: 13px; color: var(--text-dim); font-weight: 700; padding: 4px 2px; }
+.sheet-foot { padding: 12px 18px calc(14px + env(safe-area-inset-bottom)); border-top: 1.5px solid var(--border); flex-shrink: 0; }
+.sheet-apply {
+  width: 100%; padding: 15px; border-radius: 15px; font-weight: 900; font-size: 16px;
+  text-transform: uppercase; letter-spacing: .3px; color: #fff; background: var(--green);
+  box-shadow: 0 4px 0 var(--green-d); transition: .1s;
+}
+.sheet-apply:active { transform: translateY(3px); box-shadow: 0 1px 0 var(--green-d); }
+
 /* ============ Lien exercice → cours ============ */
 .course-link {
   display: flex; align-items: center; justify-content: center; gap: 8px; width: 100%;
