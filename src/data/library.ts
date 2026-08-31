@@ -33,6 +33,8 @@ const GROUPS: { label: string; ids: string[] }[] = [
     '16_SECURITY_ARCHITECTURE', '21_SECURITY_FOR_CTOS', '24_NETWORKING'] },
   { label: '💻 Code & IA', ids: [
     '19_TECHNICAL_CODING', '19B_CODING_EXERCISES', '23_LLM_RAG', '26_MCP'] },
+  { label: '🔬 Reverse & exploit', ids: [
+    '27_EXPLOIT_PATCHDIFF'] },
   { label: '🧭 Leadership technique', ids: [
     '16_ENGINEERING_MANAGERS_HANDBOOK', '17_STAFF_ENGINEER'] },
 ];
@@ -48,6 +50,7 @@ const ICONS: Record<string, string> = {
   '16_SECURITY_ARCHITECTURE': '🛡️', '21_SECURITY_FOR_CTOS': '🔑', '24_NETWORKING': '🕸️',
   '19_TECHNICAL_CODING': '💻', '19B_CODING_EXERCISES': '🧩', '23_LLM_RAG': '🧠',
   '26_MCP': '🔌', '16_ENGINEERING_MANAGERS_HANDBOOK': '👥', '17_STAFF_ENGINEER': '🎯',
+  '27_EXPLOIT_PATCHDIFF': '🩹',
 };
 
 function splitTitle(md: string): { title: string; body: string } {

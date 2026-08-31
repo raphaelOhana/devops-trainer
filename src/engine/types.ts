@@ -41,7 +41,8 @@ export type Topic =
   | 'reversing'
   | 'cryptography'
   | 'testing'
-  | 'ai-engineering';
+  | 'ai-engineering'
+  | 'exploit-dev';
 
 export type Difficulty = 'junior' | 'intermediate' | 'senior';
 
