@@ -42,7 +42,8 @@ export type Topic =
   | 'cryptography'
   | 'testing'
   | 'ai-engineering'
-  | 'exploit-dev';
+  | 'exploit-dev'
+  | 'agent-security';
 
 export type Difficulty = 'junior' | 'intermediate' | 'senior';
 

@@ -37,6 +37,7 @@ export const TOPIC_ICON: Record<Topic, string> = {
   testing: '🧪',
   'ai-engineering': '🛠️',
   'exploit-dev': '💥',
+  'agent-security': '🕵️',
 };
 
 // Libellés courts (français) pour le filtre par sujet.
@@ -74,6 +75,7 @@ export const TOPIC_LABEL: Record<Topic, string> = {
   testing: 'Tests & qualité',
   'ai-engineering': 'AI Engineering',
   'exploit-dev': 'Exploit dev',
+  'agent-security': 'Sécurité des agents IA',
 };
 
 export const DOMAIN_LABEL: Record<Domain, string> = {

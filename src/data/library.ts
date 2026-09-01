@@ -30,7 +30,7 @@ const GROUPS: { label: string; ids: string[] }[] = [
     '14_KUBERNETES', '17_CLOUD_ARCHITECTURE', '18_DEVOPS_PLATFORM',
     '15_SRE_OBSERVABILITY', '18_SITE_RELIABILITY', '22_PROMETHEUS'] },
   { label: '🔐 Sécurité & réseau', ids: [
-    '16_SECURITY_ARCHITECTURE', '21_SECURITY_FOR_CTOS', '24_NETWORKING'] },
+    '16_SECURITY_ARCHITECTURE', '21_SECURITY_FOR_CTOS', '24_NETWORKING', '30_AGENT_SECURITY'] },
   { label: '💻 Code & IA', ids: [
     '19_TECHNICAL_CODING', '19B_CODING_EXERCISES', '23_LLM_RAG', '26_MCP'] },
   { label: '🔬 Reverse & exploit', ids: [
@@ -50,7 +50,7 @@ const ICONS: Record<string, string> = {
   '16_SECURITY_ARCHITECTURE': '🛡️', '21_SECURITY_FOR_CTOS': '🔑', '24_NETWORKING': '🕸️',
   '19_TECHNICAL_CODING': '💻', '19B_CODING_EXERCISES': '🧩', '23_LLM_RAG': '🧠',
   '26_MCP': '🔌', '16_ENGINEERING_MANAGERS_HANDBOOK': '👥', '17_STAFF_ENGINEER': '🎯',
-  '27_EXPLOIT_PATCHDIFF': '🩹',
+  '27_EXPLOIT_PATCHDIFF': '🩹', '30_AGENT_SECURITY': '🕵️',
 };
 
 function splitTitle(md: string): { title: string; body: string } {

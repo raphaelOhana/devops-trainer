@@ -25,6 +25,7 @@ import cryptographyMd from './courses/cryptography.md?raw';
 import testingMd from './courses/testing.md?raw';
 import aiEngineeringMd from './courses/ai-engineering.md?raw';
 import exploitDevMd from './courses/exploit-dev.md?raw';
+import agentSecurityMd from './courses/agent-security.md?raw';
 
 // Décode les entités HTML laissées par la génération (&lt; &gt; &amp; …).
 function decode(s: string): string {
@@ -89,6 +90,7 @@ export const lessons: Lesson[] = [
   ...parse(testingMd),
   ...parse(aiEngineeringMd),
   ...parse(exploitDevMd),
+  ...parse(agentSecurityMd),
 ];
 
 /** Première leçon associée à un sujet (pour le lien exercice → cours). */
