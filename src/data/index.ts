@@ -42,6 +42,7 @@ import { testingExercises } from './exercises-testing';
 import { aiEngExercises } from './exercises-ai-engineering';
 import { exploitDevExercises } from './exercises-exploit-dev';
 import { agentSecurityExercises } from './exercises-agent-security';
+import { memoryHeapExercises } from './exercises-memory-heap';
 import { shuffleAll } from './shuffle';
 import type { Exercise } from '../engine/types';
 
@@ -92,4 +93,5 @@ export const exercises: Exercise[] = shuffleAll([
   ...aiEngExercises,
   ...exploitDevExercises,
   ...agentSecurityExercises,
+  ...memoryHeapExercises,
 ]);
