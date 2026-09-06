@@ -1,8 +1,6 @@
-name: Deploy PWA
+name: Deploy PWA to GitHub Pages
 
 # Se déclenche à chaque push sur main, ou manuellement depuis l'onglet Actions.
-# Deux cibles indépendantes : GitHub Pages (sous-chemin /devops-trainer/) et
-# Cloudflare Pages (racine). Chacune a son propre build car le `base` diffère.
 on:
   push:
     branches: [main]
@@ -20,7 +18,6 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
-  # ----------------------------------------------------------- GitHub Pages
   build:
     runs-on: ubuntu-latest
     steps:
@@ -49,39 +46,3 @@ jobs:
     steps:
       - id: deployment
         uses: actions/deploy-pages@v4
-
-  # -------------------------------------------------------- Cloudflare Pages
-  # Indépendant de GitHub Pages. Build à la RACINE (BASE_PATH=/), car
-  # Cloudflare sert le site sur devops-trainer.pages.dev sans sous-chemin.
-  # Ne s'exécute que si le secret CLOUDFLARE_API_TOKEN est configuré : sans
-  # lui, le job se termine en succès en sautant le déploiement (pas d'échec).
-  cloudflare:
-    runs-on: ubuntu-latest
-    env:
-      HAS_CF_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN != '' }}
-    steps:
-      - name: Avertir si le token manque
-        if: env.HAS_CF_TOKEN != 'true'
-        run: echo "::warning::CLOUDFLARE_API_TOKEN absent — déploiement Cloudflare ignoré. Ajoute le secret dans Settings → Secrets and variables → Actions."
-      - uses: actions/checkout@v4
-        if: env.HAS_CF_TOKEN == 'true'
-      - uses: actions/setup-node@v4
-        if: env.HAS_CF_TOKEN == 'true'
-        with:
-          node-version: 20
-          cache: npm
-      - run: npm ci
-        if: env.HAS_CF_TOKEN == 'true'
-      - name: Build (base racine)
-        if: env.HAS_CF_TOKEN == 'true'
-        run: npm run build
-        env:
-          BASE_PATH: /
-      - name: Déployer sur Cloudflare Pages
-        if: env.HAS_CF_TOKEN == 'true'
-        uses: cloudflare/wrangler-action@v3
-        with:
-          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
-          # L'account ID n'est pas un secret (visible dans l'URL .pages.dev).
-          accountId: 70b5bdde239e49f9b84b548399aff9ee
-          command: pages deploy dist --project-name=devops-trainer --branch=main
