@@ -43,6 +43,7 @@ import { aiEngExercises } from './exercises-ai-engineering';
 import { exploitDevExercises } from './exercises-exploit-dev';
 import { agentSecurityExercises } from './exercises-agent-security';
 import { memoryHeapExercises } from './exercises-memory-heap';
+import { windowsInternalsExercises } from './exercises-windows-internals';
 import { shuffleAll } from './shuffle';
 import type { Exercise } from '../engine/types';
 
@@ -94,4 +95,5 @@ export const exercises: Exercise[] = shuffleAll([
   ...exploitDevExercises,
   ...agentSecurityExercises,
   ...memoryHeapExercises,
+  ...windowsInternalsExercises,
 ]);

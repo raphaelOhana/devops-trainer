@@ -38,6 +38,7 @@ export const TOPIC_ICON: Record<Topic, string> = {
   'ai-engineering': '🛠️',
   'exploit-dev': '💥',
   'agent-security': '🕵️',
+  'windows-internals': '🪟',
 };
 
 // Libellés courts (français) pour le filtre par sujet.
@@ -76,6 +77,7 @@ export const TOPIC_LABEL: Record<Topic, string> = {
   'ai-engineering': 'AI Engineering',
   'exploit-dev': 'Exploit dev',
   'agent-security': 'Sécurité des agents IA',
+  'windows-internals': 'Windows internals',
 };
 
 export const DOMAIN_LABEL: Record<Domain, string> = {

@@ -43,7 +43,8 @@ export type Topic =
   | 'testing'
   | 'ai-engineering'
   | 'exploit-dev'
-  | 'agent-security';
+  | 'agent-security'
+  | 'windows-internals';
 
 export type Difficulty = 'junior' | 'intermediate' | 'senior';
 
