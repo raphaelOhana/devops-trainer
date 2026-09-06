@@ -1,0 +1,7632 @@
+[
+ {
+  "title": "MCUBOOT: Security Assessment — Part 1",
+  "desc": "",
+  "url": "https://trustngo.tech/2022/10/10/mcuboot-security-assessment-part-1/",
+  "source": "exploitation",
+  "h2": "Embedded and RTOS",
+  "h3": "",
+  "alsoIn": [
+   "exploitation"
+  ]
+ },
+ {
+  "title": "MCUBOOT: Security Assessment — Part 2",
+  "desc": "",
+  "url": "https://trustngo.tech/2022/10/18/mcuboot-security-assessment-part-2/",
+  "source": "exploitation",
+  "h2": "Embedded and RTOS",
+  "h3": "",
+  "alsoIn": [
+   "exploitation"
+  ]
+ },
+ {
+  "title": "MCUBoot Under (good) Pressure — Part 1",
+  "desc": "",
+  "url": "https://eshard.com/posts/mcuboot-under-good-pressure-part-1",
+  "source": "exploitation",
+  "h2": "Embedded and RTOS",
+  "h3": "",
+  "alsoIn": [
+   "exploitation"
+  ]
+ },
+ {
+  "title": "MCUBoot Under (good) Pressure — Part 2",
+  "desc": "",
+  "url": "https://eshard.com/posts/mcuboot-under-good-pressure-part-2",
+  "source": "exploitation",
+  "h2": "Embedded and RTOS",
+  "h3": "",
+  "alsoIn": [
+   "exploitation"
+  ]
+ },
+ {
+  "title": "Zephyr and MCUboot Security Analysis",
+  "desc": "",
+  "url": "https://research.nccgroup.com/wp-content/uploads/2020/05/NCC_Group_Zephyr_MCUboot_Research_Report_2020-05-26_v1.0.pdf",
+  "source": "exploitation",
+  "h2": "Embedded and RTOS",
+  "h3": "",
+  "alsoIn": [
+   "exploitation"
+  ]
+ },
+ {
+  "title": "Dynamic Allocator Misuse\" (pwn.college)",
+  "desc": "",
+  "url": "https://pwn.college/software-exploitation/dynamic-allocator-misuse",
+  "source": "exploitation",
+  "h2": "Guides, Tutorials and Writeups",
+  "h3": "Heap",
+  "alsoIn": [
+   "exploitation"
+  ]
+ },
+ {
+  "title": "Exploiting Heap Allocators",
+  "desc": "part of CS6265: Information Security Lab",
+  "url": "https://tc.gts3.org/cs6265/2019/tut/tut09-02-advheap.html",
+  "source": "exploitation",
+  "h2": "Guides, Tutorials and Writeups",
+  "h3": "Heap",
+  "alsoIn": [
+   "exploitation"
+  ]
+ },
+ {
+  "title": "Heap Exploitation (dhavalkapil)",
+  "desc": "guide for understanding the internals of 'heap memory.",
+  "url": "https://heap-exploitation.dhavalkapil.com",
+  "source": "exploitation",
+  "h2": "Guides, Tutorials and Writeups",
+  "h3": "Heap",
+  "alsoIn": [
+   "exploitation",
+   "misc"
+  ]
+ },
+ {
+  "title": "Heap Exploitation (nightmare)",
+  "desc": "heap tutorials (part of the Nightmare binary exploitation series)",
+  "url": "https://guyinatuxedo.github.io/25-heap/index.html",
+  "source": "exploitation",
+  "h2": "Guides, Tutorials and Writeups",
+  "h3": "Heap",
+  "alsoIn": [
+   "exploitation"
+  ]
+ },
+ {
+  "title": "how2heap",
+  "desc": "epository for learning various heap exploitation techniques.",
+  "url": "https://github.com/shellphish/how2heap",
+  "source": "exploitation",
+  "h2": "Guides, Tutorials and Writeups",
+  "h3": "Heap",
+  "alsoIn": [
+   "exploitation"
+  ]
+ },
+ {
+  "title": "Writeups — Analysis of Malloc Protections on Singly Linked Lists",
+  "desc": "",
+  "url": "https://maxwelldulin.com/BlogPost/Analysis-Malloc-Protections-on-Singly-Linked-Lists",
+  "source": "exploitation",
+  "h2": "Guides, Tutorials and Writeups",
+  "h3": "Heap",
+  "alsoIn": [
+   "exploitation"
+  ]
+ },
+ {
+  "title": "Writeups — Behind the Shield: Unmasking Scudo's Defenses",
+  "desc": "",
+  "url": "https://www.synacktiv.com/publications/behind-the-shield-unmasking-scudos-defenses",
+  "source": "exploitation",
+  "h2": "Guides, Tutorials and Writeups",
+  "h3": "Heap",
+  "alsoIn": [
+   "exploitation"
+  ]
+ },
+ {
+  "title": "Writeups — Bypassing GLIBC 2.32’s Safe-Linking Without Leaks into Code Execution: The House of Rust",
+  "desc": "",
+  "url": "https://c4ebt.github.io/2021/01/22/House-of-Rust.html",
+  "source": "exploitation",
+  "h2": "Guides, Tutorials and Writeups",
+  "h3": "Heap",
+  "alsoIn": [
+   "exploitation"
+  ]
+ },
+ {
+  "title": "Writeups — CUCTF 2020 Dr. Xorisaurus Heap Writeup (glibc 2.32 UAF)",
+  "desc": "",
+  "url": "https://www.willsroot.io/2020/10/cuctf-2020-dr-xorisaurus-heap-writeup.html",
+  "source": "exploitation",
+  "h2": "Guides, Tutorials and Writeups",
+  "h3": "Heap",
+  "alsoIn": [
+   "exploitation"
+  ]
+ },
+ {
+  "title": "Writeups — Cueing up a calculator: an introduction to exploit development on Linux",
+  "desc": "",
+  "url": "https://github.blog/2023-12-06-cueing-up-a-calculator-an-introduction-to-exploit-development-on-linux/",
+  "source": "exploitation",
+  "h2": "Guides, Tutorials and Writeups",
+  "h3": "Heap",
+  "alsoIn": [
+   "exploitation"
+  ]
+ },
+ {
+  "title": "Writeups — Diving deep into heap — Glibc fastbin consolidation",
+  "desc": "",
+  "url": "https://medium.com/@soh0ro0t/diving-deep-into-heap-glibc-fastbin-consolidation-4c1f38a70917",
+  "source": "exploitation",
+  "h2": "Guides, Tutorials and Writeups",
+  "h3": "Heap",
+  "alsoIn": [
+   "exploitation"
+  ]
+ },
+ {
+  "title": "Diving deep into the heap — Part 1",
+  "desc": "",
+  "url": "https://www.tooboat.com/?p=556",
+  "source": "exploitation",
+  "h2": "Guides, Tutorials and Writeups",
+  "h3": "Heap",
+  "alsoIn": [
+   "exploitation"
+  ]
+ },
+ {
+  "title": "Diving deep into the heap — Part 2",
+  "desc": "",
+  "url": "https://www.tooboat.com/?p=629",
+  "source": "exploitation",
+  "h2": "Guides, Tutorials and Writeups",
+  "h3": "Heap",
+  "alsoIn": [
+   "exploitation"
+  ]
+ },
+ {
+  "title": "Don't Be Silly - It's Only a Lightbulb",
+  "desc": "",
+  "url": "https://research.checkpoint.com/2020/dont-be-silly-its-only-a-lightbulb/",
+  "source": "exploitation",
+  "h2": "Guides, Tutorials and Writeups",
+  "h3": "Heap",
+  "alsoIn": [
+   "exploitation"
+  ]
+ },
+ {
+  "title": "Everything In It’s Right Place",
+  "desc": "",
+  "url": "https://medium.com/@kevin.massey1189/everything-in-its-right-place-20aacd17fe3f",
+  "source": "exploitation",
+  "h2": "Guides, Tutorials and Writeups",
+  "h3": "Heap",
+  "alsoIn": [
+   "exploitation"
+  ]
+ },
+ {
+  "title": "Exploiting a Remote Heap Overflow with a Custom TCP Stack",
+  "desc": "",
+  "url": "https://www.synacktiv.com/en/publications/exploiting-a-remote-heap-overflow-with-a-custom-tcp-stack.html",
+  "source": "exploitation",
+  "h2": "Guides, Tutorials and Writeups",
+  "h3": "Heap",
+  "alsoIn": [
+   "exploitation"
+  ]
+ },
+ {
+  "title": "Exploiting an Unbounded memcpy in Parallels Desktop",
+  "desc": "",
+  "url": "https://blog.ret2.io/2022/05/19/pwn2own-2021-parallels-desktop-exploit/",
+  "source": "exploitation",
+  "h2": "Guides, Tutorials and Writeups",
+  "h3": "Heap",
+  "alsoIn": [
+   "exploitation"
+  ]
+ },
+ {
+  "title": "Exploiting Sudo Heap Overflow On Debian 10",
+  "desc": "",
+  "url": "https://syst3mfailure.io/sudo-heap-overflow/",
+  "source": "exploitation",
+  "h2": "Guides, Tutorials and Writeups",
+  "h3": "Heap",
+  "alsoIn": [
+   "exploitation"
+  ]
+ },
+ {
+  "title": "Exploring Android Heap Allocations in jemalloc 'New'",
+  "desc": "",
+  "url": "https://www.synacktiv.com/en/publications/exploring-android-heap-allocations-in-jemalloc-new",
+  "source": "exploitation",
+  "h2": "Guides, Tutorials and Writeups",
+  "h3": "Heap",
+  "alsoIn": [
+   "exploitation"
+  ]
+ },
+ {
+  "title": "Glibc Heap Exploitation Basics — Part 1",
+  "desc": "",
+  "url": "https://blog.k3170makan.com/2018/11/glibc-heap-exploitation-basics.html",
+  "source": "exploitation",
+  "h2": "Guides, Tutorials and Writeups",
+  "h3": "Heap",
+  "alsoIn": [
+   "exploitation"
+  ]
+ },
+ {
+  "title": "Glibc Heap Exploitation Basics — Part 2",
+  "desc": "",
+  "url": "https://blog.k3170makan.com/2018/12/glibc-heap-exploitation-basics.html",
+  "source": "exploitation",
+  "h2": "Guides, Tutorials and Writeups",
+  "h3": "Heap",
+  "alsoIn": [
+   "exploitation"
+  ]
+ },
+ {
+  "title": "Glibc Heap Exploitation Basics — Part 3",
+  "desc": "",
+  "url": "https://blog.k3170makan.com/2019/03/glibc-heap-exploitation-basics.html",
+  "source": "exploitation",
+  "h2": "Guides, Tutorials and Writeups",
+  "h3": "Heap",
+  "alsoIn": [
+   "exploitation"
+  ]
+ },
+ {
+  "title": "Heap Exploitation Series by Azeria — Part 1: Understanding the Glibc Heap Implementation",
+  "desc": "",
+  "url": "https://azeria-labs.com/heap-exploitation-part-1-understanding-the-glibc-heap-implementation/",
+  "source": "exploitation",
+  "h2": "Guides, Tutorials and Writeups",
+  "h3": "Heap",
+  "alsoIn": [
+   "exploitation"
+  ]
+ },
+ {
+  "title": "Heap Exploitation Series by Azeria — Part 2: Understanding the Glibc Heap Implementation",
+  "desc": "",
+  "url": "https://azeria-labs.com/heap-exploitation-part-2-glibc-heap-free-bins/",
+  "source": "exploitation",
+  "h2": "Guides, Tutorials and Writeups",
+  "h3": "Heap",
+  "alsoIn": [
+   "exploitation"
+  ]
+ },
+ {
+  "title": "Heap Exploitation Series by Azeria — Case Study from an in-the-wild iOS 0-day",
+  "desc": "",
+  "url": "https://azeria-labs.com/heap-exploit-development-part-1/",
+  "source": "exploitation",
+  "h2": "Guides, Tutorials and Writeups",
+  "h3": "Heap",
+  "alsoIn": [
+   "exploitation"
+  ]
+ },
+ {
+  "title": "Heap Exploitation Series by Azeria — Heap Overflows and the iOS Kernel Heap",
+  "desc": "",
+  "url": "https://azeria-labs.com/heap-overflows-and-the-ios-kernel-heap/",
+  "source": "exploitation",
+  "h2": "Guides, Tutorials and Writeups",
+  "h3": "Heap",
+  "alsoIn": [
+   "exploitation"
+  ]
+ },
+ {
+  "title": "Heap Exploitation Series by Azeria — Grooming the iOS Kernel Heap",
+  "desc": "",
+  "url": "https://azeria-labs.com/grooming-the-ios-kernel-heap/",
+  "source": "exploitation",
+  "h2": "Guides, Tutorials and Writeups",
+  "h3": "Heap",
+  "alsoIn": [
+   "exploitation"
+  ]
+ },
+ {
+  "title": "Heap overflow using Malloc Maleficarum",
+  "desc": "",
+  "url": "https://sploitfun.wordpress.com/2015/03/04/heap-overflow-using-malloc-maleficarum/",
+  "source": "exploitation",
+  "h2": "Guides, Tutorials and Writeups",
+  "h3": "Heap",
+  "alsoIn": [
+   "exploitation"
+  ]
+ },
+ {
+  "title": "Heap overflow using unlink",
+  "desc": "",
+  "url": "https://sploitfun.wordpress.com/2015/02/26/heap-overflow-using-unlink/",
+  "source": "exploitation",
+  "h2": "Guides, Tutorials and Writeups",
+  "h3": "Heap",
+  "alsoIn": [
+   "exploitation"
+  ]
+ },
+ {
+  "title": "House of Corrosion",
+  "desc": "",
+  "url": "https://github.com/CptGibbon/House-of-Corrosion",
+  "source": "exploitation",
+  "h2": "Guides, Tutorials and Writeups",
+  "h3": "Heap",
+  "alsoIn": [
+   "exploitation"
+  ]
+ },
+ {
+  "title": "House of Husk - In Depth Explanation",
+  "desc": "",
+  "url": "https://maxwelldulin.com/BlogPost/House-of-Husk-In-Depth-Explanation",
+  "source": "exploitation",
+  "h2": "Guides, Tutorials and Writeups",
+  "h3": "Heap",
+  "alsoIn": [
+   "exploitation"
+  ]
+ },
+ {
+  "title": "House of Mind - Fastbin Variant Revived",
+  "desc": "",
+  "url": "https://maxwelldulin.com/BlogPost/House-of-Mind-Fastbin-Variant-Revived",
+  "source": "exploitation",
+  "h2": "Guides, Tutorials and Writeups",
+  "h3": "Heap",
+  "alsoIn": [
+   "exploitation"
+  ]
+ },
+ {
+  "title": "House of IO - Heap Reuse",
+  "desc": "",
+  "url": "https://maxwelldulin.com/BlogPost/House-of-IO-Heap-Reuse",
+  "source": "exploitation",
+  "h2": "Guides, Tutorials and Writeups",
+  "h3": "Heap",
+  "alsoIn": [
+   "exploitation"
+  ]
+ },
+ {
+  "title": "House of Io – Remastered",
+  "desc": "",
+  "url": "https://awaraucom.wordpress.com/2020/07/19/house-of-io-remastered/",
+  "source": "exploitation",
+  "h2": "Guides, Tutorials and Writeups",
+  "h3": "Heap",
+  "alsoIn": [
+   "exploitation"
+  ]
+ },
+ {
+  "title": "House of Muney - Leakless Heap Exploitation Technique",
+  "desc": "",
+  "url": "https://maxwelldulin.com/BlogPost/House-of-Muney-Heap-Exploitation",
+  "source": "exploitation",
+  "h2": "Guides, Tutorials and Writeups",
+  "h3": "Heap",
+  "alsoIn": [
+   "exploitation"
+  ]
+ },
+ {
+  "title": "munmap madness",
+  "desc": "",
+  "url": "http://tukan.farm/2016/07/27/munmap-madness/",
+  "source": "exploitation",
+  "h2": "Guides, Tutorials and Writeups",
+  "h3": "Heap",
+  "alsoIn": [
+   "exploitation"
+  ]
+ },
+ {
+  "title": "Off-By-One Vulnerability (Heap Based)",
+  "desc": "",
+  "url": "https://sploitfun.wordpress.com/2015/06/09/off-by-one-vulnerability-heap-based/",
+  "source": "exploitation",
+  "h2": "Guides, Tutorials and Writeups",
+  "h3": "Heap",
+  "alsoIn": [
+   "exploitation"
+  ]
+ },
+ {
+  "title": "Overview of Malloc",
+  "desc": "(glibc documentation)",
+  "url": "https://sourceware.org/glibc/wiki/MallocInternals",
+  "source": "exploitation",
+  "h2": "Guides, Tutorials and Writeups",
+  "h3": "Heap",
+  "alsoIn": [
+   "exploitation"
+  ]
+ },
+ {
+  "title": "Safe-Linking – Eliminatig a 20 Year-Old malloc() Exploit Primitive",
+  "desc": "",
+  "url": "https://research.checkpoint.com/2020/safe-linking-eliminating-a-20-year-old-malloc-exploit-primitive/",
+  "source": "exploitation",
+  "h2": "Guides, Tutorials and Writeups",
+  "h3": "Heap",
+  "alsoIn": [
+   "exploitation"
+  ]
+ },
+ {
+  "title": "The art of exploiting heap overflow — Part 1",
+  "desc": "",
+  "url": "https://medium.com/@c0ngwang/the-art-of-exploiting-heap-overflow-part-1-3bcf41e0d449",
+  "source": "exploitation",
+  "h2": "Guides, Tutorials and Writeups",
+  "h3": "Heap",
+  "alsoIn": [
+   "exploitation"
+  ]
+ },
+ {
+  "title": "The art of exploiting heap overflow — Part 2",
+  "desc": "",
+  "url": "https://medium.com/@c0ngwang/the-art-of-exploiting-heap-overflow-part-2-1bd24a5856d0",
+  "source": "exploitation",
+  "h2": "Guides, Tutorials and Writeups",
+  "h3": "Heap",
+  "alsoIn": [
+   "exploitation"
+  ]
+ },
+ {
+  "title": "The art of exploiting heap overflow — Part 3",
+  "desc": "",
+  "url": "https://medium.com/@c0ngwang/the-art-of-exploiting-heap-overflow-part-3-9890b01d56a2",
+  "source": "exploitation",
+  "h2": "Guides, Tutorials and Writeups",
+  "h3": "Heap",
+  "alsoIn": [
+   "exploitation"
+  ]
+ },
+ {
+  "title": "The art of exploiting heap overflow — Part 4",
+  "desc": "",
+  "url": "https://medium.com/@c0ngwang/the-art-of-exploiting-heap-overflow-part-4-4f1140585210",
+  "source": "exploitation",
+  "h2": "Guides, Tutorials and Writeups",
+  "h3": "Heap",
+  "alsoIn": [
+   "exploitation"
+  ]
+ },
+ {
+  "title": "The art of exploiting heap overflow — Part 5",
+  "desc": "",
+  "url": "https://medium.com/@c0ngwang/the-art-of-exploiting-heap-overflow-part-5-934192cba269",
+  "source": "exploitation",
+  "h2": "Guides, Tutorials and Writeups",
+  "h3": "Heap",
+  "alsoIn": [
+   "exploitation"
+  ]
+ },
+ {
+  "title": "The art of exploiting heap overflow — Part 6",
+  "desc": "",
+  "url": "https://medium.com/@c0ngwang/the-art-of-exploiting-heap-overflow-part-6-14410c9ba6a6",
+  "source": "exploitation",
+  "h2": "Guides, Tutorials and Writeups",
+  "h3": "Heap",
+  "alsoIn": [
+   "exploitation"
+  ]
+ },
+ {
+  "title": "The art of exploiting heap overflow — Part 7",
+  "desc": "",
+  "url": "https://medium.com/@c0ngwang/the-art-of-exploiting-heap-overflow-part-7-10a788dd7ab",
+  "source": "exploitation",
+  "h2": "Guides, Tutorials and Writeups",
+  "h3": "Heap",
+  "alsoIn": [
+   "exploitation"
+  ]
+ },
+ {
+  "title": "The Malloc Maleficarum",
+  "desc": "",
+  "url": "https://seclists.org/bugtraq/2005/Oct/118?=ref=0x434b.dev",
+  "source": "exploitation",
+  "h2": "Guides, Tutorials and Writeups",
+  "h3": "Heap",
+  "alsoIn": [
+   "exploitation"
+  ]
+ },
+ {
+  "title": "The toddler’s introduction to Heap Exploitation — Part 1",
+  "desc": "",
+  "url": "https://infosecwriteups.com/the-toddlers-introduction-to-heap-exploitation-part-1-515b3621e0e8",
+  "source": "exploitation",
+  "h2": "Guides, Tutorials and Writeups",
+  "h3": "Heap",
+  "alsoIn": [
+   "exploitation"
+  ]
+ },
+ {
+  "title": "The toddler’s introduction to Heap Exploitation — Part 2",
+  "desc": "",
+  "url": "https://infosecwriteups.com/the-toddlers-introduction-to-heap-exploitation-part-2-d1f325b74286",
+  "source": "exploitation",
+  "h2": "Guides, Tutorials and Writeups",
+  "h3": "Heap",
+  "alsoIn": [
+   "exploitation"
+  ]
+ },
+ {
+  "title": "The toddler’s introduction to Heap Exploitation — Part 3",
+  "desc": "",
+  "url": "https://infosecwriteups.com/the-toddlers-introduction-to-heap-exploitation-overflows-part-3-d3d1aa042d1e",
+  "source": "exploitation",
+  "h2": "Guides, Tutorials and Writeups",
+  "h3": "Heap",
+  "alsoIn": [
+   "exploitation"
+  ]
+ },
+ {
+  "title": "The toddler’s introduction to Heap Exploitation — Part 4",
+  "desc": "",
+  "url": "https://infosecwriteups.com/use-after-free-13544be5a921",
+  "source": "exploitation",
+  "h2": "Guides, Tutorials and Writeups",
+  "h3": "Heap",
+  "alsoIn": [
+   "exploitation"
+  ]
+ },
+ {
+  "title": "The toddler’s introduction to Heap Exploitation — Part 4.1",
+  "desc": "",
+  "url": "https://infosecwriteups.com/the-toddlers-introduction-to-heap-exploitation-fastbin-dup-to-stack-part-4-1-425592a2870b",
+  "source": "exploitation",
+  "h2": "Guides, Tutorials and Writeups",
+  "h3": "Heap",
+  "alsoIn": [
+   "exploitation"
+  ]
+ },
+ {
+  "title": "The toddler’s introduction to Heap Exploitation — Part 4.2",
+  "desc": "",
+  "url": "https://infosecwriteups.com/the-toddlers-introduction-to-heap-exploitation-fastbin-dup-consolidate-part-4-2-ce6d68136aa8",
+  "source": "exploitation",
+  "h2": "Guides, Tutorials and Writeups",
+  "h3": "Heap",
+  "alsoIn": [
+   "exploitation"
+  ]
+ },
+ {
+  "title": "The toddler’s introduction to Heap Exploitation — Part 4.3",
+  "desc": "",
+  "url": "https://infosecwriteups.com/the-toddlers-introduction-to-heap-exploitation-unsafe-unlink-part-4-3-75e00e1b0c68",
+  "source": "exploitation",
+  "h2": "Guides, Tutorials and Writeups",
+  "h3": "Heap",
+  "alsoIn": [
+   "exploitation"
+  ]
+ },
+ {
+  "title": "The toddler’s introduction to Heap Exploitation — Part 4.4",
+  "desc": "",
+  "url": "https://infosecwriteups.com/the-toddlers-introduction-to-heap-exploitation-house-of-spirit-part-4-4-252cd8928f84",
+  "source": "exploitation",
+  "h2": "Guides, Tutorials and Writeups",
+  "h3": "Heap",
+  "alsoIn": [
+   "exploitation"
+  ]
+ },
+ {
+  "title": "Understanding glibc malloc",
+  "desc": "",
+  "url": "https://sploitfun.wordpress.com/2015/02/10/understanding-glibc-malloc/",
+  "source": "exploitation",
+  "h2": "Guides, Tutorials and Writeups",
+  "h3": "Heap",
+  "alsoIn": [
+   "exploitation"
+  ]
+ },
+ {
+  "title": "Understanding the Heap - a beautiful mess",
+  "desc": "",
+  "url": "https://jackfromeast.site/2023-01/understand-the-heap-a-beautiful-mess.html",
+  "source": "exploitation",
+  "h2": "Guides, Tutorials and Writeups",
+  "h3": "Heap",
+  "alsoIn": [
+   "exploitation"
+  ]
+ },
+ {
+  "title": "Use-After-Free",
+  "desc": "",
+  "url": "https://sploitfun.wordpress.com/2015/06/16/use-after-free/",
+  "source": "exploitation",
+  "h2": "Guides, Tutorials and Writeups",
+  "h3": "Heap",
+  "alsoIn": [
+   "exploitation"
+  ]
+ },
+ {
+  "title": "Vudo malloc tricks",
+  "desc": "",
+  "url": "http://phrack.org/issues/57/8.html",
+  "source": "exploitation",
+  "h2": "Guides, Tutorials and Writeups",
+  "h3": "Heap",
+  "alsoIn": [
+   "exploitation"
+  ]
+ },
+ {
+  "title": "x86 Exploitation 101: “House of Lore” – People and Traditions",
+  "desc": "",
+  "url": "https://gbmaster.wordpress.com/2015/07/16/x86-exploitation-101-house-of-lore-people-and-traditions/",
+  "source": "exploitation",
+  "h2": "Guides, Tutorials and Writeups",
+  "h3": "Heap",
+  "alsoIn": [
+   "exploitation"
+  ]
+ },
+ {
+  "title": "Your NAS is not your NAS !",
+  "desc": "",
+  "url": "https://devco.re/blog/2022/03/28/your-NAS-is-not-your-NAS-en/",
+  "source": "exploitation",
+  "h2": "Guides, Tutorials and Writeups",
+  "h3": "Heap",
+  "alsoIn": [
+   "exploitation"
+  ]
+ },
+ {
+  "title": "DirtyCow",
+  "desc": "race condition in the way the Linux kernel's memory subsystem handled the copy-on-write.",
+  "url": "https://github.com/dirtycow/dirtycow.github.io/wiki/VulnerabilityDetails",
+  "source": "exploitation",
+  "h2": "Guides, Tutorials and Writeups",
+  "h3": "Linux Kernel",
+  "alsoIn": [
+   "exploitation"
+  ]
+ },
+ {
+  "title": "DirtyPipe",
+  "desc": "pipes and splices for verwriting data in arbitrary read-only files.",
+  "url": "https://dirtypipe.cm4all.com/?ref=0x434b.dev",
+  "source": "exploitation",
+  "h2": "Guides, Tutorials and Writeups",
+  "h3": "Linux Kernel",
+  "alsoIn": [
+   "exploitation"
+  ]
+ },
+ {
+  "title": "Technical Review: A Deep Analysis of the Dirty Pipe Vulnerability",
+  "desc": "",
+  "url": "https://blog.aquasec.com/deep-analysis-of-the-dirty-pipe-vulnerability",
+  "source": "exploitation",
+  "h2": "Guides, Tutorials and Writeups",
+  "h3": "Linux Kernel",
+  "alsoIn": [
+   "exploitation"
+  ]
+ },
+ {
+  "title": "Exploitable kernel structures",
+  "desc": "",
+  "url": "https://bsauce.github.io/2021/09/26/kernel-exploit-有用的结构体/",
+  "source": "exploitation",
+  "h2": "Guides, Tutorials and Writeups",
+  "h3": "Linux Kernel",
+  "alsoIn": [
+   "exploitation"
+  ]
+ },
+ {
+  "title": "kernel exploit practive",
+  "desc": "repository for kernel exploit practice",
+  "url": "https://github.com/pr0cf5/kernel-exploit-practice",
+  "source": "exploitation",
+  "h2": "Guides, Tutorials and Writeups",
+  "h3": "Linux Kernel",
+  "alsoIn": [
+   "exploitation"
+  ]
+ },
+ {
+  "title": "Kernel exploitation",
+  "desc": "collection of resources for kernel layer exploitation.",
+  "url": "https://low-level.readthedocs.io/en/latest/security/kernel/",
+  "source": "exploitation",
+  "h2": "Guides, Tutorials and Writeups",
+  "h3": "Linux Kernel",
+  "alsoIn": [
+   "exploitation"
+  ]
+ },
+ {
+  "title": "kernelCTF (Google)",
+  "desc": "part of the Google VRP and is focused on making exploiting Linux kernel vulnerabilities harder.",
+  "url": "https://google.github.io/security-research/kernelctf/rules.html",
+  "source": "exploitation",
+  "h2": "Guides, Tutorials and Writeups",
+  "h3": "Linux Kernel",
+  "alsoIn": [
+   "exploitation"
+  ]
+ },
+ {
+  "title": "kctf",
+  "desc": "CTF infrastructure written on top of Kubernetes.",
+  "url": "https://google.github.io/kctf/",
+  "source": "exploitation",
+  "h2": "Guides, Tutorials and Writeups",
+  "h3": "Linux Kernel",
+  "alsoIn": [
+   "exploitation"
+  ]
+ },
+ {
+  "title": "kasld",
+  "desc": "Kernel Address Space Layout Derandomization",
+  "url": "https://github.com/bcoles/kasld",
+  "source": "exploitation",
+  "h2": "Guides, Tutorials and Writeups",
+  "h3": "Linux Kernel",
+  "alsoIn": [
+   "exploitation",
+   "linux_kernel",
+   "misc"
+  ]
+ },
+ {
+  "title": "kernelpwn",
+  "desc": "CTF kernel-pwn challenges and writeups",
+  "url": "https://github.com/smallkirby/kernelpwn",
+  "source": "exploitation",
+  "h2": "Guides, Tutorials and Writeups",
+  "h3": "Linux Kernel",
+  "alsoIn": [
+   "exploitation"
+  ]
+ },
+ {
+  "title": "linux-kernel-exploitation",
+  "desc": "collection of links related to Linux kernel security and exploitation.",
+  "url": "https://github.com/xairy/linux-kernel-exploitation",
+  "source": "exploitation",
+  "h2": "Guides, Tutorials and Writeups",
+  "h3": "Linux Kernel",
+  "alsoIn": [
+   "exploitation",
+   "linux_kernel"
+  ]
+ },
+ {
+  "title": "Writeups — A Journey To The Dawn",
+  "desc": "",
+  "url": "https://blog.kylebot.net/2022/10/16/CVE-2022-1786/",
+  "source": "exploitation",
+  "h2": "Guides, Tutorials and Writeups",
+  "h3": "Linux Kernel",
+  "alsoIn": [
+   "exploitation"
+  ]
+ },
+ {
+  "title": "Writeups — A Systematic Study of Elastic Objects in Kernel Exploitation",
+  "desc": "",
+  "url": "https://zplin.me/papers/ELOISE.pdf?ref=0x434b.dev",
+  "source": "exploitation",
+  "h2": "Guides, Tutorials and Writeups",
+  "h3": "Linux Kernel",
+  "alsoIn": [
+   "exploitation"
+  ]
+ },
+ {
+  "title": "Writeups — Attacking Android Binder: Analysis and Exploitation of CVE-2023-20938",
+  "desc": "",
+  "url": "https://androidoffsec.withgoogle.com/posts/attacking-android-binder-analysis-and-exploitation-of-cve-2023-20938/",
+  "source": "exploitation",
+  "h2": "Guides, Tutorials and Writeups",
+  "h3": "Linux Kernel",
+  "alsoIn": [
+   "exploitation"
+  ]
+ },
+ {
+  "title": "Writeups — Beginner's first kernel CTF with CVE-2017-5123",
+  "desc": "",
+  "url": "https://sthbrx.github.io/blog/2023/08/08/beginners-first-kernel-ctf-with-cve-2017-5123/#:~:text=This%20is%20CVE%2D2017%2D5123,for%2C%20escaping%20the%20Chrome%20sandbox",
+  "source": "exploitation",
+  "h2": "Guides, Tutorials and Writeups",
+  "h3": "Linux Kernel",
+  "alsoIn": [
+   "exploitation"
+  ]
+ },
+ {
+  "title": "Writeups — CUCTF 2020 Hotrod Kernel Writeup (Userfaultfd Race + Kernel UAF + Timerfd_Ctx Overwrite)",
+  "desc": "",
+  "url": "https://www.willsroot.io/2020/10/cuctf-2020-hotrod-kernel-writeup.html",
+  "source": "exploitation",
+  "h2": "Guides, Tutorials and Writeups",
+  "h3": "Linux Kernel",
+  "alsoIn": [
+   "exploitation"
+  ]
+ },
+ {
+  "title": "CVE-2017-11176: A step-by-step Linux Kernel exploitation — Part 1",
+  "desc": "",
+  "url": "https://blog.lexfo.fr/cve-2017-11176-linux-kernel-exploitation-part1.html",
+  "source": "exploitation",
+  "h2": "Guides, Tutorials and Writeups",
+  "h3": "Linux Kernel",
+  "alsoIn": [
+   "exploitation"
+  ]
+ },
+ {
+  "title": "CVE-2017-11176: A step-by-step Linux Kernel exploitation — Part 2",
+  "desc": "",
+  "url": "https://blog.lexfo.fr/cve-2017-11176-linux-kernel-exploitation-part2.html",
+  "source": "exploitation",
+  "h2": "Guides, Tutorials and Writeups",
+  "h3": "Linux Kernel",
+  "alsoIn": [
+   "exploitation"
+  ]
+ },
+ {
+  "title": "CVE-2017-11176: A step-by-step Linux Kernel exploitation — Part 3",
+  "desc": "",
+  "url": "https://blog.lexfo.fr/cve-2017-11176-linux-kernel-exploitation-part3.html",
+  "source": "exploitation",
+  "h2": "Guides, Tutorials and Writeups",
+  "h3": "Linux Kernel",
+  "alsoIn": [
+   "exploitation"
+  ]
+ },
+ {
+  "title": "CVE-2017-11176: A step-by-step Linux Kernel exploitation — Part 4",
+  "desc": "",
+  "url": "https://blog.lexfo.fr/cve-2017-11176-linux-kernel-exploitation-part4.html",
+  "source": "exploitation",
+  "h2": "Guides, Tutorials and Writeups",
+  "h3": "Linux Kernel",
+  "alsoIn": [
+   "exploitation"
+  ]
+ },
+ {
+  "title": "CVE-2017-2636: Exploit the race condition in the n_hdlc Linux kernel driver",
+  "desc": "",
+  "url": "https://a13xp0p0v.github.io/2017/03/24/CVE-2017-2636.html",
+  "source": "exploitation",
+  "h2": "Guides, Tutorials and Writeups",
+  "h3": "Linux Kernel",
+  "alsoIn": [
+   "exploitation"
+  ]
+ },
+ {
+  "title": "CVE-2019-18683: Exploiting a Linux kernel vulnerability in the V4L2 subsystem",
+  "desc": "",
+  "url": "https://a13xp0p0v.github.io/2020/02/15/CVE-2019-18683.html",
+  "source": "exploitation",
+  "h2": "Guides, Tutorials and Writeups",
+  "h3": "Linux Kernel",
+  "alsoIn": [
+   "exploitation"
+  ]
+ },
+ {
+  "title": "CVE-2021–20226 a reference counting bug which leads to local privilege escalation in io_uring",
+  "desc": "",
+  "url": "https://flattsecurity.medium.com/cve-2021-20226-a-reference-counting-bug-which-leads-to-local-privilege-escalation-in-io-uring-e946bd69177a",
+  "source": "exploitation",
+  "h2": "Guides, Tutorials and Writeups",
+  "h3": "Linux Kernel",
+  "alsoIn": [
+   "exploitation"
+  ]
+ },
+ {
+  "title": "CVE-2021-32606: CAN ISOTP local privilege escalation",
+  "desc": "",
+  "url": "https://github.com/nrb547/kernel-exploitation/blob/main/cve-2021-32606/cve-2021-32606.md",
+  "source": "exploitation",
+  "h2": "Guides, Tutorials and Writeups",
+  "h3": "Linux Kernel",
+  "alsoIn": [
+   "exploitation"
+  ]
+ },
+ {
+  "title": "CVE-2021-3609: CAN BCM local privilege escalation",
+  "desc": "",
+  "url": "https://github.com/nrb547/kernel-exploitation/blob/main/cve-2021-3609/cve-2021-3609.md",
+  "source": "exploitation",
+  "h2": "Guides, Tutorials and Writeups",
+  "h3": "Linux Kernel",
+  "alsoIn": [
+   "exploitation"
+  ]
+ },
+ {
+  "title": "CVE-2022-0185 - Winning a $31337 Bounty after Pwning Ubuntu and Escaping Google's KCTF Containers",
+  "desc": "",
+  "url": "https://www.willsroot.io/2022/01/",
+  "source": "exploitation",
+  "h2": "Guides, Tutorials and Writeups",
+  "h3": "Linux Kernel",
+  "alsoIn": [
+   "exploitation"
+  ]
+ },
+ {
+  "title": "CVE-2022-2586 Writeup",
+  "desc": "",
+  "url": "https://www.jmpeax.dev/CVE-2022-2586-writeup.html",
+  "source": "exploitation",
+  "h2": "Guides, Tutorials and Writeups",
+  "h3": "Linux Kernel",
+  "alsoIn": [
+   "exploitation"
+  ]
+ },
+ {
+  "title": "CVE-2022-2602: DirtyCred File Exploitation applied on an io_uring UAF",
+  "desc": "",
+  "url": "https://blog.hacktivesecurity.com/index.php/2022/12/21/cve-2022-2602-dirtycred-file-exploitation-applied-on-an-io_uring-uaf/",
+  "source": "exploitation",
+  "h2": "Guides, Tutorials and Writeups",
+  "h3": "Linux Kernel",
+  "alsoIn": [
+   "exploitation"
+  ]
+ },
+ {
+  "title": "CVE-2022-27666: Exploit esp6 modules in Linux kernel",
+  "desc": "",
+  "url": "https://etenal.me/archives/1825",
+  "source": "exploitation",
+  "h2": "Guides, Tutorials and Writeups",
+  "h3": "Linux Kernel",
+  "alsoIn": [
+   "exploitation"
+  ]
+ },
+ {
+  "title": "CVE-2022-29582 An io_uring vulnerability",
+  "desc": "",
+  "url": "https://ruia-ruia.github.io/2022/08/05/CVE-2022-29582-io-uring/",
+  "source": "exploitation",
+  "h2": "Guides, Tutorials and Writeups",
+  "h3": "Linux Kernel",
+  "alsoIn": [
+   "exploitation"
+  ]
+ },
+ {
+  "title": "Canary in the Kernel Mine: Exploiting and Defending Against Same-Type Object Reuse",
+  "desc": "",
+  "url": "https://grsecurity.net/exploiting_and_defending_against_same_type_object_reuse",
+  "source": "exploitation",
+  "h2": "Guides, Tutorials and Writeups",
+  "h3": "Linux Kernel",
+  "alsoIn": [
+   "exploitation"
+  ]
+ },
+ {
+  "title": "Cautious! A New Exploitation Method! No Pipe but as Nasty as Dirty Pipe",
+  "desc": "",
+  "url": "https://i.blackhat.com/USA-22/Thursday/US-22-Lin-Cautious-A-New-Exploitation-Method.pdf",
+  "source": "exploitation",
+  "h2": "Guides, Tutorials and Writeups",
+  "h3": "Linux Kernel",
+  "alsoIn": [
+   "exploitation"
+  ]
+ },
+ {
+  "title": "Conquering the memory through io_uring - Analysis of CVE-2023-2598",
+  "desc": "",
+  "url": "https://anatomic.rip/cve-2023-2598/",
+  "source": "exploitation",
+  "h2": "Guides, Tutorials and Writeups",
+  "h3": "Linux Kernel",
+  "alsoIn": [
+   "exploitation"
+  ]
+ },
+ {
+  "title": "corCTF 2021 Fire of Salvation Writeup: Utilizing msg_msg Objects for Arbitrary Read and Arbitrary Write in the Linux Kernel",
+  "desc": "",
+  "url": "https://www.willsroot.io/2021/08/corctf-2021-fire-of-salvation-writeup.html",
+  "source": "exploitation",
+  "h2": "Guides, Tutorials and Writeups",
+  "h3": "Linux Kernel",
+  "alsoIn": [
+   "exploitation"
+  ]
+ },
+ {
+  "title": "corCTF 2021 ret2cds writeup: Escaping a Seccomp Sandbox via Class Data Sharing regions in OpenJDK",
+  "desc": "",
+  "url": "https://www.willsroot.io/2021/08/ret2cds-writeup-escaping-seccomp.html",
+  "source": "exploitation",
+  "h2": "Guides, Tutorials and Writeups",
+  "h3": "Linux Kernel",
+  "alsoIn": [
+   "exploitation"
+  ]
+ },
+ {
+  "title": "corCTF 2023 sysruption - Exploiting Sysret on Linux in 2023",
+  "desc": "",
+  "url": "https://www.willsroot.io/2023/08/sysruption.html",
+  "source": "exploitation",
+  "h2": "Guides, Tutorials and Writeups",
+  "h3": "Linux Kernel",
+  "alsoIn": [
+   "exploitation"
+  ]
+ },
+ {
+  "title": "corCTF 2023: sysruption writeup",
+  "desc": "",
+  "url": "https://zolutal.github.io/corctf-sysruption/",
+  "source": "exploitation",
+  "h2": "Guides, Tutorials and Writeups",
+  "h3": "Linux Kernel",
+  "alsoIn": [
+   "exploitation"
+  ]
+ },
+ {
+  "title": "CoRJail: From Null Byte Overflow To Docker Escape Exploiting poll_list Objects In The Linux Kernel",
+  "desc": "",
+  "url": "https://syst3mfailure.io/corjail/",
+  "source": "exploitation",
+  "h2": "Guides, Tutorials and Writeups",
+  "h3": "Linux Kernel",
+  "alsoIn": [
+   "exploitation"
+  ]
+ },
+ {
+  "title": "DiceCTF 2021 HashBrown Writeup: From Kernel Module Hashmap Resize Race Condition to FG-KASLR Bypass",
+  "desc": "",
+  "url": "https://www.willsroot.io/2021/02/",
+  "source": "exploitation",
+  "h2": "Guides, Tutorials and Writeups",
+  "h3": "Linux Kernel",
+  "alsoIn": [
+   "exploitation"
+  ]
+ },
+ {
+  "title": "Devils Are in the File Descriptors: It Is Time To Catch Them All",
+  "desc": "",
+  "url": "https://i.blackhat.com/USA-22/Wednesday/US-22-Wu-Devils-Are-in-the-File.pdf",
+  "source": "exploitation",
+  "h2": "Guides, Tutorials and Writeups",
+  "h3": "Linux Kernel",
+  "alsoIn": [
+   "exploitation"
+  ]
+ },
+ {
+  "title": "Dirty Pagetable: A Novel Exploitation Technique To Rule Linux Kernel",
+  "desc": "",
+  "url": "https://yanglingxi1993.github.io/dirty_pagetable/dirty_pagetable.html",
+  "source": "exploitation",
+  "h2": "Guides, Tutorials and Writeups",
+  "h3": "Linux Kernel",
+  "alsoIn": [
+   "exploitation"
+  ]
+ },
+ {
+  "title": "DirtyCred: Escalating Privilege in Linux Kernel",
+  "desc": "",
+  "url": "https://zplin.me/papers/DirtyCred.pdf",
+  "source": "exploitation",
+  "h2": "Guides, Tutorials and Writeups",
+  "h3": "Linux Kernel",
+  "alsoIn": [
+   "exploitation"
+  ]
+ },
+ {
+  "title": "DirtyCred Remastered: how to turn an UAF into Privilege Escalation",
+  "desc": "",
+  "url": "https://exploiter.dev/blog/2022/CVE-2022-2602.html",
+  "source": "exploitation",
+  "h2": "Guides, Tutorials and Writeups",
+  "h3": "Linux Kernel",
+  "alsoIn": [
+   "exploitation"
+  ]
+ },
+ {
+  "title": "EntryBleed: Breaking KASLR under KPTI with Prefetch (CVE-2022-4543)",
+  "desc": "",
+  "url": "https://www.willsroot.io/2022/12/entrybleed.html",
+  "source": "exploitation",
+  "h2": "Guides, Tutorials and Writeups",
+  "h3": "Linux Kernel",
+  "alsoIn": [
+   "exploitation"
+  ]
+ },
+ {
+  "title": "Escaping the Google kCTF Container with a Data-Only Exploit",
+  "desc": "",
+  "url": "https://h0mbre.github.io/kCTF_Data_Only_Exploit/#",
+  "source": "exploitation",
+  "h2": "Guides, Tutorials and Writeups",
+  "h3": "Linux Kernel",
+  "alsoIn": [
+   "exploitation"
+  ]
+ },
+ {
+  "title": "Exploit Engineering – Attacking the Linux Kernel",
+  "desc": "",
+  "url": "https://research.nccgroup.com/2023/05/23/offensivecon-2023-exploit-engineering-attacking-the-linux-kernel/",
+  "source": "exploitation",
+  "h2": "Guides, Tutorials and Writeups",
+  "h3": "Linux Kernel",
+  "alsoIn": [
+   "exploitation"
+  ]
+ },
+ {
+  "title": "Exploiting A 16-Year-Old Vulnerability In The Linux 6pack Driver",
+  "desc": "",
+  "url": "https://syst3mfailure.io/sixpack-slab-out-of-bounds/",
+  "source": "exploitation",
+  "h2": "Guides, Tutorials and Writeups",
+  "h3": "Linux Kernel",
+  "alsoIn": [
+   "exploitation"
+  ]
+ },
+ {
+  "title": "Exploiting CVE-2022-42703 - Bringing back the stack attack",
+  "desc": "",
+  "url": "https://googleprojectzero.blogspot.com/2022/12/exploiting-CVE-2022-42703-bringing-back-the-stack-attack.html",
+  "source": "exploitation",
+  "h2": "Guides, Tutorials and Writeups",
+  "h3": "Linux Kernel",
+  "alsoIn": [
+   "exploitation"
+  ]
+ },
+ {
+  "title": "Exploring Linux's New Random Kmalloc Caches",
+  "desc": "",
+  "url": "https://sam4k.com/exploring-linux-random-kmalloc-caches/",
+  "source": "exploitation",
+  "h2": "Guides, Tutorials and Writeups",
+  "h3": "Linux Kernel",
+  "alsoIn": [
+   "exploitation"
+  ]
+ },
+ {
+  "title": "Exploiting Kernel Races Through Taming Thread Interleaving",
+  "desc": "",
+  "url": "https://lifeasageek.github.io/papers/yoochan-exprace-bh.pdf",
+  "source": "exploitation",
+  "h2": "Guides, Tutorials and Writeups",
+  "h3": "Linux Kernel",
+  "alsoIn": [
+   "exploitation"
+  ]
+ },
+ {
+  "title": "Exploiting null-dereferences in the Linux kernel",
+  "desc": "",
+  "url": "https://googleprojectzero.blogspot.com/2023/01/exploiting-null-dereferences-in-linux.html",
+  "source": "exploitation",
+  "h2": "Guides, Tutorials and Writeups",
+  "h3": "Linux Kernel",
+  "alsoIn": [
+   "exploitation"
+  ]
+ },
+ {
+  "title": "Exploiting the Linux kernel via packet sockets",
+  "desc": "",
+  "url": "https://googleprojectzero.blogspot.com/2017/05/exploiting-linux-kernel-via-packet.html",
+  "source": "exploitation",
+  "h2": "Guides, Tutorials and Writeups",
+  "h3": "Linux Kernel",
+  "alsoIn": [
+   "exploitation"
+  ]
+ },
+ {
+  "title": "Flipping Pages: An analysis of a new Linux vulnerability in nf_tables and hardened exploitation techniques",
+  "desc": "",
+  "url": "https://pwning.tech/nftables/",
+  "source": "exploitation",
+  "h2": "Guides, Tutorials and Writeups",
+  "h3": "Linux Kernel",
+  "alsoIn": [
+   "exploitation"
+  ]
+ },
+ {
+  "title": "Four Bytes of Power: Exploiting CVE-2021-26708 in the Linux kernel",
+  "desc": "",
+  "url": "https://a13xp0p0v.github.io/2021/02/09/CVE-2021-26708.html",
+  "source": "exploitation",
+  "h2": "Guides, Tutorials and Writeups",
+  "h3": "Linux Kernel",
+  "alsoIn": [
+   "exploitation"
+  ]
+ },
+ {
+  "title": "Function Granular KASLR",
+  "desc": "",
+  "url": "https://www.trustwave.com/en-us/resources/blogs/spiderlabs-blog/linux-kernel-rop-ropping-your-way-to-part-2/?ref=0x434b.dev",
+  "source": "exploitation",
+  "h2": "Guides, Tutorials and Writeups",
+  "h3": "Linux Kernel",
+  "alsoIn": [
+   "exploitation"
+  ]
+ },
+ {
+  "title": "Gaining kernel code execution on an MTE-enabled Pixel 8",
+  "desc": "",
+  "url": "https://github.blog/2024-03-18-gaining-kernel-code-execution-on-an-mte-enabled-pixel-8/",
+  "source": "exploitation",
+  "h2": "Guides, Tutorials and Writeups",
+  "h3": "Linux Kernel",
+  "alsoIn": [
+   "exploitation"
+  ]
+ },
+ {
+  "title": "Hotrod: Exploiting timerfd_ctx Objects In The Linux Kernel",
+  "desc": "",
+  "url": "https://syst3mfailure.io/hotrod/",
+  "source": "exploitation",
+  "h2": "Guides, Tutorials and Writeups",
+  "h3": "Linux Kernel",
+  "alsoIn": [
+   "exploitation"
+  ]
+ },
+ {
+  "title": "How a simple Linux kernel memory corruption bug can lead to complete system compromise",
+  "desc": "",
+  "url": "https://googleprojectzero.blogspot.com/2021/10/how-simple-linux-kernel-memory.html",
+  "source": "exploitation",
+  "h2": "Guides, Tutorials and Writeups",
+  "h3": "Linux Kernel",
+  "alsoIn": [
+   "exploitation"
+  ]
+ },
+ {
+  "title": "How STACKLEAK improves Linux kernel security",
+  "desc": "",
+  "url": "https://a13xp0p0v.github.io/2018/11/04/stackleak.html",
+  "source": "exploitation",
+  "h2": "Guides, Tutorials and Writeups",
+  "h3": "Linux Kernel",
+  "alsoIn": [
+   "exploitation"
+  ]
+ },
+ {
+  "title": "Introduction to kernel exploitation",
+  "desc": "",
+  "url": "https://kernemporium.github.io/kernel/intro/",
+  "source": "exploitation",
+  "h2": "Guides, Tutorials and Writeups",
+  "h3": "Linux Kernel",
+  "alsoIn": [
+   "exploitation"
+  ]
+ },
+ {
+  "title": "Improving the exploit for CVE-2021-26708 in the Linux kernel to bypass LKRG",
+  "desc": "",
+  "url": "https://a13xp0p0v.github.io/2021/08/25/lkrg-bypass.html",
+  "source": "exploitation",
+  "h2": "Guides, Tutorials and Writeups",
+  "h3": "Linux Kernel",
+  "alsoIn": [
+   "exploitation"
+  ]
+ },
+ {
+  "title": "io_uring - new code, new bugs, and a new exploit technique",
+  "desc": "",
+  "url": "https://www.starlabs.sg/blog/2022/06-io_uring-new-code-new-bugs-and-a-new-exploit-technique/#unlinking-attack",
+  "source": "exploitation",
+  "h2": "Guides, Tutorials and Writeups",
+  "h3": "Linux Kernel",
+  "alsoIn": [
+   "exploitation"
+  ]
+ },
+ {
+  "title": "IPS",
+  "desc": "",
+  "url": "https://blog.kylebot.net/2022/01/10/VULNCON-2021-IPS/",
+  "source": "exploitation",
+  "h2": "Guides, Tutorials and Writeups",
+  "h3": "Linux Kernel",
+  "alsoIn": [
+   "exploitation"
+  ]
+ },
+ {
+  "title": "Linux Kernel Exploit (CVE-2022–32250) with mqueue",
+  "desc": "",
+  "url": "https://blog.theori.io/linux-kernel-exploit-cve-2022-32250-with-mqueue-a8468f32aab5",
+  "source": "exploitation",
+  "h2": "Guides, Tutorials and Writeups",
+  "h3": "Linux Kernel",
+  "alsoIn": [
+   "exploitation"
+  ]
+ },
+ {
+  "title": "Linux Kernel Exploit Development: 1day case study",
+  "desc": "",
+  "url": "https://blog.hacktivesecurity.com/index.php/2022/06/13/linux-kernel-exploit-development-1day-case-study/",
+  "source": "exploitation",
+  "h2": "Guides, Tutorials and Writeups",
+  "h3": "Linux Kernel",
+  "alsoIn": [
+   "exploitation"
+  ]
+ },
+ {
+  "title": "Linux Kernel Exploitation — Getting started & BOF",
+  "desc": "",
+  "url": "https://santaclz.github.io/2023/11/03/Linux-Kernel-Exploitation-Getting-started-and-BOF.html",
+  "source": "exploitation",
+  "h2": "Guides, Tutorials and Writeups",
+  "h3": "Linux Kernel",
+  "alsoIn": [
+   "exploitation"
+  ]
+ },
+ {
+  "title": "Linux Kernel Exploitation — Heap techniques",
+  "desc": "",
+  "url": "https://santaclz.github.io/2024/01/20/Linux-Kernel-Exploitation-Heap-techniques.html",
+  "source": "exploitation",
+  "h2": "Guides, Tutorials and Writeups",
+  "h3": "Linux Kernel",
+  "alsoIn": [
+   "exploitation"
+  ]
+ },
+ {
+  "title": "Linux Kernel Exploitation — Exploiting race-condition + UAF",
+  "desc": "",
+  "url": "https://santaclz.github.io/2024/01/29/Linux-Kernel-Exploitation-exploiting-race-condition-and-UAF.html",
+  "source": "exploitation",
+  "h2": "Guides, Tutorials and Writeups",
+  "h3": "Linux Kernel",
+  "alsoIn": [
+   "exploitation"
+  ]
+ },
+ {
+  "title": "Linux Kernel Exploitation Technique: Overwriting modprobe_path",
+  "desc": "",
+  "url": "https://lkmidas.github.io/posts/20210223-linux-kernel-pwn-modprobe/",
+  "source": "exploitation",
+  "h2": "Guides, Tutorials and Writeups",
+  "h3": "Linux Kernel",
+  "alsoIn": [
+   "exploitation"
+  ]
+ },
+ {
+  "title": "Linux kernel heap feng shui in 2022",
+  "desc": "",
+  "url": "https://duasynt.com/blog/linux-kernel-heap-feng-shui-2022",
+  "source": "exploitation",
+  "h2": "Guides, Tutorials and Writeups",
+  "h3": "Linux Kernel",
+  "alsoIn": [
+   "exploitation"
+  ]
+ },
+ {
+  "title": "Linux kernel heap quarantine versus use-after-free exploits",
+  "desc": "",
+  "url": "https://a13xp0p0v.github.io/2020/11/30/slab-quarantine.html",
+  "source": "exploitation",
+  "h2": "Guides, Tutorials and Writeups",
+  "h3": "Linux Kernel",
+  "alsoIn": [
+   "exploitation"
+  ]
+ },
+ {
+  "title": "Linux Kernel ROP — Part 2",
+  "desc": "",
+  "url": "https://www.trustwave.com/en-us/resources/blogs/spiderlabs-blog/linux-kernel-rop-ropping-your-way-to-part-1/?ref=0x434b.dev",
+  "source": "exploitation",
+  "h2": "Guides, Tutorials and Writeups",
+  "h3": "Linux Kernel",
+  "alsoIn": [
+   "exploitation"
+  ]
+ },
+ {
+  "title": "Linux Kernel universal heap spray",
+  "desc": "",
+  "url": "https://duasynt.com/blog/linux-kernel-heap-spray",
+  "source": "exploitation",
+  "h2": "Guides, Tutorials and Writeups",
+  "h3": "Linux Kernel",
+  "alsoIn": [
+   "exploitation"
+  ]
+ },
+ {
+  "title": "Linux SLUB Allocator Internals and Debugging — Part 1",
+  "desc": "",
+  "url": "https://blogs.oracle.com/linux/post/linux-slub-allocator-internals-and-debugging-1",
+  "source": "exploitation",
+  "h2": "Guides, Tutorials and Writeups",
+  "h3": "Linux Kernel",
+  "alsoIn": [
+   "exploitation"
+  ]
+ },
+ {
+  "title": "Linux SLUB Allocator Internals and Debugging — Part 2",
+  "desc": "",
+  "url": "https://blogs.oracle.com/linux/post/linux-slub-allocator-internals-and-debugging-2",
+  "source": "exploitation",
+  "h2": "Guides, Tutorials and Writeups",
+  "h3": "Linux Kernel",
+  "alsoIn": [
+   "exploitation"
+  ]
+ },
+ {
+  "title": "Linux SLUB Allocator Internals and Debugging — Part 3",
+  "desc": "",
+  "url": "https://blogs.oracle.com/linux/post/linux-slub-allocator-internals-and-debugging-3",
+  "source": "exploitation",
+  "h2": "Guides, Tutorials and Writeups",
+  "h3": "Linux Kernel",
+  "alsoIn": [
+   "exploitation"
+  ]
+ },
+ {
+  "title": "Linux SLUB Allocator Internals and Debugging — Part 4",
+  "desc": "",
+  "url": "https://blogs.oracle.com/linux/post/linux-slub-allocator-internals-and-debugging-4",
+  "source": "exploitation",
+  "h2": "Guides, Tutorials and Writeups",
+  "h3": "Linux Kernel",
+  "alsoIn": [
+   "exploitation"
+  ]
+ },
+ {
+  "title": "Mind the Patch Gap: Exploiting an io_uring Vulnerability in Ubuntu",
+  "desc": "",
+  "url": "https://blog.exodusintel.com/2024/03/27/mind-the-patch-gap-exploiting-an-io_uring-vulnerability-in-ubuntu//",
+  "source": "exploitation",
+  "h2": "Guides, Tutorials and Writeups",
+  "h3": "Linux Kernel",
+  "alsoIn": [
+   "exploitation"
+  ]
+ },
+ {
+  "title": "Monitoring Surveillance Vendors: A Deep Dive into In-the-Wild Android Full Chains in 2021",
+  "desc": "",
+  "url": "https://i.blackhat.com/USA-22/Wednesday/US-22-Jin-Monitoring-Surveillance-Vendors.pdf",
+  "source": "exploitation",
+  "h2": "Guides, Tutorials and Writeups",
+  "h3": "Linux Kernel",
+  "alsoIn": [
+   "exploitation"
+  ]
+ },
+ {
+  "title": "Racing against the clock -- hitting a tiny kernel race window",
+  "desc": "",
+  "url": "https://googleprojectzero.blogspot.com/2022/03/racing-against-clock-hitting-tiny.html",
+  "source": "exploitation",
+  "h2": "Guides, Tutorials and Writeups",
+  "h3": "Linux Kernel",
+  "alsoIn": [
+   "exploitation"
+  ]
+ },
+ {
+  "title": "ret2dir: Rethinking Kernel Isolation",
+  "desc": "",
+  "url": "https://cs.brown.edu/~vpk/papers/ret2dir.sec14.pdf?ref=0x434b.dev",
+  "source": "exploitation",
+  "h2": "Guides, Tutorials and Writeups",
+  "h3": "Linux Kernel",
+  "alsoIn": [
+   "exploitation"
+  ]
+ },
+ {
+  "title": "slides",
+  "desc": "",
+  "url": "https://www.usenix.org/sites/default/files/conference/protected-files/sec14_slides_kemerlis.pdf",
+  "source": "exploitation",
+  "h2": "Guides, Tutorials and Writeups",
+  "h3": "Linux Kernel",
+  "alsoIn": [
+   "exploitation"
+  ]
+ },
+ {
+  "title": "Reviving Exploits Against Cred Structs - Six Byte Cross Cache Overflow to Leakless Data-Oriented Kernel Pwnage",
+  "desc": "",
+  "url": "https://www.willsroot.io/2022/08/",
+  "source": "exploitation",
+  "h2": "Guides, Tutorials and Writeups",
+  "h3": "Linux Kernel",
+  "alsoIn": [
+   "exploitation"
+  ]
+ },
+ {
+  "title": "Ret2page: The Art of Exploiting Use-After-Free Vulnerabili4es in the Dedicated Cache",
+  "desc": "",
+  "url": "https://i.blackhat.com/USA-22/Thursday/US-22-WANG-Ret2page-The-Art-of-Exploiting-Use-After-Free-Vulnerabilities-in-the-Dedicated-Cache.pdf",
+  "source": "exploitation",
+  "h2": "Guides, Tutorials and Writeups",
+  "h3": "Linux Kernel",
+  "alsoIn": [
+   "exploitation"
+  ]
+ },
+ {
+  "title": "SETTLERS OF NETLINK: Exploiting a limited UAF in nf_tables (CVE-2022-32250)",
+  "desc": "",
+  "url": "https://research.nccgroup.com/2022/09/01/settlers-of-netlink-exploiting-a-limited-uaf-in-nf_tables-cve-2022-32250/",
+  "source": "exploitation",
+  "h2": "Guides, Tutorials and Writeups",
+  "h3": "Linux Kernel",
+  "alsoIn": [
+   "exploitation"
+  ]
+ },
+ {
+  "title": "The tale of a GSM Kernel LPE",
+  "desc": "",
+  "url": "https://www.jmpeax.dev/The-tale-of-a-GSM-Kernel-LPE.html",
+  "source": "exploitation",
+  "h2": "Guides, Tutorials and Writeups",
+  "h3": "Linux Kernel",
+  "alsoIn": [
+   "exploitation"
+  ]
+ },
+ {
+  "title": "USMA: Share Kernel Code with Me",
+  "desc": "",
+  "url": "https://i.blackhat.com/Asia-22/Thursday-Materials/AS-22-YongLiu-USMA-Share-Kernel-Code.pdf",
+  "source": "exploitation",
+  "h2": "Guides, Tutorials and Writeups",
+  "h3": "Linux Kernel",
+  "alsoIn": [
+   "exploitation"
+  ]
+ },
+ {
+  "title": "Wall Of Perdition: Utilizing msg_msg Objects For Arbitrary Read And Arbitrary Write In The Linux Kernel",
+  "desc": "",
+  "url": "https://syst3mfailure.io/wall-of-perdition/",
+  "source": "exploitation",
+  "h2": "Guides, Tutorials and Writeups",
+  "h3": "Linux Kernel",
+  "alsoIn": [
+   "exploitation"
+  ]
+ },
+ {
+  "title": "zer0pts CTF 2022 kRCE writeup: Limited Userland Interface to Kernel RCE",
+  "desc": "",
+  "url": "https://www.willsroot.io/2022/03/",
+  "source": "exploitation",
+  "h2": "Guides, Tutorials and Writeups",
+  "h3": "Linux Kernel",
+  "alsoIn": [
+   "exploitation"
+  ]
+ },
+ {
+  "title": "CS6265: Information Security Lab",
+  "desc": "Reversing, debugging, exploitation tutorials.",
+  "url": "https://tc.gts3.org/cs6265/2019/tut/tut01-warmup1.html",
+  "source": "exploitation",
+  "h2": "Guides, Tutorials and Writeups",
+  "h3": "Other",
+  "alsoIn": [
+   "exploitation"
+  ]
+ },
+ {
+  "title": "CTF Wiki pwn",
+  "desc": "",
+  "url": "https://ctf-wiki.mahaloz.re/pwn/readme/",
+  "source": "exploitation",
+  "h2": "Guides, Tutorials and Writeups",
+  "h3": "Other",
+  "alsoIn": [
+   "exploitation"
+  ]
+ },
+ {
+  "title": "pwning slides",
+  "desc": "collection of slides and material on exploitation (not mainatined)",
+  "url": "https://github.com/bash-c/slides/tree/master",
+  "source": "exploitation",
+  "h2": "Guides, Tutorials and Writeups",
+  "h3": "Other",
+  "alsoIn": [
+   "exploitation"
+  ]
+ },
+ {
+  "title": "Writeups — 15 years later: Remote Code Execution in qmail (CVE-2005-1513)",
+  "desc": "",
+  "url": "https://www.qualys.com/2020/05/19/cve-2005-1513/remote-code-execution-qmail.txt",
+  "source": "exploitation",
+  "h2": "Guides, Tutorials and Writeups",
+  "h3": "Other",
+  "alsoIn": [
+   "exploitation"
+  ]
+ },
+ {
+  "title": "Writeups — A Kernel Hacker Meets Fuchsia OS",
+  "desc": "",
+  "url": "https://a13xp0p0v.github.io/2022/05/24/pwn-fuchsia.html",
+  "source": "exploitation",
+  "h2": "Guides, Tutorials and Writeups",
+  "h3": "Other",
+  "alsoIn": [
+   "exploitation"
+  ]
+ },
+ {
+  "title": "Writeups — Android Kernel Exploitation",
+  "desc": "",
+  "url": "https://cloudfuzz.github.io/android-kernel-exploitation/",
+  "source": "exploitation",
+  "h2": "Guides, Tutorials and Writeups",
+  "h3": "Other",
+  "alsoIn": [
+   "exploitation",
+   "misc"
+  ]
+ },
+ {
+  "title": "ARM64 Reversing And Exploitation (8ksec) — Part 1",
+  "desc": "",
+  "url": "https://8ksec.io/arm64-reversing-and-exploitation-part-1-arm-instruction-set-simple-heap-overflow/",
+  "source": "exploitation",
+  "h2": "Guides, Tutorials and Writeups",
+  "h3": "Other",
+  "alsoIn": [
+   "exploitation"
+  ]
+ },
+ {
+  "title": "ARM64 Reversing And Exploitation (8ksec) — Part 2",
+  "desc": "",
+  "url": "https://8ksec.io/arm64-reversing-and-exploitation-part-2-use-after-free/",
+  "source": "exploitation",
+  "h2": "Guides, Tutorials and Writeups",
+  "h3": "Other",
+  "alsoIn": [
+   "exploitation"
+  ]
+ },
+ {
+  "title": "ARM64 Reversing And Exploitation (8ksec) — Part 3",
+  "desc": "",
+  "url": "https://8ksec.io/arm64-reversing-and-exploitation-part-3-a-simple-rop-chain/",
+  "source": "exploitation",
+  "h2": "Guides, Tutorials and Writeups",
+  "h3": "Other",
+  "alsoIn": [
+   "exploitation"
+  ]
+ },
+ {
+  "title": "ARM64 Reversing And Exploitation (8ksec) — Part 4",
+  "desc": "",
+  "url": "https://8ksec.io/arm64-reversing-and-exploitation-part-4-using-mprotect-to-bypass-nx-protection-8ksec-blogs/",
+  "source": "exploitation",
+  "h2": "Guides, Tutorials and Writeups",
+  "h3": "Other",
+  "alsoIn": [
+   "exploitation"
+  ]
+ },
+ {
+  "title": "ARM64 Reversing And Exploitation (8ksec) — Part 5",
+  "desc": "",
+  "url": "https://8ksec.io/arm64-reversing-and-exploitation-part-5-writing-shellcode-8ksec-blogs/",
+  "source": "exploitation",
+  "h2": "Guides, Tutorials and Writeups",
+  "h3": "Other",
+  "alsoIn": [
+   "exploitation"
+  ]
+ },
+ {
+  "title": "ARM64 Reversing And Exploitation (8ksec) — Part 6",
+  "desc": "",
+  "url": "https://8ksec.io/arm64-reversing-and-exploitation-part-6-exploiting-an-uninitialized-stack-variable-vulnerability/",
+  "source": "exploitation",
+  "h2": "Guides, Tutorials and Writeups",
+  "h3": "Other",
+  "alsoIn": [
+   "exploitation"
+  ]
+ },
+ {
+  "title": "ARM64 Reversing And Exploitation (8ksec) — Part 7",
+  "desc": "",
+  "url": "https://8ksec.io/arm64-reversing-and-exploitation-part-7-bypassing-aslr-and-nx/",
+  "source": "exploitation",
+  "h2": "Guides, Tutorials and Writeups",
+  "h3": "Other",
+  "alsoIn": [
+   "exploitation"
+  ]
+ },
+ {
+  "title": "ARM64 Reversing And Exploitation (8ksec) — Part 8",
+  "desc": "",
+  "url": "https://8ksec.io/arm64-reversing-and-exploitation-part-8-exploiting-an-integer-overflow-vulnerability/",
+  "source": "exploitation",
+  "h2": "Guides, Tutorials and Writeups",
+  "h3": "Other",
+  "alsoIn": [
+   "exploitation"
+  ]
+ },
+ {
+  "title": "ARM64 Reversing And Exploitation (8ksec) — Part 9",
+  "desc": "",
+  "url": "https://8ksec.io/arm64-reversing-and-exploitation-part-9-exploiting-an-off-by-one-overflow-vulnerability/",
+  "source": "exploitation",
+  "h2": "Guides, Tutorials and Writeups",
+  "h3": "Other",
+  "alsoIn": [
+   "exploitation"
+  ]
+ },
+ {
+  "title": "ARM64 Reversing And Exploitation (8ksec) — Part 10",
+  "desc": "",
+  "url": "https://8ksec.io/arm64-reversing-and-exploitation-part-10-intro-to-arm-memory-tagging-extension-mte/",
+  "source": "exploitation",
+  "h2": "Guides, Tutorials and Writeups",
+  "h3": "Other",
+  "alsoIn": [
+   "exploitation"
+  ]
+ },
+ {
+  "title": "BitUnmap: Attacking Android Ashmem",
+  "desc": "",
+  "url": "https://googleprojectzero.blogspot.com/2016/12/bitunmap-attacking-android-ashmem.html",
+  "source": "exploitation",
+  "h2": "Guides, Tutorials and Writeups",
+  "h3": "Other",
+  "alsoIn": [
+   "exploitation"
+  ]
+ },
+ {
+  "title": "BleedingTooth: Linux Bluetooth Zero-Click Remote Code Execution",
+  "desc": "",
+  "url": "https://google.github.io/security-research/pocs/linux/bleedingtooth/writeup.html",
+  "source": "exploitation",
+  "h2": "Guides, Tutorials and Writeups",
+  "h3": "Other",
+  "alsoIn": [
+   "exploitation"
+  ]
+ },
+ {
+  "title": "Examining Pointer Authentication on the iPhone XS",
+  "desc": "",
+  "url": "https://googleprojectzero.blogspot.com/2019/02/examining-pointer-authentication-on.html",
+  "source": "exploitation",
+  "h2": "Guides, Tutorials and Writeups",
+  "h3": "Other",
+  "alsoIn": [
+   "exploitation"
+  ]
+ },
+ {
+  "title": "GOT and PLT for pwning",
+  "desc": "",
+  "url": "https://systemoverlord.com/2017/03/19/got-and-plt-for-pwning.html",
+  "source": "exploitation",
+  "h2": "Guides, Tutorials and Writeups",
+  "h3": "Other",
+  "alsoIn": [
+   "exploitation"
+  ]
+ },
+ {
+  "title": "Learning Linux kernel exploitation (0x434b) — Part 1 - Laying the groundwork",
+  "desc": "",
+  "url": "https://0x434b.dev/dabbling-with-linux-kernel-exploitation-ctf-challenges-to-learn-the-ropes/",
+  "source": "exploitation",
+  "h2": "Guides, Tutorials and Writeups",
+  "h3": "Other",
+  "alsoIn": [
+   "exploitation"
+  ]
+ },
+ {
+  "title": "Learning Linux kernel exploitation (0x434b) — Part 2 - CVE-2022-0847",
+  "desc": "",
+  "url": "https://0x434b.dev/learning-linux-kernel-exploitation-part-2-cve-2022-0847/",
+  "source": "exploitation",
+  "h2": "Guides, Tutorials and Writeups",
+  "h3": "Other",
+  "alsoIn": [
+   "exploitation"
+  ]
+ },
+ {
+  "title": "Learning Linux Kernel Exploitation (lkmidas) — Part 1",
+  "desc": "",
+  "url": "https://lkmidas.github.io/posts/20210123-linux-kernel-pwn-part-1/",
+  "source": "exploitation",
+  "h2": "Guides, Tutorials and Writeups",
+  "h3": "Other",
+  "alsoIn": [
+   "exploitation"
+  ]
+ },
+ {
+  "title": "Learning Linux Kernel Exploitation (lkmidas) — Part 2",
+  "desc": "",
+  "url": "https://lkmidas.github.io/posts/20210128-linux-kernel-pwn-part-2/",
+  "source": "exploitation",
+  "h2": "Guides, Tutorials and Writeups",
+  "h3": "Other",
+  "alsoIn": [
+   "exploitation"
+  ]
+ },
+ {
+  "title": "Learning Linux Kernel Exploitation (lkmidas) — Part 3",
+  "desc": "",
+  "url": "https://lkmidas.github.io/posts/20210205-linux-kernel-pwn-part-3/",
+  "source": "exploitation",
+  "h2": "Guides, Tutorials and Writeups",
+  "h3": "Other",
+  "alsoIn": [
+   "exploitation"
+  ]
+ },
+ {
+  "title": "nftables Adventures: Bug Hunting and N-day Exploitation (CVE-2023-31248)",
+  "desc": "",
+  "url": "https://starlabs.sg/blog/2023/09-nftables-adventures-bug-hunting-and-n-day-exploitation/",
+  "source": "exploitation",
+  "h2": "Guides, Tutorials and Writeups",
+  "h3": "Other",
+  "alsoIn": [
+   "exploitation"
+  ]
+ },
+ {
+  "title": "Over the Air — Exploiting Broadcom’s Wi-Fi Stack (Part 1)",
+  "desc": "",
+  "url": "https://googleprojectzero.blogspot.com/2017/04/over-air-exploiting-broadcoms-wi-fi_4.html",
+  "source": "exploitation",
+  "h2": "Guides, Tutorials and Writeups",
+  "h3": "Other",
+  "alsoIn": [
+   "exploitation",
+   "wireless"
+  ]
+ },
+ {
+  "title": "Over the Air — Exploiting Broadcom’s Wi-Fi Stack (Part 2)",
+  "desc": "",
+  "url": "https://googleprojectzero.blogspot.com/2017/04/over-air-exploiting-broadcoms-wi-fi_11.html",
+  "source": "exploitation",
+  "h2": "Guides, Tutorials and Writeups",
+  "h3": "Other",
+  "alsoIn": [
+   "exploitation",
+   "wireless"
+  ]
+ },
+ {
+  "title": "Over the Air — Exploiting The Wi-Fi Stack on Apple Devices (Pt. 1)",
+  "desc": "",
+  "url": "https://googleprojectzero.blogspot.com/2017/09/over-air-vol-2-pt-1-exploiting-wi-fi.html",
+  "source": "exploitation",
+  "h2": "Guides, Tutorials and Writeups",
+  "h3": "Other",
+  "alsoIn": [
+   "exploitation",
+   "wireless"
+  ]
+ },
+ {
+  "title": "Over the Air — Exploiting The Wi-Fi Stack on Apple Devices (Pt. 2)",
+  "desc": "",
+  "url": "https://googleprojectzero.blogspot.com/2017/10/over-air-vol-2-pt-2-exploiting-wi-fi.html",
+  "source": "exploitation",
+  "h2": "Guides, Tutorials and Writeups",
+  "h3": "Other",
+  "alsoIn": [
+   "exploitation",
+   "wireless"
+  ]
+ },
+ {
+  "title": "PAC it up: Towards Pointer Integrity using ARM Pointer Authentication",
+  "desc": "",
+  "url": "https://www.usenix.org/system/files/sec19fall_liljestrand_prepub.pdf",
+  "source": "exploitation",
+  "h2": "Guides, Tutorials and Writeups",
+  "h3": "Other",
+  "alsoIn": [
+   "exploitation"
+  ]
+ },
+ {
+  "title": "Rope2 HackTheBox Writeup (Chromium V8, FSOP + glibc heap, Linux Kernel heap pwnable)",
+  "desc": "",
+  "url": "https://www.willsroot.io/2021/01/rope2-hackthebox-writeup-chromium-v8.html",
+  "source": "exploitation",
+  "h2": "Guides, Tutorials and Writeups",
+  "h3": "Other",
+  "alsoIn": [
+   "exploitation"
+  ]
+ },
+ {
+  "title": "UIUCTF 2022 - SMM Cowsay 1, 2, 3",
+  "desc": "",
+  "url": "https://toh.necst.it/uiuctf/pwn/system/x86/rop/UIUCTF-2022-SMM-Cowsay/",
+  "source": "exploitation",
+  "h2": "Guides, Tutorials and Writeups",
+  "h3": "Other",
+  "alsoIn": [
+   "exploitation"
+  ]
+ },
+ {
+  "title": "Bionic",
+  "desc": "",
+  "url": "https://android.googlesource.com/platform/bionic/",
+  "source": "exploitation",
+  "h2": "Libcs",
+  "h3": "",
+  "alsoIn": [
+   "exploitation"
+  ]
+ },
+ {
+  "title": "Documentation",
+  "desc": "",
+  "url": "https://android.googlesource.com/platform/bionic/+/refs/heads/main/docs/",
+  "source": "exploitation",
+  "h2": "Libcs",
+  "h3": "",
+  "alsoIn": [
+   "exploitation"
+  ]
+ },
+ {
+  "title": "glibc",
+  "desc": "",
+  "url": "https://sourceware.org/git/?p=glibc.git",
+  "source": "exploitation",
+  "h2": "Libcs",
+  "h3": "",
+  "alsoIn": [
+   "exploitation"
+  ]
+ },
+ {
+  "title": "Documentation",
+  "desc": "",
+  "url": "https://www.gnu.org/software/libc/manual/",
+  "source": "exploitation",
+  "h2": "Libcs",
+  "h3": "",
+  "alsoIn": [
+   "exploitation"
+  ]
+ },
+ {
+  "title": "musl",
+  "desc": "",
+  "url": "https://git.musl-libc.org/cgit/musl",
+  "source": "exploitation",
+  "h2": "Libcs",
+  "h3": "",
+  "alsoIn": [
+   "exploitation"
+  ]
+ },
+ {
+  "title": "Documentation",
+  "desc": "",
+  "url": "https://musl.libc.org/manual.html",
+  "source": "exploitation",
+  "h2": "Libcs",
+  "h3": "",
+  "alsoIn": [
+   "exploitation"
+  ]
+ },
+ {
+  "title": "uclibc-ng",
+  "desc": "",
+  "url": "https://cgit.uclibc-ng.org/cgi/cgit/uclibc-ng.git/",
+  "source": "exploitation",
+  "h2": "Libcs",
+  "h3": "",
+  "alsoIn": [
+   "exploitation"
+  ]
+ },
+ {
+  "title": "Documentation",
+  "desc": "",
+  "url": "https://uclibc-ng.org/docs/",
+  "source": "exploitation",
+  "h2": "Libcs",
+  "h3": "",
+  "alsoIn": [
+   "exploitation"
+  ]
+ },
+ {
+  "title": "Linux kernel — FGKASLR",
+  "desc": "Function Granular Kernel Address Space Layout Randomization (fgkaslr)",
+  "url": "https://lwn.net/Articles/824307/",
+  "source": "exploitation",
+  "h2": "Mitigations",
+  "h3": "",
+  "alsoIn": [
+   "exploitation"
+  ]
+ },
+ {
+  "title": "Linux kernel — SLAB freelist randomization",
+  "desc": "",
+  "url": "https://lwn.net/Articles/685047/",
+  "source": "exploitation",
+  "h2": "Mitigations",
+  "h3": "",
+  "alsoIn": [
+   "exploitation"
+  ]
+ },
+ {
+  "title": "exploit_mitigations",
+  "desc": "Knowledge base of exploit mitigations",
+  "url": "https://github.com/nccgroup/exploit_mitigations",
+  "source": "exploitation",
+  "h2": "Misc",
+  "h3": "",
+  "alsoIn": [
+   "exploitation"
+  ]
+ },
+ {
+  "title": "Linux Kernel Defence Map",
+  "desc": "relationships between vulnerability classes, exploitation techniques, bug detection mechanisms, and defence technologies.",
+  "url": "https://github.com/a13xp0p0v/linux-kernel-defence-map",
+  "source": "exploitation",
+  "h2": "Misc",
+  "h3": "",
+  "alsoIn": [
+   "exploitation",
+   "linux_kernel"
+  ]
+ },
+ {
+  "title": "ret2dl_resolve x64: Exploiting Dynamic Linking Procedure In x64 ELF Binaries Devil",
+  "desc": "",
+  "url": "https://syst3mfailure.io/ret2dl_resolve/",
+  "source": "exploitation",
+  "h2": "Misc",
+  "h3": "",
+  "alsoIn": [
+   "exploitation"
+  ]
+ },
+ {
+  "title": "The Oddest Place You Will Ever Find PAC",
+  "desc": "",
+  "url": "https://blog.ret2.io/2021/06/16/intro-to-pac-arm64/",
+  "source": "exploitation",
+  "h2": "Misc",
+  "h3": "",
+  "alsoIn": [
+   "exploitation"
+  ]
+ },
+ {
+  "title": "awesome-ctf (wargames)",
+  "desc": "list of wargames websites.",
+  "url": "https://github.com/apsdehal/awesome-ctf#wargames",
+  "source": "exploitation",
+  "h2": "Practice",
+  "h3": "",
+  "alsoIn": [
+   "exploitation"
+  ]
+ },
+ {
+  "title": "exploit.education",
+  "desc": "VM for practiving exploitation.",
+  "url": "https://exploit.education",
+  "source": "exploitation",
+  "h2": "Practice",
+  "h3": "",
+  "alsoIn": [
+   "exploitation"
+  ]
+ },
+ {
+  "title": "overthewire",
+  "desc": "earn and practice security concepts.",
+  "url": "https://overthewire.org/wargames/",
+  "source": "exploitation",
+  "h2": "Practice",
+  "h3": "",
+  "alsoIn": [
+   "exploitation"
+  ]
+ },
+ {
+  "title": "pwn.college",
+  "desc": "learn about, and practice, core cybersecurity concepts in a hands-on fashion.",
+  "url": "https://pwn.college",
+  "source": "exploitation",
+  "h2": "Practice",
+  "h3": "",
+  "alsoIn": [
+   "exploitation"
+  ]
+ },
+ {
+  "title": "pwnable.kr",
+  "desc": "wargame site which provides various pwn challenges.",
+  "url": "http://pwnable.kr/#",
+  "source": "exploitation",
+  "h2": "Practice",
+  "h3": "",
+  "alsoIn": [
+   "exploitation"
+  ]
+ },
+ {
+  "title": "pwnable.tw",
+  "desc": "wargame site for hackers to test and expand their binary exploiting skills.",
+  "url": "https://pwnable.tw",
+  "source": "exploitation",
+  "h2": "Practice",
+  "h3": "",
+  "alsoIn": [
+   "exploitation"
+  ]
+ },
+ {
+  "title": "ropemporium",
+  "desc": "learn return-oriented programming through a series of challenges.",
+  "url": "https://ropemporium.com/index.html",
+  "source": "exploitation",
+  "h2": "Practice",
+  "h3": "",
+  "alsoIn": [
+   "exploitation"
+  ]
+ },
+ {
+  "title": "ARM TrustZone: pivoting to the secure world",
+  "desc": "",
+  "url": "https://blog.thalium.re/posts/pivoting_to_the_secure_world/",
+  "source": "exploitation",
+  "h2": "TEE",
+  "h3": "",
+  "alsoIn": [
+   "exploitation",
+   "misc"
+  ]
+ },
+ {
+  "title": "TEE-reversing",
+  "desc": "",
+  "url": "https://github.com/enovella/TEE-reversing",
+  "source": "exploitation",
+  "h2": "TEE",
+  "h3": "",
+  "alsoIn": [
+   "exploitation",
+   "misc"
+  ]
+ },
+ {
+  "title": "Breaking TEE Security — part 1",
+  "desc": "",
+  "url": "https://www.riscure.com/tee-security-samsung-teegris-part-1/",
+  "source": "exploitation",
+  "h2": "TEE",
+  "h3": "",
+  "alsoIn": [
+   "exploitation"
+  ]
+ },
+ {
+  "title": "Breaking TEE Security — part 2",
+  "desc": "",
+  "url": "https://www.riscure.com/tee-security-samsung-teegris-part-2/",
+  "source": "exploitation",
+  "h2": "TEE",
+  "h3": "",
+  "alsoIn": [
+   "exploitation"
+  ]
+ },
+ {
+  "title": "Breaking TEE Security — part 3",
+  "desc": "",
+  "url": "https://www.riscure.com/tee-security-samsung-teegris-part-3/",
+  "source": "exploitation",
+  "h2": "TEE",
+  "h3": "",
+  "alsoIn": [
+   "exploitation"
+  ]
+ },
+ {
+  "title": "Trust Issues: Exploiting TrustZone TEEs",
+  "desc": "",
+  "url": "https://googleprojectzero.blogspot.com/2017/07/trust-issues-exploiting-trustzone-tees.html",
+  "source": "exploitation",
+  "h2": "TEE",
+  "h3": "",
+  "alsoIn": [
+   "exploitation"
+  ]
+ },
+ {
+  "title": "crash",
+  "desc": "Linux kernel crash utility",
+  "url": "https://github.com/crash-utility/crash",
+  "source": "exploitation",
+  "h2": "Tools",
+  "h3": "",
+  "alsoIn": [
+   "exploitation"
+  ]
+ },
+ {
+  "title": "GDB",
+  "desc": "The GNU Project Debugger",
+  "url": "https://www.sourceware.org/gdb/",
+  "source": "exploitation",
+  "h2": "Tools",
+  "h3": "",
+  "alsoIn": [
+   "exploitation"
+  ]
+ },
+ {
+  "title": "Documentation",
+  "desc": "",
+  "url": "https://sourceware.org/gdb/current/onlinedocs/gdb",
+  "source": "exploitation",
+  "h2": "Tools",
+  "h3": "",
+  "alsoIn": [
+   "exploitation"
+  ]
+ },
+ {
+  "title": "like-gdb",
+  "desc": "Fully dockerized Linux kernel debugging environment",
+  "url": "https://github.com/0xricksanchez/like-dbg",
+  "source": "exploitation",
+  "h2": "Tools",
+  "h3": "",
+  "alsoIn": [
+   "exploitation",
+   "linux_kernel"
+  ]
+ },
+ {
+  "title": "GEF",
+  "desc": "GDB Enhanced Feature",
+  "url": "https://github.com/hugsy/gef",
+  "source": "exploitation",
+  "h2": "Tools",
+  "h3": "",
+  "alsoIn": [
+   "exploitation"
+  ]
+ },
+ {
+  "title": "GEF",
+  "desc": "fork of GEF with functionalities specific for the Linux kernel",
+  "url": "https://github.com/bata24/gef",
+  "source": "exploitation",
+  "h2": "Tools",
+  "h3": "",
+  "alsoIn": [
+   "exploitation"
+  ]
+ },
+ {
+  "title": "pwntools",
+  "desc": "CTF framework and exploit development library",
+  "url": "https://github.com/Gallopsled/pwntools",
+  "source": "exploitation",
+  "h2": "Tools",
+  "h3": "",
+  "alsoIn": [
+   "exploitation"
+  ]
+ },
+ {
+  "title": "build linux",
+  "desc": "short tutorial about building Linux based operating systems.",
+  "url": "https://github.com/MichielDerhaeg/build-linux",
+  "source": "linux_kernel",
+  "h2": "Blogs, Awesomes and learning",
+  "h3": "",
+  "alsoIn": [
+   "linux_kernel"
+  ]
+ },
+ {
+  "title": "How did I approach making linux LKM rootkit, “reveng_rtkit” ?",
+  "desc": "",
+  "url": "https://reveng007.github.io/blog/2022/03/08/reveng_rkit_detailed.html",
+  "source": "linux_kernel",
+  "h2": "Blogs, Awesomes and learning",
+  "h3": "",
+  "alsoIn": [
+   "linux_kernel"
+  ]
+ },
+ {
+  "title": "Linux kernel programming",
+  "desc": "code repository for Linux Kernel Programming, published by Packt.",
+  "url": "https://github.com/PacktPublishing/Linux-Kernel-Programming",
+  "source": "linux_kernel",
+  "h2": "Blogs, Awesomes and learning",
+  "h3": "",
+  "alsoIn": [
+   "linux_kernel"
+  ]
+ },
+ {
+  "title": "man pages",
+  "desc": "manual pages for GNU/Linux",
+  "url": "https://git.kernel.org/pub/scm/docs/man-pages/man-pages.git/",
+  "source": "linux_kernel",
+  "h2": "Blogs, Awesomes and learning",
+  "h3": "",
+  "alsoIn": [
+   "linux_kernel"
+  ]
+ },
+ {
+  "title": "Linux rootkit series by Xcellerator — Introduction and Workflow",
+  "desc": "",
+  "url": "https://xcellerator.github.io/posts/linux_rootkits_01/",
+  "source": "linux_kernel",
+  "h2": "Blogs, Awesomes and learning",
+  "h3": "",
+  "alsoIn": [
+   "linux_kernel"
+  ]
+ },
+ {
+  "title": "Linux rootkit series by Xcellerator — Ftrace and Function Hooking",
+  "desc": "",
+  "url": "https://xcellerator.github.io/posts/linux_rootkits_02/",
+  "source": "linux_kernel",
+  "h2": "Blogs, Awesomes and learning",
+  "h3": "",
+  "alsoIn": [
+   "linux_kernel"
+  ]
+ },
+ {
+  "title": "Linux rootkit series by Xcellerator — A Backdoor to Root",
+  "desc": "",
+  "url": "https://xcellerator.github.io/posts/linux_rootkits_03/",
+  "source": "linux_kernel",
+  "h2": "Blogs, Awesomes and learning",
+  "h3": "",
+  "alsoIn": [
+   "linux_kernel"
+  ]
+ },
+ {
+  "title": "Linux rootkit series by Xcellerator — Backdooring PRNGs by Interfering with Char Devices",
+  "desc": "",
+  "url": "https://xcellerator.github.io/posts/linux_rootkits_04/",
+  "source": "linux_kernel",
+  "h2": "Blogs, Awesomes and learning",
+  "h3": "",
+  "alsoIn": [
+   "linux_kernel"
+  ]
+ },
+ {
+  "title": "Linux rootkit series by Xcellerator — Hiding Kernel Modules from Userspace",
+  "desc": "",
+  "url": "https://xcellerator.github.io/posts/linux_rootkits_05/",
+  "source": "linux_kernel",
+  "h2": "Blogs, Awesomes and learning",
+  "h3": "",
+  "alsoIn": [
+   "linux_kernel"
+  ]
+ },
+ {
+  "title": "Linux rootkit series by Xcellerator — Hiding Directories",
+  "desc": "",
+  "url": "https://xcellerator.github.io/posts/linux_rootkits_06/",
+  "source": "linux_kernel",
+  "h2": "Blogs, Awesomes and learning",
+  "h3": "",
+  "alsoIn": [
+   "linux_kernel"
+  ]
+ },
+ {
+  "title": "Linux rootkit series by Xcellerator — Hiding Processes",
+  "desc": "",
+  "url": "https://xcellerator.github.io/posts/linux_rootkits_07/",
+  "source": "linux_kernel",
+  "h2": "Blogs, Awesomes and learning",
+  "h3": "",
+  "alsoIn": [
+   "linux_kernel"
+  ]
+ },
+ {
+  "title": "Linux rootkit series by Xcellerator — Hiding Open Ports",
+  "desc": "",
+  "url": "https://xcellerator.github.io/posts/linux_rootkits_08/",
+  "source": "linux_kernel",
+  "h2": "Blogs, Awesomes and learning",
+  "h3": "",
+  "alsoIn": [
+   "linux_kernel"
+  ]
+ },
+ {
+  "title": "Linux rootkit series by Xcellerator — Hiding Logged In Users (Modifying File Contents Without Touching Disk)",
+  "desc": "",
+  "url": "https://xcellerator.github.io/posts/linux_rootkits_09/",
+  "source": "linux_kernel",
+  "h2": "Blogs, Awesomes and learning",
+  "h3": "",
+  "alsoIn": [
+   "linux_kernel"
+  ]
+ },
+ {
+  "title": "Linux rootkit series by Xcellerator — A Dive into the Kernel Component of Drovorub",
+  "desc": "",
+  "url": "https://xcellerator.github.io/posts/linux_rootkits_10/",
+  "source": "linux_kernel",
+  "h2": "Blogs, Awesomes and learning",
+  "h3": "",
+  "alsoIn": [
+   "linux_kernel"
+  ]
+ },
+ {
+  "title": "Linux rootkit series by Xcellerator — New Methods for Kernel 5.7+",
+  "desc": "",
+  "url": "https://xcellerator.github.io/posts/linux_rootkits_11/",
+  "source": "linux_kernel",
+  "h2": "Blogs, Awesomes and learning",
+  "h3": "",
+  "alsoIn": [
+   "linux_kernel"
+  ]
+ },
+ {
+  "title": "Writing a simple rootkit for linux",
+  "desc": "",
+  "url": "https://0x00sec.org/t/writing-a-simple-rootkit-for-linux/29034",
+  "source": "linux_kernel",
+  "h2": "Blogs, Awesomes and learning",
+  "h3": "",
+  "alsoIn": [
+   "linux_kernel"
+  ]
+ },
+ {
+  "title": "kernel-exploit-factory",
+  "desc": "Linux kernel CVE exploit analysis report and relative debug environment.",
+  "url": "https://github.com/bsauce/kernel-exploit-factory",
+  "source": "linux_kernel",
+  "h2": "Exploitation",
+  "h3": "",
+  "alsoIn": [
+   "linux_kernel"
+  ]
+ },
+ {
+  "title": "Linux Exploit Suggester",
+  "desc": "Linux privilege escalation auditing tool",
+  "url": "https://github.com/The-Z-Labs/linux-exploit-suggester",
+  "source": "linux_kernel",
+  "h2": "Exploitation",
+  "h3": "",
+  "alsoIn": [
+   "linux_kernel"
+  ]
+ },
+ {
+  "title": "Linux Kernel Exploit",
+  "desc": "links related to Linux kernel exploitation.",
+  "url": "https://github.com/SecWiki/linux-kernel-exploits",
+  "source": "linux_kernel",
+  "h2": "Exploitation",
+  "h3": "",
+  "alsoIn": [
+   "linux_kernel"
+  ]
+ },
+ {
+  "title": "difuze",
+  "desc": "fuzzer for Linux Kernel Drivers.",
+  "url": "https://github.com/ucsb-seclab/difuze",
+  "source": "linux_kernel",
+  "h2": "Fuzzing",
+  "h3": "",
+  "alsoIn": [
+   "linux_kernel"
+  ]
+ },
+ {
+  "title": "healer",
+  "desc": "Kernel fuzzer inspired by Syzkaller.",
+  "url": "https://github.com/SunHao-0/healer",
+  "source": "linux_kernel",
+  "h2": "Fuzzing",
+  "h3": "",
+  "alsoIn": [
+   "linux_kernel"
+  ]
+ },
+ {
+  "title": "Syzkaller",
+  "desc": "unsupervised coverage-guided kernel fuzzer.",
+  "url": "https://github.com/google/syzkaller",
+  "source": "linux_kernel",
+  "h2": "Fuzzing",
+  "h3": "",
+  "alsoIn": [
+   "linux_kernel"
+  ]
+ },
+ {
+  "title": "Syzbot",
+  "desc": "continuously fuzzes main Linux kernel branches and automatically reports found bugs",
+  "url": "https://syzkaller.appspot.com/upstream",
+  "source": "linux_kernel",
+  "h2": "Fuzzing",
+  "h3": "",
+  "alsoIn": [
+   "linux_kernel"
+  ]
+ },
+ {
+  "title": "SyzScope",
+  "desc": "automatically uncover high-risk impacts given a bug with only low-risk impacts.",
+  "url": "https://github.com/plummm/SyzScope",
+  "source": "linux_kernel",
+  "h2": "Fuzzing",
+  "h3": "",
+  "alsoIn": [
+   "linux_kernel"
+  ]
+ },
+ {
+  "title": "Clang Built Linux",
+  "desc": "building the Linux kernel with Clang.",
+  "url": "https://clangbuiltlinux.github.io/",
+  "source": "linux_kernel",
+  "h2": "Misc",
+  "h3": "",
+  "alsoIn": [
+   "linux_kernel"
+  ]
+ },
+ {
+  "title": "crash",
+  "desc": "Linux kernel crash utility",
+  "url": "https://crash-utility.github.io",
+  "source": "linux_kernel",
+  "h2": "Misc",
+  "h3": "",
+  "alsoIn": [
+   "linux_kernel"
+  ]
+ },
+ {
+  "title": "lowlevelprogramming-university",
+  "desc": "How to be low-level programmer",
+  "url": "https://github.com/gurugio/lowlevelprogramming-university",
+  "source": "linux_kernel",
+  "h2": "Misc",
+  "h3": "",
+  "alsoIn": [
+   "linux_kernel"
+  ]
+ },
+ {
+  "title": "TuxSuite",
+  "desc": "on-demand APIs and tools for building Linux Kernels.",
+  "url": "https://tuxsuite.com/",
+  "source": "linux_kernel",
+  "h2": "Misc",
+  "h3": "",
+  "alsoIn": [
+   "linux_kernel"
+  ]
+ },
+ {
+  "title": "vmlinux-to-elf",
+  "desc": "tool to recover a fully analyzable .ELF from a raw kernel.",
+  "url": "https://github.com/marin-m/vmlinux-to-elf",
+  "source": "linux_kernel",
+  "h2": "Misc",
+  "h3": "",
+  "alsoIn": [
+   "linux_kernel"
+  ]
+ },
+ {
+  "title": "Buildroot",
+  "desc": "simple, efficient and easy-to-use tool to generate embedded Linux systems through cross-compilation.",
+  "url": "https://buildroot.org/",
+  "source": "linux_kernel",
+  "h2": "Toolchains and Cross-compilation",
+  "h3": "",
+  "alsoIn": [
+   "linux_kernel"
+  ]
+ },
+ {
+  "title": "clang",
+  "desc": "C language family frontend for LLVM.",
+  "url": "https://clang.llvm.org/",
+  "source": "linux_kernel",
+  "h2": "Toolchains and Cross-compilation",
+  "h3": "",
+  "alsoIn": [
+   "linux_kernel"
+  ]
+ },
+ {
+  "title": "Cross-compilation toolchains (Bootlin)",
+  "desc": "large number of ready-to-use cross-compilation toolchains, targetting the Linux operating system on a large number of architectures.",
+  "url": "https://toolchains.bootlin.com/",
+  "source": "linux_kernel",
+  "h2": "Toolchains and Cross-compilation",
+  "h3": "",
+  "alsoIn": [
+   "linux_kernel"
+  ]
+ },
+ {
+  "title": "Dockcross",
+  "desc": "cross compiling toolchains in Docker images.",
+  "url": "https://github.com/dockcross/dockcross",
+  "source": "linux_kernel",
+  "h2": "Toolchains and Cross-compilation",
+  "h3": "",
+  "alsoIn": [
+   "linux_kernel"
+  ]
+ },
+ {
+  "title": "gcc",
+  "desc": "GNU Compiler Collection.",
+  "url": "https://gcc.gnu.org/",
+  "source": "linux_kernel",
+  "h2": "Toolchains and Cross-compilation",
+  "h3": "",
+  "alsoIn": [
+   "linux_kernel"
+  ]
+ },
+ {
+  "title": "Next",
+  "desc": "next tree",
+  "url": "https://git.kernel.org/pub/scm/linux/kernel/git/next/linux-next.git/",
+  "source": "linux_kernel",
+  "h2": "Repositories",
+  "h3": "",
+  "alsoIn": [
+   "linux_kernel"
+  ]
+ },
+ {
+  "title": "Rust",
+  "desc": "rust tree",
+  "url": "https://github.com/Rust-for-Linux/linux",
+  "source": "linux_kernel",
+  "h2": "Repositories",
+  "h3": "",
+  "alsoIn": [
+   "linux_kernel"
+  ]
+ },
+ {
+  "title": "RFL-patch-registry",
+  "desc": "aggregate Rust abstractions for Linux that have not yet been upstreamed.",
+  "url": "https://github.com/tgross35/RFL-patch-registry",
+  "source": "linux_kernel",
+  "h2": "Repositories",
+  "h3": "",
+  "alsoIn": [
+   "linux_kernel"
+  ]
+ },
+ {
+  "title": "Stable",
+  "desc": "Stable tree",
+  "url": "https://git.kernel.org/pub/scm/linux/kernel/git/stable/linux.git/",
+  "source": "linux_kernel",
+  "h2": "Repositories",
+  "h3": "",
+  "alsoIn": [
+   "linux_kernel"
+  ]
+ },
+ {
+  "title": "Torvalds",
+  "desc": "Linus Torvald tree",
+  "url": "https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git",
+  "source": "linux_kernel",
+  "h2": "Repositories",
+  "h3": "",
+  "alsoIn": [
+   "linux_kernel"
+  ]
+ },
+ {
+  "title": "Bootlin courses",
+  "desc": "Linux related courses from bootlin",
+  "url": "https://bootlin.com/training/",
+  "source": "linux_kernel",
+  "h2": "Resources",
+  "h3": "",
+  "alsoIn": [
+   "linux_kernel"
+  ]
+ },
+ {
+  "title": "Training material",
+  "desc": "embedded Linux and kernel training materials.",
+  "url": "https://github.com/bootlin/training-materials",
+  "source": "linux_kernel",
+  "h2": "Resources",
+  "h3": "",
+  "alsoIn": [
+   "linux_kernel"
+  ]
+ },
+ {
+  "title": "Elixir",
+  "desc": "Linux kernel source code cross reference.",
+  "url": "https://lore.kernel.org/kernel-hardening/",
+  "source": "linux_kernel",
+  "h2": "Resources",
+  "h3": "",
+  "alsoIn": [
+   "linux_kernel"
+  ]
+ },
+ {
+  "title": "kconfig-hardened-check",
+  "desc": "tool for checking the security hardening options of the Linux kernel.",
+  "url": "https://github.com/a13xp0p0v/kconfig-hardened-check",
+  "source": "linux_kernel",
+  "h2": "Resources",
+  "h3": "",
+  "alsoIn": [
+   "linux_kernel"
+  ]
+ },
+ {
+  "title": "kernel-security-learning",
+  "desc": "Anything about kernel security.",
+  "url": "https://github.com/bsauce/kernel-security-learning",
+  "source": "linux_kernel",
+  "h2": "Resources",
+  "h3": "",
+  "alsoIn": [
+   "linux_kernel"
+  ]
+ },
+ {
+  "title": "Kernel documentation",
+  "desc": "official linux kernel documentation.",
+  "url": "https://www.kernel.org/doc/html/latest/index.html",
+  "source": "linux_kernel",
+  "h2": "Resources",
+  "h3": "",
+  "alsoIn": [
+   "linux_kernel"
+  ]
+ },
+ {
+  "title": "Kernel map",
+  "desc": "interactive map of Linux kernel sources.",
+  "url": "https://makelinux.github.io/kernel/map/",
+  "source": "linux_kernel",
+  "h2": "Resources",
+  "h3": "",
+  "alsoIn": [
+   "linux_kernel",
+   "misc"
+  ]
+ },
+ {
+  "title": "kernel.org",
+  "desc": "linux kernel archives.",
+  "url": "https://kernel.org/",
+  "source": "linux_kernel",
+  "h2": "Resources",
+  "h3": "",
+  "alsoIn": [
+   "linux_kernel"
+  ]
+ },
+ {
+  "title": "kernelci.org",
+  "desc": "test system focused on the upstream Linux kernel.",
+  "url": "https://kernelci.org/",
+  "source": "linux_kernel",
+  "h2": "Resources",
+  "h3": "",
+  "alsoIn": [
+   "linux_kernel"
+  ]
+ },
+ {
+  "title": "kernelconfig",
+  "desc": "Linux kernel configuration entries.",
+  "url": "https://www.kernelconfig.io/index.html",
+  "source": "linux_kernel",
+  "h2": "Resources",
+  "h3": "",
+  "alsoIn": [
+   "linux_kernel"
+  ]
+ },
+ {
+  "title": "Linux lab",
+  "desc": "create a Docker and QEMU based Linux development Lab to easier the learning.",
+  "url": "https://github.com/tinyclub/linux-lab",
+  "source": "linux_kernel",
+  "h2": "Resources",
+  "h3": "",
+  "alsoIn": [
+   "linux_kernel"
+  ]
+ },
+ {
+  "title": "linux-insides",
+  "desc": "a book about linux kernel and its insides.",
+  "url": "https://0xax.gitbooks.io/linux-insides/content/",
+  "source": "linux_kernel",
+  "h2": "Resources",
+  "h3": "",
+  "alsoIn": [
+   "linux_kernel",
+   "misc"
+  ]
+ },
+ {
+  "title": "Linux kernel CVEs",
+  "desc": "Tracking CVEs for the linux Kernel",
+  "url": "https://github.com/nluedtke/linux_kernel_cves",
+  "source": "linux_kernel",
+  "h2": "Resources",
+  "h3": "",
+  "alsoIn": [
+   "linux_kernel"
+  ]
+ },
+ {
+  "title": "Linux Kernel Labs",
+  "desc": "lectures and labs on Linux Kernel.",
+  "url": "https://linux-kernel-labs.github.io/refs/heads/master/",
+  "source": "linux_kernel",
+  "h2": "Resources",
+  "h3": "",
+  "alsoIn": [
+   "linux_kernel"
+  ]
+ },
+ {
+  "title": "Linux Kernel Module Cheat",
+  "desc": "emulation setup to study and develop the Linux kernel.",
+  "url": "https://github.com/cirosantilli/linux-kernel-module-cheat",
+  "source": "linux_kernel",
+  "h2": "Resources",
+  "h3": "",
+  "alsoIn": [
+   "linux_kernel"
+  ]
+ },
+ {
+  "title": "Linux Kernel Wiki",
+  "desc": "linux kernel wiki (in chinese)",
+  "url": "https://github.com/0voice/linux_kernel_wiki",
+  "source": "linux_kernel",
+  "h2": "Resources",
+  "h3": "",
+  "alsoIn": [
+   "linux_kernel"
+  ]
+ },
+ {
+  "title": "Linux Kernel Workshop",
+  "desc": "learn linux kernel programming.",
+  "url": "https://lkw.readthedocs.io/en/latest/index.html",
+  "source": "linux_kernel",
+  "h2": "Resources",
+  "h3": "",
+  "alsoIn": [
+   "linux_kernel"
+  ]
+ },
+ {
+  "title": "Linux Weekly News",
+  "desc": "site dedicated to producing the best coverage from within the Linux and free software development communities.",
+  "url": "https://lwn.net",
+  "source": "linux_kernel",
+  "h2": "Resources",
+  "h3": "",
+  "alsoIn": [
+   "linux_kernel"
+  ]
+ },
+ {
+  "title": "LKFT",
+  "desc": "Linux Kernel Functional Testing.",
+  "url": "https://lkft.linaro.org/",
+  "source": "linux_kernel",
+  "h2": "Resources",
+  "h3": "",
+  "alsoIn": [
+   "linux_kernel"
+  ]
+ },
+ {
+  "title": "lkmpg",
+  "desc": "The Linux Kernel Module Programming Guide.",
+  "url": "https://sysprog21.github.io/lkmpg/",
+  "source": "linux_kernel",
+  "h2": "Resources",
+  "h3": "",
+  "alsoIn": [
+   "linux_kernel"
+  ]
+ },
+ {
+  "title": "ltp",
+  "desc": "Linux Test Project.",
+  "url": "https://github.com/linux-test-project/ltp",
+  "source": "linux_kernel",
+  "h2": "Resources",
+  "h3": "",
+  "alsoIn": [
+   "linux_kernel"
+  ]
+ },
+ {
+  "title": "[Mailing Lists] — Lore kernel",
+  "desc": "Linux kernel mailing lists.",
+  "url": "https://lore.kernel.org/",
+  "source": "linux_kernel",
+  "h2": "Resources",
+  "h3": "",
+  "alsoIn": [
+   "linux_kernel"
+  ]
+ },
+ {
+  "title": "[Mailing Lists] — Linux hardening",
+  "desc": "Linux hardening.",
+  "url": "https://lore.kernel.org/linux-hardening/",
+  "source": "linux_kernel",
+  "h2": "Resources",
+  "h3": "",
+  "alsoIn": [
+   "linux_kernel"
+  ]
+ },
+ {
+  "title": "mebeim",
+  "desc": "Linux kernel syscall tables.",
+  "url": "https://syscalls.mebeim.net/?table=x86/64/x64/v6.2",
+  "source": "linux_kernel",
+  "h2": "Resources",
+  "h3": "",
+  "alsoIn": [
+   "linux_kernel"
+  ]
+ },
+ {
+  "title": "syscall.sh",
+  "desc": "Alternative Linux kernel syscall tables",
+  "url": "https://arm64.syscall.sh",
+  "source": "linux_kernel",
+  "h2": "Resources",
+  "h3": "",
+  "alsoIn": [
+   "linux_kernel"
+  ]
+ },
+ {
+  "title": "1337kit",
+  "desc": "64-bit LKM Rootkit builder based on yaml prescription.",
+  "url": "https://github.com/lukasbalazik123/1337kit",
+  "source": "linux_kernel",
+  "h2": "Rootkits",
+  "h3": "",
+  "alsoIn": [
+   "linux_kernel"
+  ]
+ },
+ {
+  "title": "Awesome Linux Rootkits",
+  "desc": ".",
+  "url": "https://github.com/milabs/awesome-linux-rootkits",
+  "source": "linux_kernel",
+  "h2": "Rootkits",
+  "h3": "",
+  "alsoIn": [
+   "linux_kernel",
+   "red_team"
+  ]
+ },
+ {
+  "title": "ebpfkit",
+  "desc": "ebpfkit is a rootkit powered by eBPF",
+  "url": "https://github.com/Gui774ume/ebpfkit",
+  "source": "linux_kernel",
+  "h2": "Rootkits",
+  "h3": "",
+  "alsoIn": [
+   "linux_kernel"
+  ]
+ },
+ {
+  "title": "brokepkg",
+  "desc": "LKM rootkit working in Linux Kernels 2.6.x/3.x/4.x/5.x",
+  "url": "https://github.com/R3tr074/brokepkg",
+  "source": "linux_kernel",
+  "h2": "Rootkits",
+  "h3": "",
+  "alsoIn": [
+   "linux_kernel"
+  ]
+ },
+ {
+  "title": "Brootus",
+  "desc": "educational Linux Kernel Rootkit.",
+  "url": "https://github.com/dsmatter/brootus",
+  "source": "linux_kernel",
+  "h2": "Rootkits",
+  "h3": "",
+  "alsoIn": [
+   "linux_kernel"
+  ]
+ },
+ {
+  "title": "Diamorphine",
+  "desc": "LKM rootkit for Linux Kernels 2.6.x/3.x/4.x/5.x and ARM64.",
+  "url": "https://github.com/m0nad/Diamorphine",
+  "source": "linux_kernel",
+  "h2": "Rootkits",
+  "h3": "",
+  "alsoIn": [
+   "linux_kernel",
+   "red_team"
+  ]
+ },
+ {
+  "title": "Drovorub",
+  "desc": "Analysis of Drovorub",
+  "url": "https://access.redhat.com/articles/5320961",
+  "source": "linux_kernel",
+  "h2": "Rootkits",
+  "h3": "",
+  "alsoIn": [
+   "linux_kernel"
+  ]
+ },
+ {
+  "title": "enyelkm",
+  "desc": "LKM rootkit for Linux x86 with the 2.6 kerne",
+  "url": "https://github.com/therealdreg/enyelkm",
+  "source": "linux_kernel",
+  "h2": "Rootkits",
+  "h3": "",
+  "alsoIn": [
+   "linux_kernel"
+  ]
+ },
+ {
+  "title": "KoviD",
+  "desc": "Kernel rk",
+  "url": "https://github.com/carloslack/KoviD",
+  "source": "linux_kernel",
+  "h2": "Rootkits",
+  "h3": "",
+  "alsoIn": [
+   "linux_kernel"
+  ]
+ },
+ {
+  "title": "linux-rootkit",
+  "desc": "Remote Linux Loadable Kernel Module (LKM) rootkit (For Linux Kernels 5.x).",
+  "url": "https://github.com/Zhang1933/linux-rootkit",
+  "source": "linux_kernel",
+  "h2": "Rootkits",
+  "h3": "",
+  "alsoIn": [
+   "linux_kernel"
+  ]
+ },
+ {
+  "title": "linux-rootkits",
+  "desc": "collection of Linux kernel rootkits found across the internet taken and put together.",
+  "url": "https://github.com/R3x/linux-rootkits",
+  "source": "linux_kernel",
+  "h2": "Rootkits",
+  "h3": "",
+  "alsoIn": [
+   "linux_kernel"
+  ]
+ },
+ {
+  "title": "Pinkit",
+  "desc": "LKM rootkit that executes a reverse TCP netcat shell with root privileges.",
+  "url": "https://github.com/PinkP4nther/Pinkit",
+  "source": "linux_kernel",
+  "h2": "Rootkits",
+  "h3": "",
+  "alsoIn": [
+   "linux_kernel",
+   "red_team"
+  ]
+ },
+ {
+  "title": "Red Blue Teams",
+  "desc": "Linux Rootkits (4.x Kernel)",
+  "url": "https://github.com/pentesteracademy/linux-rootkits-red-blue-teams/tree/master",
+  "source": "linux_kernel",
+  "h2": "Rootkits",
+  "h3": "",
+  "alsoIn": [
+   "linux_kernel"
+  ]
+ },
+ {
+  "title": "Reptile",
+  "desc": "LKM Linux rootkit.",
+  "url": "https://github.com/f0rb1dd3n/Reptile",
+  "source": "linux_kernel",
+  "h2": "Rootkits",
+  "h3": "",
+  "alsoIn": [
+   "linux_kernel",
+   "red_team"
+  ]
+ },
+ {
+  "title": "Research rootkit",
+  "desc": "LibZeroEvil & the Research Rootkit project.",
+  "url": "https://github.com/NoviceLive/research-rootkit",
+  "source": "linux_kernel",
+  "h2": "Rootkits",
+  "h3": "",
+  "alsoIn": [
+   "linux_kernel",
+   "red_team"
+  ]
+ },
+ {
+  "title": "Reveng_rtkit",
+  "desc": "Linux Loadable Kernel Module (LKM) based rootkit (ring-0).",
+  "url": "https://github.com/reveng007/reveng_rtkit",
+  "source": "linux_kernel",
+  "h2": "Rootkits",
+  "h3": "",
+  "alsoIn": [
+   "linux_kernel"
+  ]
+ },
+ {
+  "title": "rkduck",
+  "desc": "Linux v4.x.x Rootkit",
+  "url": "https://github.com/QuokkaLight/rkduck",
+  "source": "linux_kernel",
+  "h2": "Rootkits",
+  "h3": "",
+  "alsoIn": [
+   "linux_kernel"
+  ]
+ },
+ {
+  "title": "Rootkit",
+  "desc": "rootkit for Ubuntu 16.04 and 10.04 (Linux Kernels 4.4.0 and 2.6.32), both i386 and amd64.",
+  "url": "https://github.com/nurupo/rootkit",
+  "source": "linux_kernel",
+  "h2": "Rootkits",
+  "h3": "",
+  "alsoIn": [
+   "linux_kernel",
+   "red_team"
+  ]
+ },
+ {
+  "title": "Rootkit list download",
+  "desc": "list of rootkits (includes also userspace rootkits).",
+  "url": "https://github.com/d30sa1/RootKits-List-Download",
+  "source": "linux_kernel",
+  "h2": "Rootkits",
+  "h3": "",
+  "alsoIn": [
+   "linux_kernel",
+   "red_team"
+  ]
+ },
+ {
+  "title": "rootkitkev",
+  "desc": "Rootkit Development tutorial series.",
+  "url": "https://github.com/SourceCodeDeleted/rootkitdev-linux/tree/master",
+  "source": "linux_kernel",
+  "h2": "Rootkits",
+  "h3": "",
+  "alsoIn": [
+   "linux_kernel"
+  ]
+ },
+ {
+  "title": "Satan",
+  "desc": "x86 Linux Kernel rootkit for Debian 9",
+  "url": "https://github.com/aesophor/satan",
+  "source": "linux_kernel",
+  "h2": "Rootkits",
+  "h3": "",
+  "alsoIn": [
+   "linux_kernel"
+  ]
+ },
+ {
+  "title": "spy",
+  "desc": "Linux kernel mode debugfs keylogger.",
+  "url": "https://github.com/jarun/spy",
+  "source": "linux_kernel",
+  "h2": "Rootkits",
+  "h3": "",
+  "alsoIn": [
+   "linux_kernel"
+  ]
+ },
+ {
+  "title": "Sutekh",
+  "desc": "rootkit that gives a userland process root permissions.",
+  "url": "https://github.com/PinkP4nther/Sutekh",
+  "source": "linux_kernel",
+  "h2": "Rootkits",
+  "h3": "",
+  "alsoIn": [
+   "linux_kernel",
+   "red_team"
+  ]
+ },
+ {
+  "title": "TripleCross",
+  "desc": "Linux eBPF rootkit.",
+  "url": "https://github.com/h3xduck/TripleCross",
+  "source": "linux_kernel",
+  "h2": "Rootkits",
+  "h3": "",
+  "alsoIn": [
+   "linux_kernel",
+   "red_team",
+   "misc"
+  ]
+ },
+ {
+  "title": "Getting started",
+  "desc": "official documentation for getting started with Rust and Linux kernel.",
+  "url": "https://docs.kernel.org/rust/quick-start.html",
+  "source": "linux_kernel",
+  "h2": "Rust",
+  "h3": "",
+  "alsoIn": [
+   "linux_kernel"
+  ]
+ },
+ {
+  "title": "knock-out",
+  "desc": "example of a kernel module in Rust.",
+  "url": "https://github.com/jbaublitz/knock-out",
+  "source": "linux_kernel",
+  "h2": "Rust",
+  "h3": "",
+  "alsoIn": [
+   "linux_kernel"
+  ]
+ },
+ {
+  "title": "out-of-tree",
+  "desc": "basic template for an out-of-tree Linux kernel module written in Rust.",
+  "url": "https://github.com/Rust-for-Linux/rust-out-of-tree-module",
+  "source": "linux_kernel",
+  "h2": "Rust",
+  "h3": "",
+  "alsoIn": [
+   "linux_kernel"
+  ]
+ },
+ {
+  "title": "Rust for Linux",
+  "desc": "organization for adding support for the Rust language to the Linux kernel.",
+  "url": "https://github.com/Rust-for-Linux",
+  "source": "linux_kernel",
+  "h2": "Rust",
+  "h3": "",
+  "alsoIn": [
+   "linux_kernel"
+  ]
+ },
+ {
+  "title": "Rust for Linux mailing list",
+  "desc": "rust for Linux mailing list",
+  "url": "https://lore.kernel.org/rust-for-linux/",
+  "source": "linux_kernel",
+  "h2": "Rust",
+  "h3": "",
+  "alsoIn": [
+   "linux_kernel"
+  ]
+ },
+ {
+  "title": "Rust Kernel Programming (blog)",
+  "desc": "",
+  "url": "https://coderjoshdk.github.io/posts/Rust-Kernel-Programming.html",
+  "source": "linux_kernel",
+  "h2": "Rust",
+  "h3": "",
+  "alsoIn": [
+   "linux_kernel"
+  ]
+ },
+ {
+  "title": "Specifications",
+  "desc": "",
+  "url": "https://www.3gpp.org/specifications-technologies",
+  "source": "wireless",
+  "h2": "3GPP",
+  "h3": "",
+  "alsoIn": [
+   "wireless"
+  ]
+ },
+ {
+  "title": "Wi-Fi Alliance",
+  "desc": "",
+  "url": "https://www.wi-fi.org",
+  "source": "wireless",
+  "h2": "802.11",
+  "h3": "",
+  "alsoIn": [
+   "wireless"
+  ]
+ },
+ {
+  "title": "Specification",
+  "desc": "",
+  "url": "https://www.wi-fi.org/discover-wi-fi/specifications",
+  "source": "wireless",
+  "h2": "802.11",
+  "h3": "",
+  "alsoIn": [
+   "wireless"
+  ]
+ },
+ {
+  "title": "Broadcom Wi-Fi stack exploitation — Part 5",
+  "desc": "",
+  "url": "https://googleprojectzero.blogspot.com/2017/10/over-air-vol-2-pt-3-exploiting-wi-fi.html",
+  "source": "wireless",
+  "h2": "802.11",
+  "h3": "",
+  "alsoIn": [
+   "wireless"
+  ]
+ },
+ {
+  "title": "DragonBlood",
+  "desc": "attacking WPA3's Dragonfly Handshake",
+  "url": "https://wpa3.mathyvanhoef.com",
+  "source": "wireless",
+  "h2": "802.11",
+  "h3": "",
+  "alsoIn": [
+   "wireless"
+  ]
+ },
+ {
+  "title": "Exploiting Wi-Fi Stack on Tesla Model S",
+  "desc": "",
+  "url": "https://keenlab.tencent.com/en/2020/01/02/exploiting-wifi-stack-on-tesla-model-s/",
+  "source": "wireless",
+  "h2": "802.11",
+  "h3": "",
+  "alsoIn": [
+   "wireless"
+  ]
+ },
+ {
+  "title": "FragAttacks",
+  "desc": "Fragmentation and aggregation attacks against Wi-Fi.",
+  "url": "https://www.fragattacks.com",
+  "source": "wireless",
+  "h2": "802.11",
+  "h3": "",
+  "alsoIn": [
+   "wireless"
+  ]
+ },
+ {
+  "title": "Repository",
+  "desc": "",
+  "url": "https://github.com/vanhoefm/fragattacks",
+  "source": "wireless",
+  "h2": "802.11",
+  "h3": "",
+  "alsoIn": [
+   "wireless"
+  ]
+ },
+ {
+  "title": "KRACK attack — paper",
+  "desc": "Key Reinstallation Attacks: Forcing Nonce Reuse in WPA2",
+  "url": "https://papers.mathyvanhoef.com/ccs2017.pdf",
+  "source": "wireless",
+  "h2": "802.11",
+  "h3": "",
+  "alsoIn": [
+   "wireless"
+  ]
+ },
+ {
+  "title": "KRACK attack — scripts",
+  "desc": "scripts to test if clients or access points (APs) are affected by the KRACK attack.",
+  "url": "https://github.com/vanhoefm/krackattacks-scripts",
+  "source": "wireless",
+  "h2": "802.11",
+  "h3": "",
+  "alsoIn": [
+   "wireless"
+  ]
+ },
+ {
+  "title": "KRACK attack — website",
+  "desc": "Key Reinstallation Attacks",
+  "url": "https://www.krackattacks.com",
+  "source": "wireless",
+  "h2": "802.11",
+  "h3": "",
+  "alsoIn": [
+   "wireless"
+  ]
+ },
+ {
+  "title": "ICMP redirects",
+  "desc": "Man-in-the-Middle Attacks without Rogue AP: When WPAs Meet ICMP Redirects.",
+  "url": "https://csis.gmu.edu/ksun/publications/WiFi_Interception_SP23.pdf",
+  "source": "wireless",
+  "h2": "802.11",
+  "h3": "",
+  "alsoIn": [
+   "wireless"
+  ]
+ },
+ {
+  "title": "MacStealer — paper",
+  "desc": "Framing Frames: Bypassing Wi-Fi Encryption by Manipulating Transmit Queues.",
+  "url": "https://papers.mathyvanhoef.com/usenix2023-wifi.pdf",
+  "source": "wireless",
+  "h2": "802.11",
+  "h3": "",
+  "alsoIn": [
+   "wireless"
+  ]
+ },
+ {
+  "title": "MacStealer — repository",
+  "desc": "est Wi-Fi networks for client isolation bypasses.",
+  "url": "https://github.com/vanhoefm/macstealer",
+  "source": "wireless",
+  "h2": "802.11",
+  "h3": "",
+  "alsoIn": [
+   "wireless"
+  ]
+ },
+ {
+  "title": "MacStealer — wifi-framing",
+  "desc": "Repository for the Framing Frames publication",
+  "url": "https://github.com/domienschepers/wifi-framing",
+  "source": "wireless",
+  "h2": "802.11",
+  "h3": "",
+  "alsoIn": [
+   "wireless"
+  ]
+ },
+ {
+  "title": "[IEEE] — Working Group",
+  "desc": "",
+  "url": "https://www.ieee802.org/11/",
+  "source": "wireless",
+  "h2": "802.11",
+  "h3": "",
+  "alsoIn": [
+   "wireless"
+  ]
+ },
+ {
+  "title": "Tools — aircrack-ng",
+  "desc": "complete suite of tools to assess WiFi network security.",
+  "url": "https://www.aircrack-ng.org/",
+  "source": "wireless",
+  "h2": "802.11",
+  "h3": "",
+  "alsoIn": [
+   "wireless"
+  ]
+ },
+ {
+  "title": "Tools — GitHub",
+  "desc": "WiFi security auditing tools suite",
+  "url": "https://github.com/aircrack-ng/aircrack-ng",
+  "source": "wireless",
+  "h2": "802.11",
+  "h3": "",
+  "alsoIn": [
+   "wireless"
+  ]
+ },
+ {
+  "title": "Tools — airgeddon",
+  "desc": "multi-use bash script for Linux systems to audit wireless networks.",
+  "url": "https://github.com/v1s1t0r1sh3r3/airgeddon?tab=readme-ov-file",
+  "source": "wireless",
+  "h2": "802.11",
+  "h3": "",
+  "alsoIn": [
+   "wireless"
+  ]
+ },
+ {
+  "title": "Tools — airgorah",
+  "desc": "WiFi auditing software that can perform deauth attacks and passwords cracking.",
+  "url": "https://github.com/martin-olivier/airgorah",
+  "source": "wireless",
+  "h2": "802.11",
+  "h3": "",
+  "alsoIn": [
+   "wireless"
+  ]
+ },
+ {
+  "title": "Tools — airpwn-ng",
+  "desc": "Packet injection for wifi.",
+  "url": "https://github.com/ICSec/airpwn-ng",
+  "source": "wireless",
+  "h2": "802.11",
+  "h3": "",
+  "alsoIn": [
+   "wireless"
+  ]
+ },
+ {
+  "title": "Tools — AngryOxide",
+  "desc": "802.11 Attack Tool (rust).",
+  "url": "https://github.com/Ragnt/AngryOxide",
+  "source": "wireless",
+  "h2": "802.11",
+  "h3": "",
+  "alsoIn": [
+   "wireless"
+  ]
+ },
+ {
+  "title": "Tools — apfree-wifidog",
+  "desc": "high-performance, lightweight captive portal solution.",
+  "url": "https://github.com/liudf0716/apfree-wifidog",
+  "source": "wireless",
+  "h2": "802.11",
+  "h3": "",
+  "alsoIn": [
+   "wireless"
+  ]
+ },
+ {
+  "title": "Tools — bettercap",
+  "desc": "Swiss Army knife for WiFi, Bluetooth Low Energy, wireless HID hijacking.",
+  "url": "https://www.bettercap.org/",
+  "source": "wireless",
+  "h2": "802.11",
+  "h3": "",
+  "alsoIn": [
+   "wireless"
+  ]
+ },
+ {
+  "title": "Tools — GitHub",
+  "desc": "source code repository.",
+  "url": "https://github.com/bettercap/bettercap",
+  "source": "wireless",
+  "h2": "802.11",
+  "h3": "",
+  "alsoIn": [
+   "wireless",
+   "red_team"
+  ]
+ },
+ {
+  "title": "Tools — crEAP",
+  "desc": "WPA Enterprise mode EAP types analysis",
+  "url": "https://github.com/p0dalirius/crEAP",
+  "source": "wireless",
+  "h2": "802.11",
+  "h3": "",
+  "alsoIn": [
+   "wireless"
+  ]
+ },
+ {
+  "title": "Tools — EAP_buster",
+  "desc": "lists what EAP methods are supported by the RADIUS server.",
+  "url": "https://github.com/blackarrowsec/EAP_buster",
+  "source": "wireless",
+  "h2": "802.11",
+  "h3": "",
+  "alsoIn": [
+   "wireless"
+  ]
+ },
+ {
+  "title": "Tools — eaphammer",
+  "desc": "evil twin attacks against WPA2-Enterprise networks.",
+  "url": "https://github.com/s0lst1c3/eaphammer",
+  "source": "wireless",
+  "h2": "802.11",
+  "h3": "",
+  "alsoIn": [
+   "wireless"
+  ]
+ },
+ {
+  "title": "Tools — ESP32 802.11 TX",
+  "desc": "Send arbitrary IEEE 802.11 frames with Espressif's ESP32.",
+  "url": "https://github.com/Jeija/esp32-80211-tx",
+  "source": "wireless",
+  "h2": "802.11",
+  "h3": "",
+  "alsoIn": [
+   "wireless"
+  ]
+ },
+ {
+  "title": "Tools — ESP32 ESP8266 attacks",
+  "desc": "Proof of Concept of ESP32/8266 Wi-Fi vulnerabilties.",
+  "url": "https://github.com/Matheus-Garbelini/esp32_esp8266_attacks",
+  "source": "wireless",
+  "h2": "802.11",
+  "h3": "",
+  "alsoIn": [
+   "wireless"
+  ]
+ },
+ {
+  "title": "Tools — ESP32 Marauder",
+  "desc": "suite of WiFi/Bluetooth offensive and defensive tools for the ESP32.",
+  "url": "https://github.com/justcallmekoko/ESP32Marauder",
+  "source": "wireless",
+  "h2": "802.11",
+  "h3": "",
+  "alsoIn": [
+   "wireless"
+  ]
+ },
+ {
+  "title": "Tools — ESP32-WiFi-Hash-Monster",
+  "desc": "store EAPOL & PMKID packets in an SD CARD.",
+  "url": "https://github.com/G4lile0/ESP32-WiFi-Hash-Monster",
+  "source": "wireless",
+  "h2": "802.11",
+  "h3": "",
+  "alsoIn": [
+   "wireless"
+  ]
+ },
+ {
+  "title": "Tools — esp32-wifi-penetration-tool",
+  "desc": "Exploring possibilities of ESP32 platform to attack on nearby Wi-Fi networks.",
+  "url": "https://github.com/risinek/esp32-wifi-penetration-tool",
+  "source": "wireless",
+  "h2": "802.11",
+  "h3": "",
+  "alsoIn": [
+   "wireless"
+  ]
+ },
+ {
+  "title": "Tools — fern-wifi-cracker",
+  "desc": "Wireless security auditing and attack software.",
+  "url": "https://github.com/savio-code/fern-wifi-cracker",
+  "source": "wireless",
+  "h2": "802.11",
+  "h3": "",
+  "alsoIn": [
+   "wireless"
+  ]
+ },
+ {
+  "title": "Tools — FlyingCarpet",
+  "desc": "Cross-platform AirDrop.",
+  "url": "https://github.com/spieglt/FlyingCarpet",
+  "source": "wireless",
+  "h2": "802.11",
+  "h3": "",
+  "alsoIn": [
+   "wireless"
+  ]
+ },
+ {
+  "title": "Tools — FreeRADIUS",
+  "desc": "open source RADIUS server.",
+  "url": "https://freeradius.org",
+  "source": "wireless",
+  "h2": "802.11",
+  "h3": "",
+  "alsoIn": [
+   "wireless"
+  ]
+ },
+ {
+  "title": "Tools — Github",
+  "desc": "",
+  "url": "https://github.com/FreeRADIUS",
+  "source": "wireless",
+  "h2": "802.11",
+  "h3": "",
+  "alsoIn": [
+   "wireless"
+  ]
+ },
+ {
+  "title": "Tools — hostapd",
+  "desc": "user space daemon for access points.",
+  "url": "https://w1.fi/cgit/hostap/",
+  "source": "wireless",
+  "h2": "802.11",
+  "h3": "",
+  "alsoIn": [
+   "wireless"
+  ]
+ },
+ {
+  "title": "Tools — hostapd-mana",
+  "desc": "SensePost's modified hostapd for wifi attacks.",
+  "url": "https://github.com/sensepost/hostapd-mana",
+  "source": "wireless",
+  "h2": "802.11",
+  "h3": "",
+  "alsoIn": [
+   "wireless"
+  ]
+ },
+ {
+  "title": "Tools — w1f1.net",
+  "desc": "set of tools for wifi hacking using rogue access points.",
+  "url": "https://w1f1.net",
+  "source": "wireless",
+  "h2": "802.11",
+  "h3": "",
+  "alsoIn": [
+   "wireless"
+  ]
+ },
+ {
+  "title": "Tools — howmanypeoplearearound",
+  "desc": "Count the number of people around you.",
+  "url": "https://github.com/schollz/howmanypeoplearearound",
+  "source": "wireless",
+  "h2": "802.11",
+  "h3": "",
+  "alsoIn": [
+   "wireless"
+  ]
+ },
+ {
+  "title": "Tools — Kismet",
+  "desc": "Wi-Fi, Bluetooth, RF, and more",
+  "url": "https://www.kismetwireless.net/",
+  "source": "wireless",
+  "h2": "802.11",
+  "h3": "",
+  "alsoIn": [
+   "wireless"
+  ]
+ },
+ {
+  "title": "Tools — GitHub",
+  "desc": "Kismet and related tools and libraries for wireless monitoring, transmitting, and auditing.",
+  "url": "https://github.com/kismetwireless",
+  "source": "wireless",
+  "h2": "802.11",
+  "h3": "",
+  "alsoIn": [
+   "wireless"
+  ]
+ },
+ {
+  "title": "Tools — iw",
+  "desc": "nl80211 based CLI configuration utility for wireless devices.",
+  "url": "https://git.kernel.org/pub/scm/linux/kernel/git/jberg/iw.git",
+  "source": "wireless",
+  "h2": "802.11",
+  "h3": "",
+  "alsoIn": [
+   "wireless"
+  ]
+ },
+ {
+  "title": "Tools — libwifi",
+  "desc": "an 802.11 (WiFi) Frame Generation and Parsing Library in C.",
+  "url": "https://libwifi.so/",
+  "source": "wireless",
+  "h2": "802.11",
+  "h3": "",
+  "alsoIn": [
+   "wireless"
+  ]
+ },
+ {
+  "title": "Tools — github repo",
+  "desc": "libwifi github repository",
+  "url": "https://github.com/libwifi/libwifi",
+  "source": "wireless",
+  "h2": "802.11",
+  "h3": "",
+  "alsoIn": [
+   "wireless"
+  ]
+ },
+ {
+  "title": "Tools — libwifi (nukesor)",
+  "desc": "rust library for parsing IEE 802.11 frames.",
+  "url": "https://github.com/Nukesor/libwifi",
+  "source": "wireless",
+  "h2": "802.11",
+  "h3": "",
+  "alsoIn": [
+   "wireless"
+  ]
+ },
+ {
+  "title": "Tools — libwifi (vanhoefm)",
+  "desc": "python and scapy scripts for Wi-Fi.",
+  "url": "https://github.com/vanhoefm/libwifi",
+  "source": "wireless",
+  "h2": "802.11",
+  "h3": "",
+  "alsoIn": [
+   "wireless"
+  ]
+ },
+ {
+  "title": "Tools — LinkLiar",
+  "desc": "Link-Layer MAC spoofing GUI for macOS.",
+  "url": "https://github.com/halo/LinkLiar",
+  "source": "wireless",
+  "h2": "802.11",
+  "h3": "",
+  "alsoIn": [
+   "wireless"
+  ]
+ },
+ {
+  "title": "Tools — linux-router",
+  "desc": "Set Linux as router in one command.",
+  "url": "https://github.com/garywill/linux-router",
+  "source": "wireless",
+  "h2": "802.11",
+  "h3": "",
+  "alsoIn": [
+   "wireless"
+  ]
+ },
+ {
+  "title": "Tools — modwifi",
+  "desc": "low-layer Wi-Fi attacks.",
+  "url": "https://github.com/vanhoefm/modwifi",
+  "source": "wireless",
+  "h2": "802.11",
+  "h3": "",
+  "alsoIn": [
+   "wireless"
+  ]
+ },
+ {
+  "title": "Tools — nearby",
+  "desc": "scans all nearby wifi networks and the devices connected to each network for Indoor positioning.",
+  "url": "https://github.com/wisespace-io/nearby/tree/master",
+  "source": "wireless",
+  "h2": "802.11",
+  "h3": "",
+  "alsoIn": [
+   "wireless"
+  ]
+ },
+ {
+  "title": "Tools — nexmon",
+  "desc": "The C-based Firmware Patching Framework for Broadcom/Cypress WiFi Chips.",
+  "url": "https://github.com/seemoo-lab/nexmon",
+  "source": "wireless",
+  "h2": "802.11",
+  "h3": "",
+  "alsoIn": [
+   "wireless"
+  ]
+ },
+ {
+  "title": "Tools — openwrt",
+  "desc": "Linux operating system targeting embedded devices.",
+  "url": "https://openwrt.org",
+  "source": "wireless",
+  "h2": "802.11",
+  "h3": "",
+  "alsoIn": [
+   "wireless"
+  ]
+ },
+ {
+  "title": "Tools — pawnagotchi",
+  "desc": "A2C-based “AI” powered by bettercap and running on a Raspberry Pi Zero W that learns from its surrounding WiFi environment in order to maximize the crackable WPA key material it captures/",
+  "url": "https://pwnagotchi.ai/",
+  "source": "wireless",
+  "h2": "802.11",
+  "h3": "",
+  "alsoIn": [
+   "wireless"
+  ]
+ },
+ {
+  "title": "Tools — pi-pwnbox-rogueap",
+  "desc": "Rogue AP based on Raspberry Pi",
+  "url": "https://github.com/koutto/pi-pwnbox-rogueap",
+  "source": "wireless",
+  "h2": "802.11",
+  "h3": "",
+  "alsoIn": [
+   "wireless"
+  ]
+ },
+ {
+  "title": "Tools — PiDense",
+  "desc": "Python script to audit wireless network security.",
+  "url": "https://github.com/WiPi-Hunter/PiDense",
+  "source": "wireless",
+  "h2": "802.11",
+  "h3": "",
+  "alsoIn": [
+   "wireless"
+  ]
+ },
+ {
+  "title": "Tools — pixiewps",
+  "desc": "An offline Wi-Fi Protected Setup brute-force utility.",
+  "url": "https://github.com/wiire-a/pixiewps",
+  "source": "wireless",
+  "h2": "802.11",
+  "h3": "",
+  "alsoIn": [
+   "wireless"
+  ]
+ },
+ {
+  "title": "Tools — probequest",
+  "desc": "Toolkit for playing with Wi-Fi probe requests.",
+  "url": "https://github.com/SkypLabs/probequest",
+  "source": "wireless",
+  "h2": "802.11",
+  "h3": "",
+  "alsoIn": [
+   "wireless"
+  ]
+ },
+ {
+  "title": "Tools — rastap",
+  "desc": "full-featured wireless router setup for Debian-based devices.",
+  "url": "https://raspap.com",
+  "source": "wireless",
+  "h2": "802.11",
+  "h3": "",
+  "alsoIn": [
+   "wireless"
+  ]
+ },
+ {
+  "title": "Tools — rogue (InfamousSYN)",
+  "desc": "extensible toolkit providing penetration testers an easy-to-use platform to deploy Access Points.",
+  "url": "https://github.com/InfamousSYN/rogue",
+  "source": "wireless",
+  "h2": "802.11",
+  "h3": "",
+  "alsoIn": [
+   "wireless"
+  ]
+ },
+ {
+  "title": "Tools — sentrygun",
+  "desc": "Rogue AP killer",
+  "url": "https://github.com/s0lst1c3/sentrygun",
+  "source": "wireless",
+  "h2": "802.11",
+  "h3": "",
+  "alsoIn": [
+   "wireless"
+  ]
+ },
+ {
+  "title": "Tools — trackerjacker",
+  "desc": "like nmap for mapping wifi networks you're not connected to, plus device tracking.",
+  "url": "https://github.com/calebmadrigal/trackerjacker",
+  "source": "wireless",
+  "h2": "802.11",
+  "h3": "",
+  "alsoIn": [
+   "wireless"
+  ]
+ },
+ {
+  "title": "Tools — websploit",
+  "desc": "an advanced MITM framework.",
+  "url": "https://github.com/f4rih/websploit",
+  "source": "wireless",
+  "h2": "802.11",
+  "h3": "",
+  "alsoIn": [
+   "wireless"
+  ]
+ },
+ {
+  "title": "Tools — WEF",
+  "desc": "Wi-Fi Exploitation Framework.",
+  "url": "https://github.com/D3Ext/WEF",
+  "source": "wireless",
+  "h2": "802.11",
+  "h3": "",
+  "alsoIn": [
+   "wireless"
+  ]
+ },
+ {
+  "title": "Tools — wifi-arsenal",
+  "desc": "links to projects related to wifi security.",
+  "url": "https://github.com/0x90/wifi-arsenal",
+  "source": "wireless",
+  "h2": "802.11",
+  "h3": "",
+  "alsoIn": [
+   "wireless"
+  ]
+ },
+ {
+  "title": "Tools — wifi-cracking",
+  "desc": "Crack WPA/WPA2 Wi-Fi Routers with Airodump-ng and Aircrack-ng/Hashcat.",
+  "url": "https://github.com/brannondorsey/wifi-cracking",
+  "source": "wireless",
+  "h2": "802.11",
+  "h3": "",
+  "alsoIn": [
+   "wireless"
+  ]
+ },
+ {
+  "title": "Tools — wifi-deauth",
+  "desc": "deauth attac.",
+  "url": "https://github.com/flashnuke/wifi-deauth",
+  "source": "wireless",
+  "h2": "802.11",
+  "h3": "",
+  "alsoIn": [
+   "wireless"
+  ]
+ },
+ {
+  "title": "Tools — Wifi-Hacking",
+  "desc": "Cyber Security Tool For Hacking Wireless Connections Using Built-In Kali Tools.",
+  "url": "https://github.com/ankit0183/Wifi-Hacking",
+  "source": "wireless",
+  "h2": "802.11",
+  "h3": "",
+  "alsoIn": [
+   "wireless"
+  ]
+ },
+ {
+  "title": "Tools — WIFI-HACKING",
+  "desc": "Security Tool For Hacking Wireless Connections.",
+  "url": "https://github.com/U7P4L-IN/WIFI-HACKING",
+  "source": "wireless",
+  "h2": "802.11",
+  "h3": "",
+  "alsoIn": [
+   "wireless"
+  ]
+ },
+ {
+  "title": "Tools — WiFi-Spam",
+  "desc": "Spam thousands of WiFi access points with custom SSIDs.",
+  "url": "https://github.com/adamff-dev/WiFi-Spam",
+  "source": "wireless",
+  "h2": "802.11",
+  "h3": "",
+  "alsoIn": [
+   "wireless"
+  ]
+ },
+ {
+  "title": "Tools — WiFiBroot",
+  "desc": "A Wireless (WPA/WPA2) Pentest/Cracking tool.",
+  "url": "https://github.com/hash3liZer/WiFiBroot",
+  "source": "wireless",
+  "h2": "802.11",
+  "h3": "",
+  "alsoIn": [
+   "wireless"
+  ]
+ },
+ {
+  "title": "Tools — wifijammer",
+  "desc": "Continuously jam all wifi clients/routers.",
+  "url": "https://github.com/DanMcInerney/wifijammer",
+  "source": "wireless",
+  "h2": "802.11",
+  "h3": "",
+  "alsoIn": [
+   "wireless"
+  ]
+ },
+ {
+  "title": "Tools — wifiphisher",
+  "desc": "The Rogue Access Point Framework.",
+  "url": "https://github.com/wifiphisher/wifiphisher",
+  "source": "wireless",
+  "h2": "802.11",
+  "h3": "",
+  "alsoIn": [
+   "wireless"
+  ]
+ },
+ {
+  "title": "Tools — WiFiManager",
+  "desc": "ESP8266 WiFi Connection manager with web captive portal.",
+  "url": "https://github.com/tzapu/WiFiManager",
+  "source": "wireless",
+  "h2": "802.11",
+  "h3": "",
+  "alsoIn": [
+   "wireless"
+  ]
+ },
+ {
+  "title": "Tools — wifipumpkin3",
+  "desc": "Powerful framework for rogue access point attack.",
+  "url": "https://github.com/P0cL4bs/wifipumpkin3",
+  "source": "wireless",
+  "h2": "802.11",
+  "h3": "",
+  "alsoIn": [
+   "wireless"
+  ]
+ },
+ {
+  "title": "Tools — wifite2",
+  "desc": "script for auditing wireless networks.",
+  "url": "https://github.com/derv82/wifite2",
+  "source": "wireless",
+  "h2": "802.11",
+  "h3": "",
+  "alsoIn": [
+   "wireless"
+  ]
+ },
+ {
+  "title": "Tools — wifi-presence",
+  "desc": "Presence detection on OpenWrt routers using connect/disconnect events of WiFi clients.",
+  "url": "https://github.com/awilliams/wifi-presence",
+  "source": "wireless",
+  "h2": "802.11",
+  "h3": "",
+  "alsoIn": [
+   "wireless"
+  ]
+ },
+ {
+  "title": "Tools — wirespy",
+  "desc": "automate various wireless networks attacks.",
+  "url": "https://github.com/aress31/wirespy",
+  "source": "wireless",
+  "h2": "802.11",
+  "h3": "",
+  "alsoIn": [
+   "wireless"
+  ]
+ },
+ {
+  "title": "Tools — WPAxFuzz",
+  "desc": "full-featured open-source Wi-Fi fuzzer",
+  "url": "https://github.com/efchatz/WPAxFuzz",
+  "source": "wireless",
+  "h2": "802.11",
+  "h3": "",
+  "alsoIn": [
+   "wireless"
+  ]
+ },
+ {
+  "title": "esp-wifi",
+  "desc": "WIP / POC for using the ESP32-C3, ESP32-S3 and ESP32 wifi drivers in bare-metal Rust.",
+  "url": "https://github.com/esp-rs/esp-wifi",
+  "source": "wireless",
+  "h2": "802.11",
+  "h3": "",
+  "alsoIn": [
+   "wireless"
+  ]
+ },
+ {
+  "title": "esp32-wifi-lib",
+  "desc": "ESP32 WiFi library.",
+  "url": "https://github.com/espressif/esp32-wifi-lib",
+  "source": "wireless",
+  "h2": "802.11",
+  "h3": "",
+  "alsoIn": [
+   "wireless"
+  ]
+ },
+ {
+  "title": "Fz3r0 802.11_Wi-Fi Knowledge-Base",
+  "desc": "802.11 Wi-Fi Networking Knowledge Base.",
+  "url": "https://github.com/Fz3r0/Fz3r0_-_802.11_Wi-Fi_-_Knowledge-Base",
+  "source": "wireless",
+  "h2": "802.11",
+  "h3": "",
+  "alsoIn": [
+   "wireless"
+  ]
+ },
+ {
+  "title": "itlwm",
+  "desc": "Intel Wi-Fi Drivers for macOS",
+  "url": "https://github.com/OpenIntelWireless/itlwm?tab=readme-ov-file",
+  "source": "wireless",
+  "h2": "802.11",
+  "h3": "",
+  "alsoIn": [
+   "wireless"
+  ]
+ },
+ {
+  "title": "USB-WiFi",
+  "desc": "USB WiFi Adapter Information for Linux",
+  "url": "https://github.com/morrownr/USB-WiFi",
+  "source": "wireless",
+  "h2": "802.11",
+  "h3": "",
+  "alsoIn": [
+   "wireless",
+   "misc"
+  ]
+ },
+ {
+  "title": "wifi-pentesting-guide",
+  "desc": "WiFi Penetration Testing Guide.",
+  "url": "https://github.com/ricardojoserf/wifi-pentesting-guide",
+  "source": "wireless",
+  "h2": "802.11",
+  "h3": "",
+  "alsoIn": [
+   "wireless"
+  ]
+ },
+ {
+  "title": "bluetooth.com",
+  "desc": "",
+  "url": "https://www.bluetooth.com",
+  "source": "wireless",
+  "h2": "Bluetooth",
+  "h3": "",
+  "alsoIn": [
+   "wireless"
+  ]
+ },
+ {
+  "title": "Specifications",
+  "desc": "",
+  "url": "https://www.bluetooth.com/specifications/specs/",
+  "source": "wireless",
+  "h2": "Bluetooth",
+  "h3": "",
+  "alsoIn": [
+   "wireless"
+  ]
+ },
+ {
+  "title": "Attacks — BlueBorne",
+  "desc": "attacks famility affecting Bluetooth devices",
+  "url": "https://www.armis.com/research/blueborne/",
+  "source": "wireless",
+  "h2": "Bluetooth",
+  "h3": "",
+  "alsoIn": [
+   "wireless"
+  ]
+ },
+ {
+  "title": "Hi, My Name is Keyboard — Blog Post",
+  "desc": "",
+  "url": "https://github.com/skysafe/reblog/blob/main/cve-2024-0230/README.md",
+  "source": "wireless",
+  "h2": "Bluetooth",
+  "h3": "",
+  "alsoIn": [
+   "wireless"
+  ]
+ },
+ {
+  "title": "Hi, My Name is Keyboard — PoC",
+  "desc": "",
+  "url": "https://github.com/marcnewlin/hi_my_name_is_keyboard",
+  "source": "wireless",
+  "h2": "Bluetooth",
+  "h3": "",
+  "alsoIn": [
+   "wireless"
+  ]
+ },
+ {
+  "title": "bluffs",
+  "desc": "Bluetooth Forward and Future Secrecy Attacks",
+  "url": "https://github.com/francozappa/bluffs",
+  "source": "wireless",
+  "h2": "Bluetooth",
+  "h3": "",
+  "alsoIn": [
+   "wireless"
+  ]
+ },
+ {
+  "title": "knob",
+  "desc": "Key Negotiation Of Bluetooth (KNOB) attacks.",
+  "url": "https://github.com/francozappa/knob",
+  "source": "wireless",
+  "h2": "Bluetooth",
+  "h3": "",
+  "alsoIn": [
+   "wireless"
+  ]
+ },
+ {
+  "title": "kr00kie",
+  "desc": "kr00kie attack.",
+  "url": "https://hexway.io/research/r00kie-kr00kie/",
+  "source": "wireless",
+  "h2": "Bluetooth",
+  "h3": "",
+  "alsoIn": [
+   "wireless"
+  ]
+ },
+ {
+  "title": "Playing with kr00kie",
+  "desc": "",
+  "url": "https://www.thice.nl/playing-with-kr00k/",
+  "source": "wireless",
+  "h2": "Bluetooth",
+  "h3": "",
+  "alsoIn": [
+   "wireless"
+  ]
+ },
+ {
+  "title": "Slides",
+  "desc": "",
+  "url": "https://web-assets.esetstatic.com/wls/2020/02/ESET_Kr00k.pdf",
+  "source": "wireless",
+  "h2": "Bluetooth",
+  "h3": "",
+  "alsoIn": [
+   "wireless"
+  ]
+ },
+ {
+  "title": "SweynTooth — Website",
+  "desc": "",
+  "url": "https://asset-group.github.io/disclosures/sweyntooth/",
+  "source": "wireless",
+  "h2": "Bluetooth",
+  "h3": "",
+  "alsoIn": [
+   "wireless"
+  ]
+ },
+ {
+  "title": "SweynTooth — PoC",
+  "desc": "",
+  "url": "https://github.com/Matheus-Garbelini/sweyntooth_bluetooth_low_energy_attacks",
+  "source": "wireless",
+  "h2": "Bluetooth",
+  "h3": "",
+  "alsoIn": [
+   "wireless"
+  ]
+ },
+ {
+  "title": "Awesome bluetooth security",
+  "desc": "useful references for anyone working with Bluetooth BR/EDR/LE or Mesh security.",
+  "url": "https://github.com/engn33r/awesome-bluetooth-security",
+  "source": "wireless",
+  "h2": "Bluetooth",
+  "h3": "",
+  "alsoIn": [
+   "wireless"
+  ]
+ },
+ {
+  "title": "BLE Security Attack Defence",
+  "desc": "Unveiling zero day vulnerabilities and security flaws in modern Bluetooth LE stacks.",
+  "url": "https://github.com/Charmve/BLE-Security-Attack-Defence",
+  "source": "wireless",
+  "h2": "Bluetooth",
+  "h3": "",
+  "alsoIn": [
+   "wireless"
+  ]
+ },
+ {
+  "title": "IntelBluetoothFirmware",
+  "desc": "Intel Bluetooth Firmware for macOS",
+  "url": "https://github.com/OpenIntelWireless/IntelBluetoothFirmware",
+  "source": "wireless",
+  "h2": "Bluetooth",
+  "h3": "",
+  "alsoIn": [
+   "wireless"
+  ]
+ },
+ {
+  "title": "Stacks — bluez",
+  "desc": "Bluetooth protocol stack for Linux",
+  "url": "https://github.com/bluez/bluez",
+  "source": "wireless",
+  "h2": "Bluetooth",
+  "h3": "",
+  "alsoIn": [
+   "wireless"
+  ]
+ },
+ {
+  "title": "Stacks — BTStack",
+  "desc": "Dual-mode Bluetooth stack, with small memory footprint",
+  "url": "https://github.com/bluekitchen/btstack",
+  "source": "wireless",
+  "h2": "Bluetooth",
+  "h3": "",
+  "alsoIn": [
+   "wireless"
+  ]
+ },
+ {
+  "title": "Stacks — NimBLE",
+  "desc": "open-source Bluetooth Low Energy (BLE) stack",
+  "url": "https://mynewt.apache.org/latest/network/",
+  "source": "wireless",
+  "h2": "Bluetooth",
+  "h3": "",
+  "alsoIn": [
+   "wireless"
+  ]
+ },
+ {
+  "title": "Tools — Android nRF-Connect",
+  "desc": "nRF Connect for Mobile is an application designed for Bluetooth Low Energy developers.",
+  "url": "https://github.com/NordicSemiconductor/Android-nRF-Connect/tree/main",
+  "source": "wireless",
+  "h2": "Bluetooth",
+  "h3": "",
+  "alsoIn": [
+   "wireless"
+  ]
+ },
+ {
+  "title": "Tools — apple_bleee",
+  "desc": "what an attacker get from Apple devices if they sniff Bluetooth traffic.",
+  "url": "https://github.com/hexway/apple_bleee",
+  "source": "wireless",
+  "h2": "Bluetooth",
+  "h3": "",
+  "alsoIn": [
+   "wireless"
+  ]
+ },
+ {
+  "title": "Tools — AppleJuice",
+  "desc": "Apple BLE proximity pairing message spoofing",
+  "url": "https://github.com/ECTO-1A/AppleJuice",
+  "source": "wireless",
+  "h2": "Bluetooth",
+  "h3": "",
+  "alsoIn": [
+   "wireless"
+  ]
+ },
+ {
+  "title": "Tools — ble-fuzzing",
+  "desc": "Stateful Black-Box Fuzzing of BLE Devices Using Automata Learning",
+  "url": "https://git.ist.tugraz.at/apferscher/ble-fuzzing",
+  "source": "wireless",
+  "h2": "Bluetooth",
+  "h3": "",
+  "alsoIn": [
+   "wireless"
+  ]
+ },
+ {
+  "title": "Tools — bleak",
+  "desc": "cross platform Bluetooth Low Energy Client for Python using asyncio",
+  "url": "https://github.com/hbldh/bleak",
+  "source": "wireless",
+  "h2": "Bluetooth",
+  "h3": "",
+  "alsoIn": [
+   "wireless"
+  ]
+ },
+ {
+  "title": "Tools — BLEUnlock",
+  "desc": "Lock/unlock your Mac with Bluetooth LE.",
+  "url": "https://github.com/ts1/BLEUnlock",
+  "source": "wireless",
+  "h2": "Bluetooth",
+  "h3": "",
+  "alsoIn": [
+   "wireless"
+  ]
+ },
+ {
+  "title": "Tools — bluepy",
+  "desc": "Python interface to Bluetooth LE on Linux.",
+  "url": "https://github.com/IanHarvey/bluepy",
+  "source": "wireless",
+  "h2": "Bluetooth",
+  "h3": "",
+  "alsoIn": [
+   "wireless"
+  ]
+ },
+ {
+  "title": "Tools — bluer",
+  "desc": "Official BlueZ Bindings for Rust.",
+  "url": "https://github.com/bluez/bluer",
+  "source": "wireless",
+  "h2": "Bluetooth",
+  "h3": "",
+  "alsoIn": [
+   "wireless"
+  ]
+ },
+ {
+  "title": "Tools — bluesnooze",
+  "desc": "Bluetooth Low Energy (BLE) snooping tool.",
+  "url": "https://github.com/odlp/bluesnooze",
+  "source": "wireless",
+  "h2": "Bluetooth",
+  "h3": "",
+  "alsoIn": [
+   "wireless"
+  ]
+ },
+ {
+  "title": "Tools — bluetility",
+  "desc": "A Bluetooth Low Energy browser, an open-source alternative to LightBlue for OS X.",
+  "url": "https://github.com/jnross/Bluetility",
+  "source": "wireless",
+  "h2": "Bluetooth",
+  "h3": "",
+  "alsoIn": [
+   "wireless"
+  ]
+ },
+ {
+  "title": "Tools — bluing",
+  "desc": "intelligence gathering tool for hacking Bluetooth.",
+  "url": "https://github.com/fO-000/bluing",
+  "source": "wireless",
+  "h2": "Bluetooth",
+  "h3": "",
+  "alsoIn": [
+   "wireless"
+  ]
+ },
+ {
+  "title": "Tools — BTLE",
+  "desc": "Bluetooth Low Energy (BLE) packet sniffer and transmitter for both standard and non standard (raw bit) based on Software Defined Radio (SDR).",
+  "url": "https://github.com/JiaoXianjun/BTLE",
+  "source": "wireless",
+  "h2": "Bluetooth",
+  "h3": "",
+  "alsoIn": [
+   "wireless"
+  ]
+ },
+ {
+  "title": "Tools — btlejack",
+  "desc": "Bluetooth Low Energy Swiss-army knife.",
+  "url": "https://github.com/virtualabs/btlejack",
+  "source": "wireless",
+  "h2": "Bluetooth",
+  "h3": "",
+  "alsoIn": [
+   "wireless"
+  ]
+ },
+ {
+  "title": "Tools — btlejuice",
+  "desc": "Bluetooth Smart (LE) Man-in-the-Middle framework",
+  "url": "https://github.com/DigitalSecurity/btlejuice",
+  "source": "wireless",
+  "h2": "Bluetooth",
+  "h3": "",
+  "alsoIn": [
+   "wireless"
+  ]
+ },
+ {
+  "title": "Tools — btleplug",
+  "desc": "Rust Cross-Platform Host-Side Bluetooth LE Access Library.",
+  "url": "https://github.com/deviceplug/btleplug",
+  "source": "wireless",
+  "h2": "Bluetooth",
+  "h3": "",
+  "alsoIn": [
+   "wireless"
+  ]
+ },
+ {
+  "title": "Tools — crackle",
+  "desc": "Crack and decrypt BLE encryption.",
+  "url": "https://github.com/mikeryan/crackle",
+  "source": "wireless",
+  "h2": "Bluetooth",
+  "h3": "",
+  "alsoIn": [
+   "wireless"
+  ]
+ },
+ {
+  "title": "Tools — ESP32 bluetooth classic sniffer",
+  "desc": "Active Bluetooth BR/EDR Sniffer/Injector as cheap as any ESP32 board can get.",
+  "url": "https://github.com/Matheus-Garbelini/esp32_bluetooth_classic_sniffer",
+  "source": "wireless",
+  "h2": "Bluetooth",
+  "h3": "",
+  "alsoIn": [
+   "wireless"
+  ]
+ },
+ {
+  "title": "Tools — gattacker",
+  "desc": "BLE (Bluetooth Low Energy) security assessment",
+  "url": "https://github.com/securing/gattacker",
+  "source": "wireless",
+  "h2": "Bluetooth",
+  "h3": "",
+  "alsoIn": [
+   "wireless"
+  ]
+ },
+ {
+  "title": "Tools — gattlib",
+  "desc": "Library to access GATT information from BLE (Bluetooth Low Energy) devices.",
+  "url": "https://github.com/labapart/gattlib",
+  "source": "wireless",
+  "h2": "Bluetooth",
+  "h3": "",
+  "alsoIn": [
+   "wireless"
+  ]
+ },
+ {
+  "title": "Tools — ice9-bluetooth-sniffer",
+  "desc": "Wireshark Bluetooth sniffer for HackRF, BladeRF, and USRP.",
+  "url": "https://github.com/mikeryan/ice9-bluetooth-sniffer",
+  "source": "wireless",
+  "h2": "Bluetooth",
+  "h3": "",
+  "alsoIn": [
+   "wireless",
+   "misc"
+  ]
+ },
+ {
+  "title": "Tools — injectable-firmware",
+  "desc": "Custom firmware for nrf52840-dongle to eversdrop and attack BLE communications.",
+  "url": "https://github.com/RCayre/injectable-firmware",
+  "source": "wireless",
+  "h2": "Bluetooth",
+  "h3": "",
+  "alsoIn": [
+   "wireless"
+  ]
+ },
+ {
+  "title": "Tools — internalblue",
+  "desc": "About Bluetooth experimentation framework for Broadcom and Cypress chips.",
+  "url": "https://github.com/seemoo-lab/internalblue",
+  "source": "wireless",
+  "h2": "Bluetooth",
+  "h3": "",
+  "alsoIn": [
+   "wireless"
+  ]
+ },
+ {
+  "title": "Tools — LOGITacker",
+  "desc": "Enumerate and test Logitech wireless input devices for vulnerabilities",
+  "url": "https://github.com/RoganDawes/LOGITacker",
+  "source": "wireless",
+  "h2": "Bluetooth",
+  "h3": "",
+  "alsoIn": [
+   "wireless"
+  ]
+ },
+ {
+  "title": "Tools — nRF sniffer",
+  "desc": "Bluetooth LE sniffer from nordic.",
+  "url": "https://infocenter.nordicsemi.com/index.jsp?topic=%2Fug_sniffer_ble%2FUG%2Fsniffer_ble%2Fintro.html",
+  "source": "wireless",
+  "h2": "Bluetooth",
+  "h3": "",
+  "alsoIn": [
+   "wireless"
+  ]
+ },
+ {
+  "title": "Tools — Sniffle",
+  "desc": "A sniffer for Bluetooth 5 and 4.x LE",
+  "url": "https://github.com/nccgroup/Sniffle",
+  "source": "wireless",
+  "h2": "Bluetooth",
+  "h3": "",
+  "alsoIn": [
+   "wireless"
+  ]
+ },
+ {
+  "title": "802.15.4",
+  "desc": "",
+  "url": "https://ieeexplore.ieee.org/browse/standards/get-program/page/series?id=68",
+  "source": "wireless",
+  "h2": "IoT",
+  "h3": "",
+  "alsoIn": [
+   "wireless"
+  ]
+ },
+ {
+  "title": "KillerBee",
+  "desc": "IEEE 802.15.4/ZigBee Security Research Toolkit.",
+  "url": "https://github.com/jhshi/openofdm",
+  "source": "wireless",
+  "h2": "IoT",
+  "h3": "",
+  "alsoIn": [
+   "wireless"
+  ]
+ },
+ {
+  "title": "csa-iot.org",
+  "desc": "Connectivity Standards Alliance",
+  "url": "https://csa-iot.org",
+  "source": "wireless",
+  "h2": "IoT",
+  "h3": "",
+  "alsoIn": [
+   "wireless"
+  ]
+ },
+ {
+  "title": "Specifications",
+  "desc": "",
+  "url": "https://csa-iot.org/developer-resource/specifications-download-request/",
+  "source": "wireless",
+  "h2": "IoT",
+  "h3": "",
+  "alsoIn": [
+   "wireless"
+  ]
+ },
+ {
+  "title": "ESPHome",
+  "desc": "Home Automation systems.",
+  "url": "https://esphome.io",
+  "source": "wireless",
+  "h2": "IoT",
+  "h3": "",
+  "alsoIn": [
+   "wireless"
+  ]
+ },
+ {
+  "title": "Home Assistant",
+  "desc": "Open source home automation",
+  "url": "https://www.home-assistant.io/",
+  "source": "wireless",
+  "h2": "IoT",
+  "h3": "",
+  "alsoIn": [
+   "wireless"
+  ]
+ },
+ {
+  "title": "ble_monitor",
+  "desc": "BLE monitor for passive BLE sensors",
+  "url": "https://github.com/custom-components/ble_monitor/tree/master",
+  "source": "wireless",
+  "h2": "IoT",
+  "h3": "",
+  "alsoIn": [
+   "wireless"
+  ]
+ },
+ {
+  "title": "Matter",
+  "desc": "",
+  "url": "https://csa-iot.org/all-solutions/matter/",
+  "source": "wireless",
+  "h2": "IoT",
+  "h3": "",
+  "alsoIn": [
+   "wireless"
+  ]
+ },
+ {
+  "title": "Thread",
+  "desc": "",
+  "url": "https://www.threadgroup.org",
+  "source": "wireless",
+  "h2": "IoT",
+  "h3": "",
+  "alsoIn": [
+   "wireless"
+  ]
+ },
+ {
+  "title": "OpenThread",
+  "desc": "open-source implementation of Thread",
+  "url": "https://openthread.io",
+  "source": "wireless",
+  "h2": "IoT",
+  "h3": "",
+  "alsoIn": [
+   "wireless"
+  ]
+ },
+ {
+  "title": "Specifications",
+  "desc": "",
+  "url": "https://www.threadgroup.org/support#specifications",
+  "source": "wireless",
+  "h2": "IoT",
+  "h3": "",
+  "alsoIn": [
+   "wireless"
+  ]
+ },
+ {
+  "title": "ZigBee",
+  "desc": "",
+  "url": "https://csa-iot.org/all-solutions/zigbee/",
+  "source": "wireless",
+  "h2": "IoT",
+  "h3": "",
+  "alsoIn": [
+   "wireless"
+  ]
+ },
+ {
+  "title": "Linux Wireless wiki",
+  "desc": "Documentation for the Linux wireless (IEEE-802.11) subsystem.",
+  "url": "https://wireless.wiki.kernel.org/",
+  "source": "wireless",
+  "h2": "linux",
+  "h3": "",
+  "alsoIn": [
+   "wireless"
+  ]
+ },
+ {
+  "title": "Realtek drivers — RTL88x2BU",
+  "desc": "Linux Driver for USB WiFi Adapters that are based on the RTL8812BU and RTL8822BU Chipset.",
+  "url": "https://github.com/morrownr/88x2bu",
+  "source": "wireless",
+  "h2": "linux",
+  "h3": "",
+  "alsoIn": [
+   "wireless"
+  ]
+ },
+ {
+  "title": "Bouffalo Labs",
+  "desc": "",
+  "url": "https://www.bouffalolab.com",
+  "source": "wireless",
+  "h2": "Microcontrollers Vendors",
+  "h3": "",
+  "alsoIn": [
+   "wireless"
+  ]
+ },
+ {
+  "title": "GitHub",
+  "desc": "",
+  "url": "https://github.com/bouffalolab",
+  "source": "wireless",
+  "h2": "Microcontrollers Vendors",
+  "h3": "",
+  "alsoIn": [
+   "wireless"
+  ]
+ },
+ {
+  "title": "Espressif",
+  "desc": "",
+  "url": "https://www.espressif.com/en",
+  "source": "wireless",
+  "h2": "Microcontrollers Vendors",
+  "h3": "",
+  "alsoIn": [
+   "wireless"
+  ]
+ },
+ {
+  "title": "Github",
+  "desc": "",
+  "url": "https://github.com/espressif",
+  "source": "wireless",
+  "h2": "Microcontrollers Vendors",
+  "h3": "",
+  "alsoIn": [
+   "wireless"
+  ]
+ },
+ {
+  "title": "Documentation",
+  "desc": "",
+  "url": "https://docs.espressif.com/projects/esp-idf/en/stable/esp32/index.html#",
+  "source": "wireless",
+  "h2": "Microcontrollers Vendors",
+  "h3": "",
+  "alsoIn": [
+   "wireless"
+  ]
+ },
+ {
+  "title": "Silicon Labs",
+  "desc": "",
+  "url": "https://www.silabs.com",
+  "source": "wireless",
+  "h2": "Microcontrollers Vendors",
+  "h3": "",
+  "alsoIn": [
+   "wireless"
+  ]
+ },
+ {
+  "title": "GitHub",
+  "desc": "",
+  "url": "https://github.com/SiliconLabs",
+  "source": "wireless",
+  "h2": "Microcontrollers Vendors",
+  "h3": "",
+  "alsoIn": [
+   "wireless"
+  ]
+ },
+ {
+  "title": "Documentation",
+  "desc": "",
+  "url": "https://docs.silabs.com",
+  "source": "wireless",
+  "h2": "Microcontrollers Vendors",
+  "h3": "",
+  "alsoIn": [
+   "wireless"
+  ]
+ },
+ {
+  "title": "Bluetooth 5.0",
+  "desc": "",
+  "url": "https://docs.silabs.com/bluetooth/5.0/",
+  "source": "wireless",
+  "h2": "Microcontrollers Vendors",
+  "h3": "",
+  "alsoIn": [
+   "wireless"
+  ]
+ },
+ {
+  "title": "Microchip",
+  "desc": "",
+  "url": "https://www.microchip.com",
+  "source": "wireless",
+  "h2": "Microcontrollers Vendors",
+  "h3": "",
+  "alsoIn": [
+   "wireless"
+  ]
+ },
+ {
+  "title": "GitHub",
+  "desc": "",
+  "url": "https://github.com/MicrochipTech",
+  "source": "wireless",
+  "h2": "Microcontrollers Vendors",
+  "h3": "",
+  "alsoIn": [
+   "wireless"
+  ]
+ },
+ {
+  "title": "Nordic",
+  "desc": "",
+  "url": "https://www.nordicsemi.com",
+  "source": "wireless",
+  "h2": "Microcontrollers Vendors",
+  "h3": "",
+  "alsoIn": [
+   "wireless"
+  ]
+ },
+ {
+  "title": "GitHub",
+  "desc": "",
+  "url": "https://github.com/NordicSemiconductor",
+  "source": "wireless",
+  "h2": "Microcontrollers Vendors",
+  "h3": "",
+  "alsoIn": [
+   "wireless"
+  ]
+ },
+ {
+  "title": "Documentation",
+  "desc": "",
+  "url": "https://docs.nordicsemi.com",
+  "source": "wireless",
+  "h2": "Microcontrollers Vendors",
+  "h3": "",
+  "alsoIn": [
+   "wireless"
+  ]
+ },
+ {
+  "title": "nrf-rs",
+  "desc": "",
+  "url": "https://github.com/nrf-rs",
+  "source": "wireless",
+  "h2": "Microcontrollers Vendors",
+  "h3": "",
+  "alsoIn": [
+   "wireless"
+  ]
+ },
+ {
+  "title": "Tools — nRF Sniffer for 802.15.4",
+  "desc": "",
+  "url": "https://www.nordicsemi.com/Products/Development-tools/nRF-Sniffer-for-802154",
+  "source": "wireless",
+  "h2": "Microcontrollers Vendors",
+  "h3": "",
+  "alsoIn": [
+   "wireless"
+  ]
+ },
+ {
+  "title": "Tools — nRF Sniffer for Bluetooth LE",
+  "desc": "",
+  "url": "https://www.nordicsemi.com/Products/Development-tools/nRF-Sniffer-for-Bluetooth-LE",
+  "source": "wireless",
+  "h2": "Microcontrollers Vendors",
+  "h3": "",
+  "alsoIn": [
+   "wireless"
+  ]
+ },
+ {
+  "title": "NXP",
+  "desc": "",
+  "url": "https://www.nxp.com",
+  "source": "wireless",
+  "h2": "Microcontrollers Vendors",
+  "h3": "",
+  "alsoIn": [
+   "wireless"
+  ]
+ },
+ {
+  "title": "GitHub",
+  "desc": "",
+  "url": "https://github.com/NXP",
+  "source": "wireless",
+  "h2": "Microcontrollers Vendors",
+  "h3": "",
+  "alsoIn": [
+   "wireless"
+  ]
+ },
+ {
+  "title": "Renesas",
+  "desc": "",
+  "url": "https://www.renesas.com/us/en",
+  "source": "wireless",
+  "h2": "Microcontrollers Vendors",
+  "h3": "",
+  "alsoIn": [
+   "wireless"
+  ]
+ },
+ {
+  "title": "GitHub",
+  "desc": "",
+  "url": "https://github.com/renesas",
+  "source": "wireless",
+  "h2": "Microcontrollers Vendors",
+  "h3": "",
+  "alsoIn": [
+   "wireless"
+  ]
+ },
+ {
+  "title": "STMicroelectronics",
+  "desc": "",
+  "url": "https://www.st.com/content/st_com/en.html",
+  "source": "wireless",
+  "h2": "Microcontrollers Vendors",
+  "h3": "",
+  "alsoIn": [
+   "wireless"
+  ]
+ },
+ {
+  "title": "GitHub",
+  "desc": "",
+  "url": "https://github.com/STMicroelectronics",
+  "source": "wireless",
+  "h2": "Microcontrollers Vendors",
+  "h3": "",
+  "alsoIn": [
+   "wireless"
+  ]
+ },
+ {
+  "title": "Texas Instruments",
+  "desc": "",
+  "url": "https://www.ti.com",
+  "source": "wireless",
+  "h2": "Microcontrollers Vendors",
+  "h3": "",
+  "alsoIn": [
+   "wireless"
+  ]
+ },
+ {
+  "title": "GitHub",
+  "desc": "",
+  "url": "https://github.com/TexasInstruments",
+  "source": "wireless",
+  "h2": "Microcontrollers Vendors",
+  "h3": "",
+  "alsoIn": [
+   "wireless"
+  ]
+ },
+ {
+  "title": "Awesome CTS",
+  "desc": "curated list of Capture The Signal CTF related stuff.",
+  "url": "https://github.com/BlackVS/Awesome-CTS",
+  "source": "wireless",
+  "h2": "Misc",
+  "h3": "",
+  "alsoIn": [
+   "wireless"
+  ]
+ },
+ {
+  "title": "CatSniffer",
+  "desc": "multiprotocol and multiband board for sniffing, communicating, and attacking IoT (Internet of Things) devices",
+  "url": "https://github.com/ElectronicCats/CatSniffer",
+  "source": "wireless",
+  "h2": "Misc",
+  "h3": "",
+  "alsoIn": [
+   "wireless"
+  ]
+ },
+ {
+  "title": "continuity",
+  "desc": "Apple Continuity Protocol Reverse Engineering and Dissector",
+  "url": "https://github.com/furiousMAC/continuity",
+  "source": "wireless",
+  "h2": "Misc",
+  "h3": "",
+  "alsoIn": [
+   "wireless"
+  ]
+ },
+ {
+  "title": "cts.ninja",
+  "desc": "CTF focused on radio signal reverse engineering",
+  "url": "https://cts.ninja/",
+  "source": "wireless",
+  "h2": "Misc",
+  "h3": "",
+  "alsoIn": [
+   "wireless"
+  ]
+ },
+ {
+  "title": "Official FCC ID",
+  "desc": "",
+  "url": "https://www.fcc.gov/oet/ea/fccid",
+  "source": "wireless",
+  "h2": "Misc",
+  "h3": "",
+  "alsoIn": [
+   "wireless"
+  ]
+ },
+ {
+  "title": "ESP32-Paxcounter",
+  "desc": "Wifi & BLE driven passenger flow metering with cheap ESP32 boards.",
+  "url": "https://github.com/cyberman54/ESP32-Paxcounter",
+  "source": "wireless",
+  "h2": "Misc",
+  "h3": "",
+  "alsoIn": [
+   "wireless"
+  ]
+ },
+ {
+  "title": "esp32-open-mac",
+  "desc": "Reverse engineered wifi driver for the ESP32.",
+  "url": "https://github.com/esp32-open-mac/esp32-open-mac",
+  "source": "wireless",
+  "h2": "Misc",
+  "h3": "",
+  "alsoIn": [
+   "wireless"
+  ]
+ },
+ {
+  "title": "esp32free80211",
+  "desc": "Send arbitrary IEEE 802.11 frames.",
+  "url": "https://github.com/Jeija/esp32free80211",
+  "source": "wireless",
+  "h2": "Misc",
+  "h3": "",
+  "alsoIn": [
+   "wireless"
+  ]
+ },
+ {
+  "title": "FlipperZero",
+  "desc": "",
+  "url": "https://flipperzero.one",
+  "source": "wireless",
+  "h2": "Misc",
+  "h3": "",
+  "alsoIn": [
+   "wireless"
+  ]
+ },
+ {
+  "title": "Awesome",
+  "desc": "",
+  "url": "https://github.com/djsime1/awesome-flipperzero",
+  "source": "wireless",
+  "h2": "Misc",
+  "h3": "",
+  "alsoIn": [
+   "wireless"
+  ]
+ },
+ {
+  "title": "Firmware (original)",
+  "desc": "",
+  "url": "https://github.com/flipperdevices/flipperzero-firmware",
+  "source": "wireless",
+  "h2": "Misc",
+  "h3": "",
+  "alsoIn": [
+   "wireless"
+  ]
+ },
+ {
+  "title": "flipper-zero-evil-portal",
+  "desc": "",
+  "url": "https://github.com/bigbrodude6119/flipper-zero-evil-portal",
+  "source": "wireless",
+  "h2": "Misc",
+  "h3": "",
+  "alsoIn": [
+   "wireless"
+  ]
+ },
+ {
+  "title": "RogueMaster firmware",
+  "desc": "",
+  "url": "https://github.com/RogueMaster/flipperzero-firmware-wPlugins",
+  "source": "wireless",
+  "h2": "Misc",
+  "h3": "",
+  "alsoIn": [
+   "wireless"
+  ]
+ },
+ {
+  "title": "Unleashed-firmware",
+  "desc": "",
+  "url": "https://github.com/DarkFlippers/unleashed-firmware",
+  "source": "wireless",
+  "h2": "Misc",
+  "h3": "",
+  "alsoIn": [
+   "wireless"
+  ]
+ },
+ {
+  "title": "Xtreme-firmware",
+  "desc": "",
+  "url": "https://github.com/Flipper-XFW/Xtreme-Firmware",
+  "source": "wireless",
+  "h2": "Misc",
+  "h3": "",
+  "alsoIn": [
+   "wireless"
+  ]
+ },
+ {
+  "title": "Fissure",
+  "desc": "The RF and reverse engineering framework for everyone.",
+  "url": "https://github.com/ainfosec/FISSURE",
+  "source": "wireless",
+  "h2": "Misc",
+  "h3": "",
+  "alsoIn": [
+   "wireless"
+  ]
+ },
+ {
+  "title": "Mirage",
+  "desc": "powerful and modular framework dedicated to the security analysis of wireless communications.",
+  "url": "https://github.com/RCayre/mirage",
+  "source": "wireless",
+  "h2": "Misc",
+  "h3": "",
+  "alsoIn": [
+   "wireless"
+  ]
+ },
+ {
+  "title": "netscanner",
+  "desc": "network scanner implemented in rust",
+  "url": "https://github.com/Chleba/netscanner",
+  "source": "wireless",
+  "h2": "Misc",
+  "h3": "",
+  "alsoIn": [
+   "wireless"
+  ]
+ },
+ {
+  "title": "opendrop",
+  "desc": "An open Apple AirDrop implementation",
+  "url": "https://github.com/seemoo-lab/opendrop",
+  "source": "wireless",
+  "h2": "Misc",
+  "h3": "",
+  "alsoIn": [
+   "wireless"
+  ]
+ },
+ {
+  "title": "owlink",
+  "desc": "Open Wireless Link",
+  "url": "https://owlink.org/publications/",
+  "source": "wireless",
+  "h2": "Misc",
+  "h3": "",
+  "alsoIn": [
+   "wireless"
+  ]
+ },
+ {
+  "title": "Responder",
+  "desc": "LLMNR, NBT-NS and MDNS poisoner",
+  "url": "https://github.com/lgandx/Responder",
+  "source": "wireless",
+  "h2": "Misc",
+  "h3": "",
+  "alsoIn": [
+   "wireless"
+  ]
+ },
+ {
+  "title": "Signal Identification Guide",
+  "desc": "help identify radio signals through example sounds and waterfall images.",
+  "url": "https://www.sigidwiki.com/wiki/Signal_Identification_Guide",
+  "source": "wireless",
+  "h2": "Misc",
+  "h3": "",
+  "alsoIn": [
+   "wireless"
+  ]
+ },
+ {
+  "title": "sparrow-wifi",
+  "desc": "Next-Gen GUI-based WiFi and Bluetooth Analyzer for Linux",
+  "url": "https://github.com/ghostop14/sparrow-wifi",
+  "source": "wireless",
+  "h2": "Misc",
+  "h3": "",
+  "alsoIn": [
+   "wireless"
+  ]
+ },
+ {
+  "title": "WiFiDuck",
+  "desc": "Wireless keystroke injection attack platform",
+  "url": "https://github.com/SpacehuhnTech/WiFiDuck",
+  "source": "wireless",
+  "h2": "Misc",
+  "h3": "",
+  "alsoIn": [
+   "wireless"
+  ]
+ },
+ {
+  "title": "wigle.net",
+  "desc": "Wireless network mapping service",
+  "url": "https://wigle.net",
+  "source": "wireless",
+  "h2": "Misc",
+  "h3": "",
+  "alsoIn": [
+   "wireless"
+  ]
+ },
+ {
+  "title": "Hardware — BladeRF",
+  "desc": "2x2 MIMO, 47MHz to 6GHz frequency range",
+  "url": "https://www.nuand.com/bladerf-2-0-micro/",
+  "source": "wireless",
+  "h2": "SDR and SDP",
+  "h3": "",
+  "alsoIn": [
+   "wireless"
+  ]
+ },
+ {
+  "title": "Hardware — GitHub",
+  "desc": "bladeRF USB 3.0 Superspeed Software Defined Radio Source Code.",
+  "url": "https://github.com/Nuand/bladeRF",
+  "source": "wireless",
+  "h2": "SDR and SDP",
+  "h3": "",
+  "alsoIn": [
+   "wireless"
+  ]
+ },
+ {
+  "title": "Hardware — HackRF One",
+  "desc": "oftware Defined Radio peripheral capable of transmission or reception of radio signals from 1 MHz to 6 GHz.",
+  "url": "https://greatscottgadgets.com/hackrf/one/",
+  "source": "wireless",
+  "h2": "SDR and SDP",
+  "h3": "",
+  "alsoIn": [
+   "wireless"
+  ]
+ },
+ {
+  "title": "Hardware — GitHub",
+  "desc": "low cost software radio platform.",
+  "url": "https://github.com/greatscottgadgets/hackrf",
+  "source": "wireless",
+  "h2": "SDR and SDP",
+  "h3": "",
+  "alsoIn": [
+   "wireless"
+  ]
+ },
+ {
+  "title": "Hardware — LimeSDR",
+  "desc": "low cost, open source, apps-enabled software defined radio (SDR).",
+  "url": "https://limemicro.com/products/boards/limesdr/",
+  "source": "wireless",
+  "h2": "SDR and SDP",
+  "h3": "",
+  "alsoIn": [
+   "wireless"
+  ]
+ },
+ {
+  "title": "Hardware — GitHub",
+  "desc": "LimeSdr software",
+  "url": "https://github.com/myriadrf",
+  "source": "wireless",
+  "h2": "SDR and SDP",
+  "h3": "",
+  "alsoIn": [
+   "wireless"
+  ]
+ },
+ {
+  "title": "Libraries — GNU Radio",
+  "desc": "development toolkit that provides signal processing blocks to implement software radios.",
+  "url": "https://www.gnuradio.org/",
+  "source": "wireless",
+  "h2": "SDR and SDP",
+  "h3": "",
+  "alsoIn": [
+   "wireless"
+  ]
+ },
+ {
+  "title": "Libraries — GitHub",
+  "desc": "the Free and Open Software Radio Ecosystem.",
+  "url": "https://github.com/gnuradio/gnuradio",
+  "source": "wireless",
+  "h2": "SDR and SDP",
+  "h3": "",
+  "alsoIn": [
+   "wireless"
+  ]
+ },
+ {
+  "title": "Libraries — LiquidSDR",
+  "desc": "free and open-source signal processing library for software-defined radios.",
+  "url": "https://liquidsdr.org/",
+  "source": "wireless",
+  "h2": "SDR and SDP",
+  "h3": "",
+  "alsoIn": [
+   "wireless"
+  ]
+ },
+ {
+  "title": "Libraries — liquid-dsp",
+  "desc": "digital signal processing library for software-defined radios.",
+  "url": "https://github.com/jgaeddert/liquid-dsp",
+  "source": "wireless",
+  "h2": "SDR and SDP",
+  "h3": "",
+  "alsoIn": [
+   "wireless"
+  ]
+ },
+ {
+  "title": "Libraries — OpenOFDM",
+  "desc": "Sythesizable, modular Verilog implementation of 802.11 OFDM decoder.",
+  "url": "https://www.analog.com/en/education/education-library/software-defined-radio-for-engineers.html",
+  "source": "wireless",
+  "h2": "SDR and SDP",
+  "h3": "",
+  "alsoIn": [
+   "wireless"
+  ]
+ },
+ {
+  "title": "Theory — dspguide",
+  "desc": "The Scientist and Engineer's Guide to Digital Signal Processing.",
+  "url": "http://www.dspguide.com/",
+  "source": "wireless",
+  "h2": "SDR and SDP",
+  "h3": "",
+  "alsoIn": [
+   "wireless"
+  ]
+ },
+ {
+  "title": "Theory — pysdr",
+  "desc": "A Guide to SDR and DSP using Python.",
+  "url": "https://pysdr.org/",
+  "source": "wireless",
+  "h2": "SDR and SDP",
+  "h3": "",
+  "alsoIn": [
+   "wireless"
+  ]
+ },
+ {
+  "title": "Theory — rtl-sdr",
+  "desc": "RTL-SDR (RTL2832U) and software defined radio news and projects.",
+  "url": "https://www.rtl-sdr.com",
+  "source": "wireless",
+  "h2": "SDR and SDP",
+  "h3": "",
+  "alsoIn": [
+   "wireless"
+  ]
+ },
+ {
+  "title": "Tools — sdrangel",
+  "desc": "SDR Rx/Tx software",
+  "url": "https://github.com/f4exb/sdrangel",
+  "source": "wireless",
+  "h2": "SDR and SDP",
+  "h3": "",
+  "alsoIn": [
+   "wireless"
+  ]
+ },
+ {
+  "title": "Tools — SDRPlusPlusA",
+  "desc": "Cross-Platform SDR Software",
+  "url": "https://github.com/AlexandreRouma/SDRPlusPlus",
+  "source": "wireless",
+  "h2": "SDR and SDP",
+  "h3": "",
+  "alsoIn": [
+   "wireless"
+  ]
+ },
+ {
+  "title": "Tools — urh",
+  "desc": "Universal Radio Hacker",
+  "url": "https://github.com/jopohl/urh",
+  "source": "wireless",
+  "h2": "SDR and SDP",
+  "h3": "",
+  "alsoIn": [
+   "wireless"
+  ]
+ },
+ {
+  "title": "z-wave alliance",
+  "desc": "",
+  "url": "https://z-wavealliance.org",
+  "source": "wireless",
+  "h2": "Z-Wave",
+  "h3": "",
+  "alsoIn": [
+   "wireless"
+  ]
+ },
+ {
+  "title": "ICS Security",
+  "desc": "curated list of resources related to Industrial Control System (ICS) security.",
+  "url": "https://github.com/hslatman/awesome-industrial-control-system-security",
+  "source": "ot_security",
+  "h2": "Awesomes",
+  "h3": "",
+  "alsoIn": [
+   "ot_security"
+  ]
+ },
+ {
+  "title": "ICS Security Tools",
+  "desc": "tools, tips, tricks, and more for exploring ICS Security.",
+  "url": "https://github.com/ITI/ICS-Security-Tools",
+  "source": "ot_security",
+  "h2": "Awesomes",
+  "h3": "",
+  "alsoIn": [
+   "ot_security"
+  ]
+ },
+ {
+  "title": "ICS/SCADA security collection",
+  "desc": "a collection of resources for geting started in ICS/SCADA cybersecurity.",
+  "url": "http://www.robertmlee.org/a-collection-of-resources-for-getting-started-in-icsscada-cybersecurity/",
+  "source": "ot_security",
+  "h2": "Blogs and News",
+  "h3": "",
+  "alsoIn": [
+   "ot_security"
+  ]
+ },
+ {
+  "title": "Attify blog",
+  "desc": "Attify security blog.",
+  "url": "https://blog.attify.com/",
+  "source": "ot_security",
+  "h2": "Blogs and News",
+  "h3": "",
+  "alsoIn": [
+   "ot_security"
+  ]
+ },
+ {
+  "title": "NIST ICS Security",
+  "desc": "guide to Industrial Control Systems (ICS) Security by NIST.",
+  "url": "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-82r2.pdf",
+  "source": "ot_security",
+  "h2": "Guides and Best Practices",
+  "h3": "",
+  "alsoIn": [
+   "ot_security"
+  ]
+ },
+ {
+  "title": "OWASP IoT",
+  "desc": "better understand the security issues associated with the Internet of Things.",
+  "url": "https://owasp.org/www-project-internet-of-things/#tab=Firmware_Analysis",
+  "source": "ot_security",
+  "h2": "Guides and Best Practices",
+  "h3": "",
+  "alsoIn": [
+   "ot_security"
+  ]
+ },
+ {
+  "title": "Backdoors",
+  "desc": "",
+  "url": "#backdoors",
+  "source": "red_team",
+  "h2": "",
+  "h3": "",
+  "alsoIn": [
+   "red_team"
+  ]
+ },
+ {
+  "title": "C2 Frameworks",
+  "desc": "",
+  "url": "#c2-frameworks",
+  "source": "red_team",
+  "h2": "",
+  "h3": "",
+  "alsoIn": [
+   "red_team"
+  ]
+ },
+ {
+  "title": "Libraries",
+  "desc": "",
+  "url": "#libraries",
+  "source": "red_team",
+  "h2": "",
+  "h3": "",
+  "alsoIn": [
+   "red_team"
+  ]
+ },
+ {
+  "title": "Malwares",
+  "desc": "",
+  "url": "#malwares",
+  "source": "red_team",
+  "h2": "",
+  "h3": "",
+  "alsoIn": [
+   "red_team"
+  ]
+ },
+ {
+  "title": "Networking",
+  "desc": "",
+  "url": "#networking",
+  "source": "red_team",
+  "h2": "",
+  "h3": "",
+  "alsoIn": [
+   "red_team"
+  ]
+ },
+ {
+  "title": "BDF",
+  "desc": "The Backdoor Factory.",
+  "url": "https://github.com/secretsquirrel/the-backdoor-factory",
+  "source": "red_team",
+  "h2": "Backdoors",
+  "h3": "",
+  "alsoIn": [
+   "red_team"
+  ]
+ },
+ {
+  "title": "ReCmd",
+  "desc": "Remote Command executor",
+  "url": "https://github.com/0xor0ne/recmd",
+  "source": "red_team",
+  "h2": "Backdoors",
+  "h3": "",
+  "alsoIn": [
+   "red_team"
+  ]
+ },
+ {
+  "title": "Tiny Shell",
+  "desc": "An open-source UNIX backdoor",
+  "url": "https://github.com/creaktive/tsh",
+  "source": "red_team",
+  "h2": "Backdoors",
+  "h3": "",
+  "alsoIn": [
+   "red_team"
+  ]
+ },
+ {
+  "title": "C2 matrix",
+  "desc": "C2 frameworks comparison.",
+  "url": "https://www.thec2matrix.com/",
+  "source": "red_team",
+  "h2": "C2 Frameworks",
+  "h3": "",
+  "alsoIn": [
+   "red_team"
+  ]
+ },
+ {
+  "title": "Spreadsheet",
+  "desc": "",
+  "url": "https://docs.google.com/spreadsheets/d/1b4mUxa6cDQuTV2BPC6aA-GR4zGZi0ooPYtBe4IgPsSc/edit#gid=0",
+  "source": "red_team",
+  "h2": "C2 Frameworks",
+  "h3": "",
+  "alsoIn": [
+   "red_team"
+  ]
+ },
+ {
+  "title": "Emp3r0r",
+  "desc": "Linux/Windows post-exploitation framework made by linux user.",
+  "url": "https://github.com/jm33-m0/emp3r0r",
+  "source": "red_team",
+  "h2": "C2 Frameworks",
+  "h3": "",
+  "alsoIn": [
+   "red_team"
+  ]
+ },
+ {
+  "title": "empire",
+  "desc": "PowerShell and Python 3.x post-exploitation framework.",
+  "url": "https://github.com/BC-SECURITY/Empire",
+  "source": "red_team",
+  "h2": "C2 Frameworks",
+  "h3": "",
+  "alsoIn": [
+   "red_team"
+  ]
+ },
+ {
+  "title": "Havoc",
+  "desc": "modern and malleable post-exploitation command and control framework.",
+  "url": "https://github.com/HavocFramework/Havoc",
+  "source": "red_team",
+  "h2": "C2 Frameworks",
+  "h3": "",
+  "alsoIn": [
+   "red_team"
+  ]
+ },
+ {
+  "title": "Heroinn",
+  "desc": "Rust cross platform C2/post-exploitation framework.",
+  "url": "https://github.com/b23r0/Heroinn",
+  "source": "red_team",
+  "h2": "C2 Frameworks",
+  "h3": "",
+  "alsoIn": [
+   "red_team"
+  ]
+ },
+ {
+  "title": "Link",
+  "desc": "command and control framework written in rust.",
+  "url": "https://github.com/postrequest/link",
+  "source": "red_team",
+  "h2": "C2 Frameworks",
+  "h3": "",
+  "alsoIn": [
+   "red_team"
+  ]
+ },
+ {
+  "title": "pupy",
+  "desc": "cross-platform remote administration and post-exploitation tool.",
+  "url": "https://github.com/n1nj4sec/pupy",
+  "source": "red_team",
+  "h2": "C2 Frameworks",
+  "h3": "",
+  "alsoIn": [
+   "red_team"
+  ]
+ },
+ {
+  "title": "sliver",
+  "desc": "Adversary Emulation Framework.",
+  "url": "https://github.com/BishopFox/sliver",
+  "source": "red_team",
+  "h2": "C2 Frameworks",
+  "h3": "",
+  "alsoIn": [
+   "red_team"
+  ]
+ },
+ {
+  "title": "pwncat",
+  "desc": "reverse and bind shell handler.",
+  "url": "https://github.com/calebstewart/pwncat",
+  "source": "red_team",
+  "h2": "C2 Frameworks",
+  "h3": "",
+  "alsoIn": [
+   "red_team"
+  ]
+ },
+ {
+  "title": "Stitch",
+  "desc": "python Remote Administration Tool.",
+  "url": "https://github.com/nathanlopez/Stitch",
+  "source": "red_team",
+  "h2": "C2 Frameworks",
+  "h3": "",
+  "alsoIn": [
+   "red_team"
+  ]
+ },
+ {
+  "title": "TheFatRat",
+  "desc": "generate backdoor and easy tool to post exploitation attack.",
+  "url": "https://github.com/screetsec/TheFatRat",
+  "source": "red_team",
+  "h2": "C2 Frameworks",
+  "h3": "",
+  "alsoIn": [
+   "red_team"
+  ]
+ },
+ {
+  "title": "veil",
+  "desc": "generate metasploit payloads that bypass common anti-virus solutions.",
+  "url": "https://github.com/Veil-Framework/Veil",
+  "source": "red_team",
+  "h2": "C2 Frameworks",
+  "h3": "",
+  "alsoIn": [
+   "red_team"
+  ]
+ },
+ {
+  "title": "ColdFire",
+  "desc": "malware development library.",
+  "url": "https://github.com/redcode-labs/Coldfire",
+  "source": "red_team",
+  "h2": "Libraries",
+  "h3": "",
+  "alsoIn": [
+   "red_team"
+  ]
+ },
+ {
+  "title": "Houdini",
+  "desc": "rust library that allows you to delete your executable while it's running.",
+  "url": "https://github.com/yamakadi/houdini",
+  "source": "red_team",
+  "h2": "Libraries",
+  "h3": "",
+  "alsoIn": [
+   "red_team"
+  ]
+ },
+ {
+  "title": "Impacket",
+  "desc": "collection of Python classes for working with network protocols.",
+  "url": "https://github.com/fortra/impacket",
+  "source": "red_team",
+  "h2": "Libraries",
+  "h3": "",
+  "alsoIn": [
+   "red_team"
+  ]
+ },
+ {
+  "title": "Intruducer",
+  "desc": "Rust crate to load a shared library into a Linux process without using ptrace.",
+  "url": "https://github.com/vfsfitvnm/intruducer",
+  "source": "red_team",
+  "h2": "Libraries",
+  "h3": "",
+  "alsoIn": [
+   "red_team"
+  ]
+ },
+ {
+  "title": "Linux Malware",
+  "desc": "tracking interesting Linux (and UNIX) malware.",
+  "url": "https://github.com/timb-machine/linux-malware",
+  "source": "red_team",
+  "h2": "Malwares",
+  "h3": "",
+  "alsoIn": [
+   "red_team"
+  ]
+ },
+ {
+  "title": "ATT&CK mapping",
+  "desc": "linux malware to ATTACK.",
+  "url": "https://gist.github.com/timb-machine/05043edd6e3f71569f0e6d2fe99f5e8c",
+  "source": "red_team",
+  "h2": "Malwares",
+  "h3": "",
+  "alsoIn": [
+   "red_team"
+  ]
+ },
+ {
+  "title": "elfloader",
+  "desc": "architecture-agnostic ELF file flattener for shellcode.",
+  "url": "https://github.com/gamozolabs/elfloader",
+  "source": "red_team",
+  "h2": "Malwares",
+  "h3": "",
+  "alsoIn": [
+   "red_team"
+  ]
+ },
+ {
+  "title": "Dumpers — pamspy",
+  "desc": "Credentials Dumper for Linux using eBPF.",
+  "url": "https://github.com/citronneur/pamspy",
+  "source": "red_team",
+  "h2": "Malwares",
+  "h3": "",
+  "alsoIn": [
+   "red_team"
+  ]
+ },
+ {
+  "title": "Log Cleaners — Moonwalk",
+  "desc": "Cover your tracks during Linux Exploitation by leaving zero traces on system logs and filesystem timestamps.",
+  "url": "https://github.com/mufeedvh/moonwalk",
+  "source": "red_team",
+  "h2": "Malwares",
+  "h3": "",
+  "alsoIn": [
+   "red_team"
+  ]
+ },
+ {
+  "title": "Malware Source Code",
+  "desc": "collection of malware source code for a variety of platforms.",
+  "url": "https://github.com/vxunderground/MalwareSourceCode",
+  "source": "red_team",
+  "h2": "Malwares",
+  "h3": "",
+  "alsoIn": [
+   "red_team"
+  ]
+ },
+ {
+  "title": "Obfuscation — Bashfuscator",
+  "desc": "configurable and extendable Bash obfuscation framework.",
+  "url": "https://github.com/Bashfuscator/Bashfuscator",
+  "source": "red_team",
+  "h2": "Malwares",
+  "h3": "",
+  "alsoIn": [
+   "red_team"
+  ]
+ },
+ {
+  "title": "Packers — oxide",
+  "desc": "PoC packer written in Rust.",
+  "url": "https://github.com/frank2/oxide",
+  "source": "red_team",
+  "h2": "Malwares",
+  "h3": "",
+  "alsoIn": [
+   "red_team"
+  ]
+ },
+ {
+  "title": "Packers — UPX",
+  "desc": "free, portable, extendable, high-performance executable packer.",
+  "url": "https://upx.github.io/",
+  "source": "red_team",
+  "h2": "Malwares",
+  "h3": "",
+  "alsoIn": [
+   "red_team"
+  ]
+ },
+ {
+  "title": "Pafish",
+  "desc": "testing tool that uses different techniques to detect virtual machines and malware analysis environments.",
+  "url": "https://github.com/a0rtega/pafish",
+  "source": "red_team",
+  "h2": "Malwares",
+  "h3": "",
+  "alsoIn": [
+   "red_team"
+  ]
+ },
+ {
+  "title": "antiscan",
+  "desc": "scan service similar to virustotal",
+  "url": "https://antiscan.me",
+  "source": "red_team",
+  "h2": "Misc",
+  "h3": "",
+  "alsoIn": [
+   "red_team"
+  ]
+ },
+ {
+  "title": "File Transfer — croc",
+  "desc": "easily and securely send things from one computer to another.",
+  "url": "https://github.com/schollz/croc",
+  "source": "red_team",
+  "h2": "Networking",
+  "h3": "",
+  "alsoIn": [
+   "red_team"
+  ]
+ },
+ {
+  "title": "File Transfer — pcp",
+  "desc": "peer-to-peer data transfer tool based on libp2p.",
+  "url": "https://github.com/dennis-tra/pcp",
+  "source": "red_team",
+  "h2": "Networking",
+  "h3": "",
+  "alsoIn": [
+   "red_team"
+  ]
+ },
+ {
+  "title": "Proxies — frp",
+  "desc": "fast reverse proxy.",
+  "url": "https://github.com/fatedier/frp",
+  "source": "red_team",
+  "h2": "Networking",
+  "h3": "",
+  "alsoIn": [
+   "red_team"
+  ]
+ },
+ {
+  "title": "Proxies — leaf",
+  "desc": "versatile and efficient proxy framework.",
+  "url": "https://github.com/eycorsican/leaf",
+  "source": "red_team",
+  "h2": "Networking",
+  "h3": "",
+  "alsoIn": [
+   "red_team"
+  ]
+ },
+ {
+  "title": "Proxies — mitmproxy",
+  "desc": "interactive HTTPS proxy.",
+  "url": "https://mitmproxy.org/",
+  "source": "red_team",
+  "h2": "Networking",
+  "h3": "",
+  "alsoIn": [
+   "red_team"
+  ]
+ },
+ {
+  "title": "Proxies — ngrok",
+  "desc": "introspected tunnels to localhost.",
+  "url": "https://github.com/inconshreveable/ngrok",
+  "source": "red_team",
+  "h2": "Networking",
+  "h3": "",
+  "alsoIn": [
+   "red_team"
+  ]
+ },
+ {
+  "title": "Proxies — Proxiechain",
+  "desc": "a tool that forces any TCP connection made by any given application to follow through proxies.",
+  "url": "https://github.com/haad/proxychains",
+  "source": "red_team",
+  "h2": "Networking",
+  "h3": "",
+  "alsoIn": [
+   "red_team"
+  ]
+ },
+ {
+  "title": "Proxies — rathole",
+  "desc": "lightweight and high-performance reverse proxy for NAT traversal, written in Rust.",
+  "url": "https://github.com/rapiz1/rathole",
+  "source": "red_team",
+  "h2": "Networking",
+  "h3": "",
+  "alsoIn": [
+   "red_team"
+  ]
+ },
+ {
+  "title": "Proxies — Shadowsocks",
+  "desc": "fast tunnel proxy that helps you bypass firewalls.",
+  "url": "https://github.com/shadowsocks/shadowsocks-rust",
+  "source": "red_team",
+  "h2": "Networking",
+  "h3": "",
+  "alsoIn": [
+   "red_team"
+  ]
+ },
+ {
+  "title": "Proxies — socat",
+  "desc": "relay for bidirectional data transfer.",
+  "url": "https://repo.or.cz/socat.git",
+  "source": "red_team",
+  "h2": "Networking",
+  "h3": "",
+  "alsoIn": [
+   "red_team"
+  ]
+ },
+ {
+  "title": "Remote/Reverse Shells — GTRS",
+  "desc": "Google Translator Reverse Shell.",
+  "url": "https://github.com/mthbernardes/GTRS",
+  "source": "red_team",
+  "h2": "Networking",
+  "h3": "",
+  "alsoIn": [
+   "red_team"
+  ]
+ },
+ {
+  "title": "Remote/Reverse Shells — hershell",
+  "desc": "multiplatform reverse shell generator.",
+  "url": "https://github.com/lesnuages/hershell",
+  "source": "red_team",
+  "h2": "Networking",
+  "h3": "",
+  "alsoIn": [
+   "red_team"
+  ]
+ },
+ {
+  "title": "Remote/Reverse Shells — icmpsh",
+  "desc": "reverse ICMP shell.",
+  "url": "https://github.com/bdamele/icmpsh",
+  "source": "red_team",
+  "h2": "Networking",
+  "h3": "",
+  "alsoIn": [
+   "red_team"
+  ]
+ },
+ {
+  "title": "Remote/Reverse Shells — Platypus",
+  "desc": "modern multiple reverse shell sessions manager written in go.",
+  "url": "https://github.com/WangYihang/Platypus",
+  "source": "red_team",
+  "h2": "Networking",
+  "h3": "",
+  "alsoIn": [
+   "red_team"
+  ]
+ },
+ {
+  "title": "Remote/Reverse Shells — rpty",
+  "desc": "tricking shells into interactive mode when local PTY's are not available.",
+  "url": "https://github.com/TimeToogo/remote-pty",
+  "source": "red_team",
+  "h2": "Networking",
+  "h3": "",
+  "alsoIn": [
+   "red_team"
+  ]
+ },
+ {
+  "title": "Remote/Reverse Shells — rsg",
+  "desc": "tool to generate various ways to do a reverse shell.",
+  "url": "https://github.com/mthbernardes/rsg",
+  "source": "red_team",
+  "h2": "Networking",
+  "h3": "",
+  "alsoIn": [
+   "red_team"
+  ]
+ },
+ {
+  "title": "Remote/Reverse Shells — rtty",
+  "desc": "access your terminal from anywhere via the web.",
+  "url": "https://www.graplsecurity.com/blog",
+  "source": "red_team",
+  "h2": "Networking",
+  "h3": "",
+  "alsoIn": [
+   "red_team"
+  ]
+ },
+ {
+  "title": "Remote/Reverse Shells — rustcat",
+  "desc": "modern Port listener and Reverse shell.",
+  "url": "https://github.com/robiot/rustcat",
+  "source": "red_team",
+  "h2": "Networking",
+  "h3": "",
+  "alsoIn": [
+   "red_team"
+  ]
+ },
+ {
+  "title": "Remote/Reverse Shells — tunshell",
+  "desc": "remote shell into ephemeral environments.",
+  "url": "https://github.com/TimeToogo/tunshell",
+  "source": "red_team",
+  "h2": "Networking",
+  "h3": "",
+  "alsoIn": [
+   "red_team"
+  ]
+ },
+ {
+  "title": "Remote/Reverse Shells — wash",
+  "desc": "a cloud-native shell for bringing remote infrastructure to your terminal.",
+  "url": "https://github.com/puppetlabs/wash",
+  "source": "red_team",
+  "h2": "Networking",
+  "h3": "",
+  "alsoIn": [
+   "red_team"
+  ]
+ },
+ {
+  "title": "Tunnelling — bore",
+  "desc": "simple CLI tool for making tunnels to localhost.",
+  "url": "https://github.com/ekzhang/bore",
+  "source": "red_team",
+  "h2": "Networking",
+  "h3": "",
+  "alsoIn": [
+   "red_team"
+  ]
+ },
+ {
+  "title": "Tunnelling — chisel",
+  "desc": "fast TCP/UDP tunnel over HTTP.",
+  "url": "https://github.com/jpillora/chisel",
+  "source": "red_team",
+  "h2": "Networking",
+  "h3": "",
+  "alsoIn": [
+   "red_team"
+  ]
+ },
+ {
+  "title": "Tunnelling — clash",
+  "desc": "rule-based tunnel in Go.",
+  "url": "https://github.com/Dreamacro/clash",
+  "source": "red_team",
+  "h2": "Networking",
+  "h3": "",
+  "alsoIn": [
+   "red_team"
+  ]
+ },
+ {
+  "title": "Tunnelling — dog-tunnel",
+  "desc": "p2p tunnel.",
+  "url": "https://github.com/vzex/dog-tunnel",
+  "source": "red_team",
+  "h2": "Networking",
+  "h3": "",
+  "alsoIn": [
+   "red_team"
+  ]
+ },
+ {
+  "title": "Tunnelling — kcp",
+  "desc": "a Fast and Reliable ARQ Protocol.",
+  "url": "https://github.com/skywind3000/kcp",
+  "source": "red_team",
+  "h2": "Networking",
+  "h3": "",
+  "alsoIn": [
+   "red_team"
+  ]
+ },
+ {
+  "title": "Tunnelling — gost",
+  "desc": "a simple tunnel written in golang.",
+  "url": "https://github.com/ginuerzh/gost",
+  "source": "red_team",
+  "h2": "Networking",
+  "h3": "",
+  "alsoIn": [
+   "red_team"
+  ]
+ },
+ {
+  "title": "Tunnelling — gsocket",
+  "desc": "connect like there is no firewall. Securely.",
+  "url": "https://github.com/hackerschoice/gsocket",
+  "source": "red_team",
+  "h2": "Networking",
+  "h3": "",
+  "alsoIn": [
+   "red_team"
+  ]
+ },
+ {
+  "title": "Tunnelling — icmptunnel",
+  "desc": "tunnel your IP traffic through ICMP echo and reply packets.",
+  "url": "https://github.com/DhavalKapil/icmptunnel",
+  "source": "red_team",
+  "h2": "Networking",
+  "h3": "",
+  "alsoIn": [
+   "red_team"
+  ]
+ },
+ {
+  "title": "Tunnelling — iodine",
+  "desc": "tunnel IPv4 data through a DNS server.",
+  "url": "https://github.com/yarrick/iodine",
+  "source": "red_team",
+  "h2": "Networking",
+  "h3": "",
+  "alsoIn": [
+   "red_team"
+  ]
+ },
+ {
+  "title": "Tunnelling — pingtunnel",
+  "desc": "tool that send TCP/UDP traffic over ICMP.",
+  "url": "https://github.com/esrrhs/pingtunnel",
+  "source": "red_team",
+  "h2": "Networking",
+  "h3": "",
+  "alsoIn": [
+   "red_team"
+  ]
+ },
+ {
+  "title": "Tunnelling — ssf",
+  "desc": "Secure Socket Funneling.",
+  "url": "https://github.com/securesocketfunneling/ssf",
+  "source": "red_team",
+  "h2": "Networking",
+  "h3": "",
+  "alsoIn": [
+   "red_team"
+  ]
+ },
+ {
+  "title": "Tunnelling — Stowaway",
+  "desc": "Multi-hop Proxy Tool for pentesters.",
+  "url": "https://github.com/ph4ntonn/Stowaway",
+  "source": "red_team",
+  "h2": "Networking",
+  "h3": "",
+  "alsoIn": [
+   "red_team"
+  ]
+ },
+ {
+  "title": "Tunnelling — udp2raw",
+  "desc": "tunnel which Turns UDP Traffic into Encrypted UDP/FakeTCP/ICMP Traffic.",
+  "url": "https://github.com/wangyu-/udp2raw",
+  "source": "red_team",
+  "h2": "Networking",
+  "h3": "",
+  "alsoIn": [
+   "red_team"
+  ]
+ },
+ {
+  "title": "ATT&CK",
+  "desc": "knowledge base of adversary tactics and techniques.",
+  "url": "https://attack.mitre.org/",
+  "source": "red_team",
+  "h2": "Resources",
+  "h3": "",
+  "alsoIn": [
+   "red_team"
+  ]
+ },
+ {
+  "title": "GTFOBins",
+  "desc": "curated list of Unix binaries that can be used to bypass local security restrictions.",
+  "url": "https://gtfobins.github.io/",
+  "source": "red_team",
+  "h2": "Resources",
+  "h3": "",
+  "alsoIn": [
+   "red_team"
+  ]
+ },
+ {
+  "title": "HackTricks",
+  "desc": "hacking trick/technique/whatever",
+  "url": "https://book.hacktricks.xyz/welcome/readme",
+  "source": "red_team",
+  "h2": "Resources",
+  "h3": "",
+  "alsoIn": [
+   "red_team"
+  ]
+ },
+ {
+  "title": "Linode Red Teaming Series",
+  "desc": "",
+  "url": "https://www.linode.com/docs/guides/hackersploit-red-team-series/",
+  "source": "red_team",
+  "h2": "Resources",
+  "h3": "",
+  "alsoIn": [
+   "red_team"
+  ]
+ },
+ {
+  "title": "LOLBAS",
+  "desc": "Living Off The Land Binaries, Scripts and Libraries.",
+  "url": "https://lolbas-project.github.io/",
+  "source": "red_team",
+  "h2": "Resources",
+  "h3": "",
+  "alsoIn": [
+   "red_team"
+  ]
+ },
+ {
+  "title": "Offensive Security",
+  "desc": "Tools & Interesting Things for RedTeam Ops.",
+  "url": "https://github.com/bigb0sss/RedTeam-OffensiveSecurity",
+  "source": "red_team",
+  "h2": "Resources",
+  "h3": "",
+  "alsoIn": [
+   "red_team"
+  ]
+ },
+ {
+  "title": "PayloadAllTheThings",
+  "desc": "list of useful payloads and bypass for Web Application Security and Pentest/CTF.",
+  "url": "https://github.com/swisskyrepo/PayloadsAllTheThings",
+  "source": "red_team",
+  "h2": "Resources",
+  "h3": "",
+  "alsoIn": [
+   "red_team"
+  ]
+ },
+ {
+  "title": "PayloadBox",
+  "desc": "list of attack payloads.",
+  "url": "https://github.com/payloadbox/",
+  "source": "red_team",
+  "h2": "Resources",
+  "h3": "",
+  "alsoIn": [
+   "red_team"
+  ]
+ },
+ {
+  "title": "Red Teaming",
+  "desc": "List of Awesome Red Teaming Resources.",
+  "url": "https://github.com/yeyintminthuhtut/Awesome-Red-Teaming",
+  "source": "red_team",
+  "h2": "Resources",
+  "h3": "",
+  "alsoIn": [
+   "red_team"
+  ]
+ },
+ {
+  "title": "Red team cheatsheet",
+  "desc": "Red Team Cheatsheet in constant expansion.",
+  "url": "https://github.com/RistBS/Awesome-RedTeam-Cheatsheet",
+  "source": "red_team",
+  "h2": "Resources",
+  "h3": "",
+  "alsoIn": [
+   "red_team"
+  ]
+ },
+ {
+  "title": "Red Team Infrastructure",
+  "desc": "Red Team infrastructure hardening resources.",
+  "url": "https://github.com/bluscreenofjeff/Red-Team-Infrastructure-Wiki",
+  "source": "red_team",
+  "h2": "Resources",
+  "h3": "",
+  "alsoIn": [
+   "red_team",
+   "misc"
+  ]
+ },
+ {
+  "title": "RedTeam-Tools",
+  "desc": "Tools and Techniques for Red Team",
+  "url": "https://github.com/A-poc/RedTeam-Tools",
+  "source": "red_team",
+  "h2": "Resources",
+  "h3": "",
+  "alsoIn": [
+   "red_team"
+  ]
+ },
+ {
+  "title": "Red Teaming Toolkit",
+  "desc": "cutting-edge open-source security tools (OST) for a red teamer and threat hunter.",
+  "url": "https://github.com/infosecn1nja/Red-Teaming-Toolkit",
+  "source": "red_team",
+  "h2": "Resources",
+  "h3": "",
+  "alsoIn": [
+   "red_team"
+  ]
+ },
+ {
+  "title": "RedTeaming-TT",
+  "desc": "Red Teaming Tactics and Techniques",
+  "url": "https://github.com/mantvydasb/RedTeaming-Tactics-and-Techniques",
+  "source": "red_team",
+  "h2": "Resources",
+  "h3": "",
+  "alsoIn": [
+   "red_team"
+  ]
+ },
+ {
+  "title": "SecList",
+  "desc": "collection of multiple types of lists used during security assessments.",
+  "url": "https://github.com/danielmiessler/SecLists",
+  "source": "red_team",
+  "h2": "Resources",
+  "h3": "",
+  "alsoIn": [
+   "red_team"
+  ]
+ },
+ {
+  "title": "Standards — NIST",
+  "desc": "Framework for Improving Critical Infrastructure Cybersecurity.",
+  "url": "https://www.nist.gov/news-events/news/2018/04/nist-releases-version-11-its-popular-cybersecurity-framework",
+  "source": "red_team",
+  "h2": "Resources",
+  "h3": "",
+  "alsoIn": [
+   "red_team"
+  ]
+ },
+ {
+  "title": "Standards — OSSTMM",
+  "desc": "Open Source Security Testing Methodology Manual.",
+  "url": "https://www.isecom.org/research.html#content5-9d",
+  "source": "red_team",
+  "h2": "Resources",
+  "h3": "",
+  "alsoIn": [
+   "red_team"
+  ]
+ },
+ {
+  "title": "Standards — PTES",
+  "desc": "Penetration Testing Methodologies and Standards.",
+  "url": "http://www.pentest-standard.org/index.php/Main_Page",
+  "source": "red_team",
+  "h2": "Resources",
+  "h3": "",
+  "alsoIn": [
+   "red_team"
+  ]
+ },
+ {
+  "title": "Standards — TIBER",
+  "desc": "Threat Intelligence-Based Ethical Red Teaming Framework.",
+  "url": "https://www.ecb.europa.eu/paym/cyber-resilience/tiber-eu/html/index.en.html",
+  "source": "red_team",
+  "h2": "Resources",
+  "h3": "",
+  "alsoIn": [
+   "red_team"
+  ]
+ },
+ {
+  "title": "Standards — STG",
+  "desc": "OWASP testing methodologies.",
+  "url": "https://owasp.org/www-project-web-security-testing-guide/latest/3-The_OWASP_Testing_Framework/1-Penetration_Testing_Methodologies",
+  "source": "red_team",
+  "h2": "Resources",
+  "h3": "",
+  "alsoIn": [
+   "red_team"
+  ]
+ },
+ {
+  "title": "Resources — xcellerator",
+  "desc": "Linux kernel rootkit series",
+  "url": "https://xcellerator.github.io/tags/rootkit/",
+  "source": "red_team",
+  "h2": "Rootkits",
+  "h3": "",
+  "alsoIn": [
+   "red_team"
+  ]
+ },
+ {
+  "title": "airgeddon",
+  "desc": "multi-use bash script for Linux systems to audit wireless networks.",
+  "url": "https://github.com/v1s1t0r1sh3r3/airgeddon",
+  "source": "red_team",
+  "h2": "Tools",
+  "h3": "",
+  "alsoIn": [
+   "red_team"
+  ]
+ },
+ {
+  "title": "Beshark",
+  "desc": "Bash post exploitation toolkit.",
+  "url": "https://github.com/redcode-labs/Bashark",
+  "source": "red_team",
+  "h2": "Tools",
+  "h3": "",
+  "alsoIn": [
+   "red_team"
+  ]
+ },
+ {
+  "title": "BloodHound",
+  "desc": "Six Degrees of Domain Admin.",
+  "url": "https://github.com/BloodHoundAD/BloodHound",
+  "source": "red_team",
+  "h2": "Tools",
+  "h3": "",
+  "alsoIn": [
+   "red_team"
+  ]
+ },
+ {
+  "title": "CrackMapExec",
+  "desc": "evaluates and exploits vulnerabilities in an active directory environment.",
+  "url": "https://github.com/Porchetta-Industries/CrackMapExec",
+  "source": "red_team",
+  "h2": "Tools",
+  "h3": "",
+  "alsoIn": [
+   "red_team"
+  ]
+ },
+ {
+  "title": "HashCat",
+  "desc": "password recovery utility.",
+  "url": "https://github.com/hashcat/hashcat",
+  "source": "red_team",
+  "h2": "Tools",
+  "h3": "",
+  "alsoIn": [
+   "red_team"
+  ]
+ },
+ {
+  "title": "LaZagne",
+  "desc": "retrieve passowrds.",
+  "url": "https://github.com/AlessandroZ/LaZagne",
+  "source": "red_team",
+  "h2": "Tools",
+  "h3": "",
+  "alsoIn": [
+   "red_team"
+  ]
+ },
+ {
+  "title": "Linux Exploit Suggester",
+  "desc": "Linux privilege escalation auditing tool.",
+  "url": "https://github.com/mzet-/linux-exploit-suggester",
+  "source": "red_team",
+  "h2": "Tools",
+  "h3": "",
+  "alsoIn": [
+   "red_team"
+  ]
+ },
+ {
+  "title": "Metasploit Framework",
+  "desc": "penetration testing framework.",
+  "url": "https://github.com/rapid7/metasploit-framework",
+  "source": "red_team",
+  "h2": "Tools",
+  "h3": "",
+  "alsoIn": [
+   "red_team"
+  ]
+ },
+ {
+  "title": "Venom",
+  "desc": "metasploit Shellcode generator/compiller.",
+  "url": "https://github.com/r00t-3xp10it/venom",
+  "source": "red_team",
+  "h2": "Tools",
+  "h3": "",
+  "alsoIn": [
+   "red_team"
+  ]
+ },
+ {
+  "title": "NoseyParker",
+  "desc": "command-line program that finds secrets and sensitive information in textual data and Git history.",
+  "url": "https://github.com/praetorian-inc/noseyparker",
+  "source": "red_team",
+  "h2": "Tools",
+  "h3": "",
+  "alsoIn": [
+   "red_team"
+  ]
+ },
+ {
+  "title": "PEASS-ng",
+  "desc": "Privilege Escalation Awesome Scripts SUITE.",
+  "url": "https://github.com/carlospolop/PEASS-ng",
+  "source": "red_team",
+  "h2": "Tools",
+  "h3": "",
+  "alsoIn": [
+   "red_team"
+  ]
+ },
+ {
+  "title": "pixload",
+  "desc": "set of tools for creating/injecting payload into images.",
+  "url": "https://github.com/chinarulezzz/pixload",
+  "source": "red_team",
+  "h2": "Tools",
+  "h3": "",
+  "alsoIn": [
+   "red_team"
+  ]
+ },
+ {
+  "title": "Sherlock",
+  "desc": "hunt down social media accounts by username across social networks.",
+  "url": "https://github.com/sherlock-project/sherlock",
+  "source": "red_team",
+  "h2": "Tools",
+  "h3": "",
+  "alsoIn": [
+   "red_team"
+  ]
+ },
+ {
+  "title": "SSH weaponization — reverse-ssh",
+  "desc": "Statically-linked ssh server with reverse shell",
+  "url": "https://github.com/Fahrj/reverse-ssh",
+  "source": "red_team",
+  "h2": "Tools",
+  "h3": "",
+  "alsoIn": [
+   "red_team"
+  ]
+ },
+ {
+  "title": "SSH weaponization — reverse_ssh",
+  "desc": "SSH based reverse shell.",
+  "url": "https://github.com/NHAS/reverse_ssh",
+  "source": "red_team",
+  "h2": "Tools",
+  "h3": "",
+  "alsoIn": [
+   "red_team"
+  ]
+ },
+ {
+  "title": "SSH weaponization — sshimpanzee",
+  "desc": "static reverse ssh server functionality.",
+  "url": "https://github.com/lexfo/sshimpanzee",
+  "source": "red_team",
+  "h2": "Tools",
+  "h3": "",
+  "alsoIn": [
+   "red_team"
+  ]
+ },
+ {
+  "title": "traitor",
+  "desc": "automatic Linux privesc via exploitation of low-hanging fruit.",
+  "url": "https://github.com/liamg/traitor",
+  "source": "red_team",
+  "h2": "Tools",
+  "h3": "",
+  "alsoIn": [
+   "red_team"
+  ]
+ },
+ {
+  "title": "0xtriboulet",
+  "desc": "",
+  "url": "https://steve-s.gitbook.io/0xtriboulet",
+  "source": "misc",
+  "h2": "Misc",
+  "h3": "",
+  "alsoIn": [
+   "misc"
+  ]
+ },
+ {
+  "title": "A Noobs Guide to ARM Exploitation",
+  "desc": "",
+  "url": "https://ad2001.gitbook.io/a-noobs-guide-to-arm-exploitation/",
+  "source": "misc",
+  "h2": "Misc",
+  "h3": "",
+  "alsoIn": [
+   "misc"
+  ]
+ },
+ {
+  "title": "Advanced binary fuzzing using AFL++-QEMU and libprotobuf: a practical case of grammar-aware in-memory persistent fuzzing",
+  "desc": "",
+  "url": "https://airbus-seclab.github.io/AFLplusplus-blogpost/",
+  "source": "misc",
+  "h2": "Misc",
+  "h3": "",
+  "alsoIn": [
+   "misc"
+  ]
+ },
+ {
+  "title": "Advanced Compilers: The Self-Guided Online Course",
+  "desc": "",
+  "url": "https://www.cs.cornell.edu/courses/cs6120/2020fa/self-guided/",
+  "source": "misc",
+  "h2": "Misc",
+  "h3": "",
+  "alsoIn": [
+   "misc"
+  ]
+ },
+ {
+  "title": "Analysis of a LoadLibraryA Stack String Obfuscation Technique with Radare2 & x86dbg",
+  "desc": "",
+  "url": "https://www.archcloudlabs.com/projects/loadlibrary-analysis/",
+  "source": "misc",
+  "h2": "Misc",
+  "h3": "",
+  "alsoIn": [
+   "misc"
+  ]
+ },
+ {
+  "title": "Anti-Debug Tricks",
+  "desc": "",
+  "url": "https://anti-debug.checkpoint.com",
+  "source": "misc",
+  "h2": "Misc",
+  "h3": "",
+  "alsoIn": [
+   "misc"
+  ]
+ },
+ {
+  "title": "ARMv8 AArch64/ARM64 Full Beginner's Assembly Tutorial",
+  "desc": "",
+  "url": "https://mariokartwii.com/armv8/",
+  "source": "misc",
+  "h2": "Misc",
+  "h3": "",
+  "alsoIn": [
+   "misc"
+  ]
+ },
+ {
+  "title": "Awesome binary parsing",
+  "desc": "",
+  "url": "https://github.com/dloss/binary-parsing",
+  "source": "misc",
+  "h2": "Misc",
+  "h3": "",
+  "alsoIn": [
+   "misc"
+  ]
+ },
+ {
+  "title": "Awesome Executable Packing",
+  "desc": "",
+  "url": "https://github.com/packing-box/awesome-executable-packing?tab=readme-ov-file",
+  "source": "misc",
+  "h2": "Misc",
+  "h3": "",
+  "alsoIn": [
+   "misc"
+  ]
+ },
+ {
+  "title": "Awesome Industrial Protocols",
+  "desc": "",
+  "url": "https://github.com/Orange-Cyberdefense/awesome-industrial-protocols",
+  "source": "misc",
+  "h2": "Misc",
+  "h3": "",
+  "alsoIn": [
+   "misc"
+  ]
+ },
+ {
+  "title": "Brute Ratel - Scandinavian Defence",
+  "desc": "",
+  "url": "https://protectedmo.de/brute.html",
+  "source": "misc",
+  "h2": "Misc",
+  "h3": "",
+  "alsoIn": [
+   "misc"
+  ]
+ },
+ {
+  "title": "Comprehensive Rust",
+  "desc": "",
+  "url": "https://google.github.io/comprehensive-rust/",
+  "source": "misc",
+  "h2": "Misc",
+  "h3": "",
+  "alsoIn": [
+   "misc"
+  ]
+ },
+ {
+  "title": "cryptopals",
+  "desc": "",
+  "url": "https://cryptopals.com",
+  "source": "misc",
+  "h2": "Misc",
+  "h3": "",
+  "alsoIn": [
+   "misc"
+  ]
+ },
+ {
+  "title": "CVE North Stars",
+  "desc": "",
+  "url": "https://cve-north-stars.github.io",
+  "source": "misc",
+  "h2": "Misc",
+  "h3": "",
+  "alsoIn": [
+   "misc"
+  ]
+ },
+ {
+  "title": "Debugger Ghidra Class",
+  "desc": "",
+  "url": "https://github.com/NationalSecurityAgency/ghidra/tree/master/GhidraDocs/GhidraClass/Debugger",
+  "source": "misc",
+  "h2": "Misc",
+  "h3": "",
+  "alsoIn": [
+   "misc"
+  ]
+ },
+ {
+  "title": "Diffing Portal",
+  "desc": "",
+  "url": "http://diffing.quarkslab.com/?ref=0xor0ne.xyz",
+  "source": "misc",
+  "h2": "Misc",
+  "h3": "",
+  "alsoIn": [
+   "misc"
+  ]
+ },
+ {
+  "title": "exploit_mitigations",
+  "desc": "",
+  "url": "https://github.com/nccgroup/exploit_mitigations?ref=0xor0ne.xyz",
+  "source": "misc",
+  "h2": "Misc",
+  "h3": "",
+  "alsoIn": [
+   "misc"
+  ]
+ },
+ {
+  "title": "fenrir",
+  "desc": "",
+  "url": "https://github.com/R0rt1z2/fenrir",
+  "source": "misc",
+  "h2": "Misc",
+  "h3": "",
+  "alsoIn": [
+   "misc"
+  ]
+ },
+ {
+  "title": "Ghidriff - Ghidra Binary Diffing Engine",
+  "desc": "",
+  "url": "https://github.com/clearbluejar/ghidriff",
+  "source": "misc",
+  "h2": "Misc",
+  "h3": "",
+  "alsoIn": [
+   "misc"
+  ]
+ },
+ {
+  "title": "Grand Theft Auto A peek of BLE relay attack",
+  "desc": "",
+  "url": "https://rollingpwn.github.io/BLE-Relay-Aattck/",
+  "source": "misc",
+  "h2": "Misc",
+  "h3": "",
+  "alsoIn": [
+   "misc"
+  ]
+ },
+ {
+  "title": "Hands-on Firmware Extraction, Exploration, and Emulation",
+  "desc": "",
+  "url": "https://github.com/onekey-sec/BHEU23-firmware-workshop",
+  "source": "misc",
+  "h2": "Misc",
+  "h3": "",
+  "alsoIn": [
+   "misc"
+  ]
+ },
+ {
+  "title": "Illustrated Connections — dtls",
+  "desc": "",
+  "url": "https://dtls.xargs.org",
+  "source": "misc",
+  "h2": "Misc",
+  "h3": "",
+  "alsoIn": [
+   "misc"
+  ]
+ },
+ {
+  "title": "Illustrated Connections — quic",
+  "desc": "",
+  "url": "https://quic.xargs.org",
+  "source": "misc",
+  "h2": "Misc",
+  "h3": "",
+  "alsoIn": [
+   "misc"
+  ]
+ },
+ {
+  "title": "Illustrated Connections — tls 1.2",
+  "desc": "",
+  "url": "https://tls12.xargs.org",
+  "source": "misc",
+  "h2": "Misc",
+  "h3": "",
+  "alsoIn": [
+   "misc"
+  ]
+ },
+ {
+  "title": "Illustrated Connections — tls 1.3",
+  "desc": "",
+  "url": "https://tls13.xargs.org",
+  "source": "misc",
+  "h2": "Misc",
+  "h3": "",
+  "alsoIn": [
+   "misc"
+  ]
+ },
+ {
+  "title": "Introduction to encryption for embedded Linux — Introduction to encryption for embedded Linux developers",
+  "desc": "",
+  "url": "https://sergioprado.blog/introduction-to-encryption-for-embedded-linux-developers/",
+  "source": "misc",
+  "h2": "Misc",
+  "h3": "",
+  "alsoIn": [
+   "misc"
+  ]
+ },
+ {
+  "title": "Introduction to encryption for embedded Linux — A hands-on approach to symmetric-key encryption",
+  "desc": "",
+  "url": "https://sergioprado.blog/a-hands-on-approach-to-symmetric-key-encryption/",
+  "source": "misc",
+  "h2": "Misc",
+  "h3": "",
+  "alsoIn": [
+   "misc"
+  ]
+ },
+ {
+  "title": "Introduction to encryption for embedded Linux — Asymmetric-Key Encryption and Digital Signatures in Practice",
+  "desc": "",
+  "url": "https://sergioprado.blog/asymmetric-key-encryption-and-digital-signatures-in-practice/",
+  "source": "misc",
+  "h2": "Misc",
+  "h3": "",
+  "alsoIn": [
+   "misc"
+  ]
+ },
+ {
+  "title": "Introduction to Malware Analysis and Reverse Engineering",
+  "desc": "",
+  "url": "https://class.malware.re",
+  "source": "misc",
+  "h2": "Misc",
+  "h3": "",
+  "alsoIn": [
+   "misc"
+  ]
+ },
+ {
+  "title": "Kernel Exploit Recipes Notebook",
+  "desc": "",
+  "url": "https://docs.google.com/document/d/1a9uUAISBzw3ur1aLQqKc5JOQLaJYiOP5pe_B4xCT1KA/edit#heading=h.6141m9mqkmgh",
+  "source": "misc",
+  "h2": "Misc",
+  "h3": "",
+  "alsoIn": [
+   "misc"
+  ]
+ },
+ {
+  "title": "Laser-Based Audio Injection on Voice-Controllable Systems",
+  "desc": "",
+  "url": "https://lightcommands.com",
+  "source": "misc",
+  "h2": "Misc",
+  "h3": "",
+  "alsoIn": [
+   "misc"
+  ]
+ },
+ {
+  "title": "Linux Kernel CVEs",
+  "desc": "",
+  "url": "https://linuxkernelcves.com",
+  "source": "misc",
+  "h2": "Misc",
+  "h3": "",
+  "alsoIn": [
+   "misc"
+  ]
+ },
+ {
+  "title": "Linux kernel exploit development",
+  "desc": "",
+  "url": "https://breaking-bits.gitbook.io/breaking-bits/exploit-development/linux-kernel-exploit-development?s=09",
+  "source": "misc",
+  "h2": "Misc",
+  "h3": "",
+  "alsoIn": [
+   "misc"
+  ]
+ },
+ {
+  "title": "Linux Privilege Escalation",
+  "desc": "",
+  "url": "https://tbhaxor.com/linux-privilege-escalation/",
+  "source": "misc",
+  "h2": "Misc",
+  "h3": "",
+  "alsoIn": [
+   "misc"
+  ]
+ },
+ {
+  "title": "Linux Syscalls Reference",
+  "desc": "",
+  "url": "https://syscalls.mebeim.net/?table=x86/64/x64/v6.5",
+  "source": "misc",
+  "h2": "Misc",
+  "h3": "",
+  "alsoIn": [
+   "misc"
+  ]
+ },
+ {
+  "title": "Lytro Unlock - Making a bad camera slightly better",
+  "desc": "",
+  "url": "https://github.com/ea/lytro_unlock",
+  "source": "misc",
+  "h2": "Misc",
+  "h3": "",
+  "alsoIn": [
+   "misc"
+  ]
+ },
+ {
+  "title": "Minimizing Rust Binary Size",
+  "desc": "",
+  "url": "https://github.com/johnthagen/min-sized-rust",
+  "source": "misc",
+  "h2": "Misc",
+  "h3": "",
+  "alsoIn": [
+   "misc"
+  ]
+ },
+ {
+  "title": "mjsxj09cm Recovering Firmware And Backdooring",
+  "desc": "",
+  "url": "https://whiterose-infosec.super.site/mjsxj09cm-recovering-firmware-and-backdooring",
+  "source": "misc",
+  "h2": "Misc",
+  "h3": "",
+  "alsoIn": [
+   "misc"
+  ]
+ },
+ {
+  "title": "Operating System development tutorials in Rust on the Raspberry Pi",
+  "desc": "",
+  "url": "https://github.com/rust-embedded/rust-raspberrypi-OS-tutorials",
+  "source": "misc",
+  "h2": "Misc",
+  "h3": "",
+  "alsoIn": [
+   "misc"
+  ]
+ },
+ {
+  "title": "parking-game-fuzzer",
+  "desc": "",
+  "url": "https://github.com/addisoncrump/parking-game-fuzzer",
+  "source": "misc",
+  "h2": "Misc",
+  "h3": "",
+  "alsoIn": [
+   "misc"
+  ]
+ },
+ {
+  "title": "Practical Cryprography for Developers",
+  "desc": "",
+  "url": "https://cryptobook.nakov.com",
+  "source": "misc",
+  "h2": "Misc",
+  "h3": "",
+  "alsoIn": [
+   "misc"
+  ]
+ },
+ {
+  "title": "Reverse Engineering For Everyone!",
+  "desc": "",
+  "url": "https://0xinfection.github.io/reversing/",
+  "source": "misc",
+  "h2": "Misc",
+  "h3": "",
+  "alsoIn": [
+   "misc"
+  ]
+ },
+ {
+  "title": "Reverse Engineering WiFi on RISC-V BL602",
+  "desc": "",
+  "url": "https://lupyuen.github.io/articles/wifi",
+  "source": "misc",
+  "h2": "Misc",
+  "h3": "",
+  "alsoIn": [
+   "misc"
+  ]
+ },
+ {
+  "title": "Rust Atomics and Locks",
+  "desc": "",
+  "url": "https://marabos.nl/atomics/",
+  "source": "misc",
+  "h2": "Misc",
+  "h3": "",
+  "alsoIn": [
+   "misc"
+  ]
+ },
+ {
+  "title": "RustRedOps",
+  "desc": "",
+  "url": "https://github.com/joaoviictorti/RustRedOps",
+  "source": "misc",
+  "h2": "Misc",
+  "h3": "",
+  "alsoIn": [
+   "misc"
+  ]
+ },
+ {
+  "title": "Satellite Hacking Demystified(RTC0007)",
+  "desc": "",
+  "url": "https://redteamrecipe.com/Satellite-Hacking-Demystified/",
+  "source": "misc",
+  "h2": "Misc",
+  "h3": "",
+  "alsoIn": [
+   "misc"
+  ]
+ },
+ {
+  "title": "THC's favourite Tips, Tricks & Hacks (Cheat Sheet)",
+  "desc": "",
+  "url": "https://github.com/hackerschoice/thc-tips-tricks-hacks-cheat-sheet",
+  "source": "misc",
+  "h2": "Misc",
+  "h3": "",
+  "alsoIn": [
+   "misc"
+  ]
+ },
+ {
+  "title": "tmpout.sh",
+  "desc": "collection of writeups on low-level stuff",
+  "url": "https://tmpout.sh",
+  "source": "misc",
+  "h2": "Misc",
+  "h3": "",
+  "alsoIn": [
+   "misc"
+  ]
+ },
+ {
+  "title": "Trail of Bits Testing Handbook",
+  "desc": "",
+  "url": "https://appsec.guide",
+  "source": "misc",
+  "h2": "Misc",
+  "h3": "",
+  "alsoIn": [
+   "misc"
+  ]
+ },
+ {
+  "title": "VSS: Beginners Guide to Building a Hardware Hacking Lab",
+  "desc": "",
+  "url": "https://voidstarsec.com/hw-hacking-lab/vss-lab-guide]",
+  "source": "misc",
+  "h2": "Misc",
+  "h3": "",
+  "alsoIn": [
+   "misc"
+  ]
+ },
+ {
+  "title": "WinDBG quick start tutorial",
+  "desc": "",
+  "url": "http://codemachine.com/articles/windbg_quickstart.html",
+  "source": "misc",
+  "h2": "Misc",
+  "h3": "",
+  "alsoIn": [
+   "misc"
+  ]
+ }
+]
