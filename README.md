@@ -139,6 +139,23 @@ jour au prochain lancement avec réseau.
 > Note : les mises à jour ne s'appliquent qu'**avec réseau**. Hors-ligne, tu gardes la
 > dernière version installée — c'est le comportement voulu.
 
+### Miroir Cloudflare Pages (racine, sans sous-chemin)
+
+Le même workflow déploie aussi sur **Cloudflare Pages** → <https://devops-trainer.pages.dev/>.
+Comme Cloudflare sert le site à la **racine** (pas de sous-chemin `/devops-trainer/`),
+le job `cloudflare` refait un build avec `BASE_PATH=/`.
+
+Ce job **ne s'exécute que si le secret `CLOUDFLARE_API_TOKEN` existe** (sinon il se
+saute sans faire échouer le run). Pour l'activer, une seule fois :
+
+1. Cloudflare → **My Profile → API Tokens → Create Token**, gabarit **« Edit Cloudflare Pages »**
+   (permission *Account · Cloudflare Pages · Edit*).
+2. GitHub → **Settings → Secrets and variables → Actions → New repository secret**,
+   nom `CLOUDFLARE_API_TOKEN`, valeur = le token.
+
+L'account ID est en clair dans le workflow (ce n'est pas un secret). Déploiement
+manuel équivalent : `MSYS_NO_PATHCONV=1 BASE_PATH=/ npm run build && npx wrangler pages deploy dist --project-name=devops-trainer --branch=main`.
+
 ---
 
 ## Roadmap
